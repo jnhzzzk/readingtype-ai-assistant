@@ -6,7 +6,7 @@ import { ChatInput } from './ChatInput';
 import { QuickActions } from './QuickActions';
 import { DictionaryViewer } from './DictionaryViewer';
 import { HelpModal } from './HelpModal';
-import { Message, createChatStream } from '@/lib/chat-service';
+import { Message, createChatStream } from '../lib/chat-service';
 
 import { 
   ClockIcon, 

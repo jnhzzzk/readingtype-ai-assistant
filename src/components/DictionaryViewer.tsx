@@ -13,7 +13,7 @@ import {
   searchDictionary, 
   DictionaryField, 
   DictionaryValue 
-} from '@/lib/reading-type-dictionary';
+} from '../lib/reading-type-dictionary';
 
 interface DictionaryViewerProps {
   isOpen: boolean;

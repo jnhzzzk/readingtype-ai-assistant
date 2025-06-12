@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Message } from '@/lib/chat-service';
+import { Message } from '../lib/chat-service';
 import { UserIcon, CodeBracketIcon, CpuChipIcon } from '@heroicons/react/24/outline';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';

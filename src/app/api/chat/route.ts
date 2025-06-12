@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
     }
     
     // 检查API密钥是否配置
-    if (!DEEPSEEK_API_KEY || DEEPSEEK_API_KEY === 'your_deepseek_api_key_here') {
+    if (!DEEPSEEK_API_KEY || DEEPSEEK_API_KEY === 'your_deepseek_api_key_here' || DEEPSEEK_API_KEY === 'your_api_key_here') {
       console.log('API密钥未配置，使用模拟响应');
       
       // 提取用户消息

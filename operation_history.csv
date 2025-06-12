@@ -1,0 +1,2 @@
+id,timestamp,input_text,operation_type,result,user_action
+2025-06-12T11:34:31.226027,储能PCS三相有功功率15分钟数据,generate_enhanced,290,pending

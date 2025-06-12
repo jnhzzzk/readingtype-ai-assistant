@@ -16,21 +16,36 @@ parts/
 sdist/
 var/
 wheels/
-pip-wheel-metadata/
-share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
 MANIFEST
 
-# Virtual Environment
-.env
-.venv
+# Virtual environment
+.venv/
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js
+.next/
+out/
+build/
 
 # IDE
 .vscode/
@@ -52,67 +67,14 @@ Thumbs.db
 *.log
 logs/
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Coverage directory used by tools like istanbul
-coverage/
-*.lcov
-
-# nyc test coverage
-.nyc_output
-
-# node_modules
-node_modules/
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-.parcel-cache
-
-# Next.js build output
-.next/
-out/
-
-# Nuxt.js build / generate output
-.nuxt
-dist
-
-# Temporary files
-*.tmp
-*.temp
-
 # Database
 *.db
 *.sqlite
 
-# API Keys and sensitive data
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Cache
+.cache/
 
-# Debug files
-DEBUG_*.md
-OPTIMIZATION_*.md
-
-# Test files
-test_*.py
-
-# CSV data files that might be large
-*.csv
-*.xlsx 
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/ 

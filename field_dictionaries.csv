@@ -1,0 +1,1146 @@
+field_name,field_chinese_name,field_value,display_name,description,is_custom
+macroPeriod,宏周期,0,0.none,Not applicable.,False
+macroPeriod,宏周期,1,1.secondly,Per second interval,False
+macroPeriod,宏周期,2,2.minutely,Per minute interval,False
+macroPeriod,宏周期,3,3.hourly,Per hour interval,False
+macroPeriod,宏周期,4,4.daily,Per day interval,False
+macroPeriod,宏周期,5,5.weekly,Per week interval,False
+macroPeriod,宏周期,6,6.monthly,Per month interval,False
+macroPeriod,宏周期,7,7.yearly,Per year interval,False
+macroPeriod,宏周期,8,8.billingPeriod,"Captured during the billing period starting at
+midnight of the first day of the billing period (as
+defined by the billing cycle day). If during the
+current billing period, it specifies a period from
+the start of the current billing period until ""now"".",False
+macroPeriod,宏周期,9,9.fixedBlock,Fixed block period,False
+macroPeriod,宏周期,10,10.rollingBlock,Rolling block period,False
+macroPeriod,宏周期,11,11.daily,"Daily period starting at midnight. If for the
+current day, this specifies the time from midnight
+to ""now"".",False
+macroPeriod,宏周期,12,12.tenYearly,Per ten years period,False
+macroPeriod,宏周期,13,13.monthly,"Monthly period starting at midnight on the first
+day of the month. If within the current month,
+this specifies the period from the start of the
+month until ""now.",False
+macroPeriod,宏周期,22,22.seasonal,"A season of time spanning multiple months. E.g.
+""Summer,"" ""Spring,"" ""Fall,"" and ""Winter"" based
+cycle. If within the current season, it specifies the period from the start of the current season
+until ""now.""",False
+macroPeriod,宏周期,24,24.weekly,"Weekly period starting at midnight on the first
+day of the week and ending the instant before
+midnight the last day of the week. If within the
+current week, it specifies the period from the
+start of the week until ""now.""",False
+macroPeriod,宏周期,32,32.specifiedPeriod,"For the period defined by the start and end of
+the TimePeriod element in the message.",False
+aggregate,统计,0,0.none,Not Applicable,False
+aggregate,统计,1,1.notApplicable,Not applicable aggregation,False
+aggregate,统计,2,2.average,,False
+aggregate,统计,3,3.delta,Delta aggregation,False
+aggregate,统计,4,4.excess,"The value represents an amount over which a threshold was
+exceeded.",False
+aggregate,统计,5,5.highThreshold,The value represents a programmed threshold.,False
+aggregate,统计,6,6.maximum,Maximum value aggregation,False
+aggregate,统计,7,7.lowThreshold,The value represents a programmed threshold.,False
+aggregate,统计,8,8.maximum,The highest value observed,False
+aggregate,统计,9,9.minimum,The smallest value observed,False
+aggregate,统计,11,11.nominal,,False
+aggregate,统计,12,12.normal,,False
+aggregate,统计,16,16.secondMaximum,The second highest value observed,False
+aggregate,统计,17,17.secondMinimum,The second smallest value observed,False
+aggregate,统计,23,23.thirdMaximum,The third highest value observed,False
+aggregate,统计,24,24.fourthMaximum,The fourth highest value observed,False
+aggregate,统计,25,25.fifthMaximum,The fifth highest value observed,False
+aggregate,统计,26,26.sum,The accumulated sum,False
+aggregate,统计,27,27.high,"Typically used to identify the high volume flow port of a
+compound water meter.",False
+aggregate,统计,28,28.low,"Typically used to identify the low volume flow port of a
+compound water meter.",False
+aggregate,统计,29,"29.Standard Deviation
+Population","The standard deviation of a population (indicated by lower case
+sigma)",False
+aggregate,统计,30,"30.Standard Deviation
+Sample","The standard deviation of a sample drawn from a population
+(usually indicated by a lower case ‘s",False
+measurePeriod,测量周期,0,0.none,Not Applicable,False
+measurePeriod,测量周期,1,1.tenMinute,10 min,False
+measurePeriod,测量周期,2,2.fifteenMinute,15 min,False
+measurePeriod,测量周期,3,3.oneMinute,1 min,False
+measurePeriod,测量周期,4,4.twentyfourHour,24 hour,False
+measurePeriod,测量周期,5,5.thirtyMinute,30 min,False
+measurePeriod,测量周期,6,6.fiveMinute,5 min,False
+measurePeriod,测量周期,7,7.sixtyMinute,60 min,False
+measurePeriod,测量周期,8,8.fourMinute,4 min,False
+measurePeriod,测量周期,9,9.sixMinute,6 min,False
+measurePeriod,测量周期,10,10.twoMinute,2 min,False
+measurePeriod,测量周期,11,11.sevenMinute,7 min,False
+measurePeriod,测量周期,12,12.eightMinute,8 min,False
+measurePeriod,测量周期,13,13.nineMinute,9 min,False
+measurePeriod,测量周期,14,14.threeMinute,3 min,False
+measurePeriod,测量周期,15,15.present,Within the present period of time,False
+measurePeriod,测量周期,16,16.previous,"Shifted within the previous monthly cycle and
+data set",False
+measurePeriod,测量周期,17,17.thirteenMinute,13 min,False
+measurePeriod,测量周期,18,18.fourteenMinute,14 min,False
+measurePeriod,测量周期,19,19.sixteenMinute,16 min,False
+measurePeriod,测量周期,20,20.seventeenMinute,17 min,False
+measurePeriod,测量周期,21,21.eighteenMinute,18 min,False
+measurePeriod,测量周期,22,22.nineteenMinute,19 min,False
+measurePeriod,测量周期,23,23.twentyOneMinute,21 min,False
+measurePeriod,测量周期,24,24.twentyTwoMinute,22 min,False
+measurePeriod,测量周期,25,25.twentyThreeMinute,23 min,False
+measurePeriod,测量周期,26,26.twentyFourMinute,24 min,False
+measurePeriod,测量周期,27,27.twentyFiveMinute,25 min,False
+measurePeriod,测量周期,28,28.twentySixMinute,26 min,False
+measurePeriod,测量周期,29,29.twentySevenMinute,27 min,False
+measurePeriod,测量周期,30,30.twentyEightMinute,28 min,False
+measurePeriod,测量周期,31,31.twentyMinute,20 min interval,False
+measurePeriod,测量周期,50,50.fixedBlock60Min,60 min Fixed Block,False
+measurePeriod,测量周期,51,51.fixedBlock30Min,30 min Fixed Block,False
+measurePeriod,测量周期,52,52.fixedBlock20Min,20 min Fixed Block,False
+measurePeriod,测量周期,53,53.fixedBlock15Min,15 min Fixed Block,False
+measurePeriod,测量周期,54,54.fixedBlock10Min,10 min Fixed Block,False
+measurePeriod,测量周期,55,55.fixedBlock5Min,5 min Fixed Block,False
+measurePeriod,测量周期,56,56.fixedBlock1Min,1 min Fixed Bloc,False
+measurePeriod,测量周期,57,57.rollingBlock60MinIntvl30MinSubIntvl,"60 min Rolling Block with 30-minute sub
+interval",False
+measurePeriod,测量周期,58,58.rollingBlock60MinIntvl20MinSubIntvl,"60 min Rolling Block with 20-minute sub
+intervals",False
+measurePeriod,测量周期,59,59.rollingBlock60MinIntvl15MinSubIntvl,"60 min Rolling Block with 15-minute sub
+intervals",False
+measurePeriod,测量周期,60,60.rollingBlock60MinIntvl12MinSubIntvl,"60 min Rolling Block with 12-minute sub
+intervals",False
+measurePeriod,测量周期,61,61.rollingBlock60MinIntvl10MinSubIntvl,"60 min Rolling Block with 10-minute sub
+intervals",False
+measurePeriod,测量周期,62,62.rollingBlock60MinIntvl6MinSubIntvl,"60 min Rolling Block with 6-minute sub
+intervals",False
+measurePeriod,测量周期,63,63.rollingBlock60MinIntvl5MinSubIntvl,"60 min Rolling Block with 5-minute sub
+intervals",False
+measurePeriod,测量周期,64,64.rollingBlock60MinIntvl4MinSubIntvl,"60 min Rolling Block with 4-minute sub
+intervals",False
+measurePeriod,测量周期,65,65.rollingBlock30MinIntvl15MinSubIntvl,"30 min Rolling Block with 15-minute sub
+intervals",False
+measurePeriod,测量周期,66,66.rollingBlock30MinIntvl10MinSubIntvl,"30 min Rolling Block with 10-minute sub
+intervals",False
+measurePeriod,测量周期,67,67.rollingBlock30MinIntvl6MinSubIntvl,"30 min Rolling Block with 6-minute sub
+intervals",False
+measurePeriod,测量周期,68,68.rollingBlock30MinIntvl5MinSubIntvl,"30 min Rolling Block with 5-minute sub
+intervals",False
+measurePeriod,测量周期,69,69.rollingBlock30MinIntvl3MinSubIntvl,"30 min Rolling Block with 3-minute sub
+intervals",False
+measurePeriod,测量周期,70,70.rollingBlock30MinIntvl2MinSubIntvl,"30 min Rolling Block with 2-minute sub
+intervals",False
+measurePeriod,测量周期,71,71.rollingBlock15MinIntvl5MinSubIntvl,"15 min Rolling Block with 5-minute sub
+intervals",False
+measurePeriod,测量周期,72,72.rollingBlock15MinIntvl3MinSubIntvl,"15 min Rolling Block with 3-minute sub
+intervals",False
+measurePeriod,测量周期,73,73.rollingBlock15MinIntvl1MinSubIntvl,"15 min Rolling Block with 1-minute sub
+intervals",False
+measurePeriod,测量周期,74,74.rollingBlock10MinIntvl5MinSubIntvl,"10 min Rolling Block with 5-minute sub
+intervals",False
+measurePeriod,测量周期,75,75.rollingBlock10MinIntvl2MinSubIntvl,"10 min Rolling Block with 2-minute sub
+intervals",False
+measurePeriod,测量周期,76,76.rollingBlock10MinIntvl1MinSubIntvl,"10 min Rolling Block with 1-minute sub
+intervals",False
+measurePeriod,测量周期,77,77.rollingBlock5MinIntvl1MinSubIntvl,"5 min Rolling Block with 1-minute sub
+intervals",False
+measurePeriod,测量周期,78,78.twelveMinute,12 min,False
+measurePeriod,测量周期,79,79.twoHour,2 h,False
+measurePeriod,测量周期,80,80.fourHour,4 h,False
+measurePeriod,测量周期,81,81.sixHour,6 h,False
+measurePeriod,测量周期,82,82.twelveHour,12 h,False
+measurePeriod,测量周期,83,83.threeHour,3 h,False
+measurePeriod,测量周期,100,100.specifiedInterval,"The interval length is described in attribute
+#10 in seconds. Attribute #11 should be ""1""
+for whole seconds.",False
+measurePeriod,测量周期,101,101.specifiedFixedBlock,"The fixed block duration is described in
+attribute #10 in seconds. Attribute #11 should
+be ""1"" for whole seconds.",False
+measurePeriod,测量周期,102,102.specifiedRollingBlock,"The rolling block size is described by attribute
+#10 in seconds, and the sub-interval size by
+attribute #11 in seconds.",False
+accumulationBehaviour,累积行为,0,0.none,"Not Applicable, or implied by the unit of measure.",False
+accumulationBehaviour,累积行为,1,1.bulkQuantity,"A value from a register which represents the bulk
+quantity of a commodity. This quantity is computed as
+the integral of the commodity usage rate. This value is
+typically used as the basis for the dial reading at the
+meter, and as a result, will roll over upon reaching a
+maximum dial value.
+NOTE 1 With the metering system, the roll-over
+behaviour typically implies a roll-under behavior so that
+the value presented is always a positive value (e.g.
+unsigned integer or positive decimal.) However, when
+communicating data between enterprise applications a
+negative value might occur in a case such as net
+metering.
+NOTE 2 A BulkQuantity refers primarily to the dial
+reading and not the consumption over a specific period
+of time.",False
+accumulationBehaviour,累积行为,2,2.continuousCumulative,"The sum of the previous billing period values and the
+present period value. Note: “ContinuousCumulative” is
+commonly used in conjunction with “demand.” The
+“ContinuousCumulative Demand” would be the
+cumulative sum of the previous billing period maximum
+demand values (as occurring with each demand reset)
+summed with the present period maximum demand value
+(which has yet to be reset.)",False
+accumulationBehaviour,累积行为,3,3.cumulative,"The sum of the previous billing period values. Note:
+“Cumulative” is commonly used in conjunction with
+“demand.” Each demand reset causes the maximum
+demand value for the present billing period (since the
+last demand reset) to accumulate as an accumulative
+total of all maximum demands. So instead of “zeroing”
+the demand register, a demand reset has the affect of
+adding the present maximum demand to this
+accumulating total.",False
+accumulationBehaviour,累积行为,4,4.deltaData,"The difference between the value at the end of the
+prescribed interval and the beginning of the interval. This
+is used for incremental interval data.
+NOTE 3 One common application would be for load
+profile data, another use might be to report the number
+of events within an interval (such as the number of
+equipment energizations within the specified period of
+time.)",False
+accumulationBehaviour,累积行为,6,6.indicating,"As if a needle is swung out on the meter face to a value
+to indicate the current value. (Note: An “indicating” value
+is typically measured over hundreds of milliseconds or
+greater, or may imply a “pusher” mechanism to capture a
+value. Compare this to “instantaneous” which is
+measured over a shorter period of time.)",False
+accumulationBehaviour,累积行为,9,9.summation,"A form of accumulation which is selective with respect to
+time.
+NOTE 4 “Summation” could be considered a
+specialization of “Bulk Quantity” according to the rules of
+inheritance where “Summation” selectively accumulates
+pulses over a timing pattern, and “BulkQuantity”
+accumulates pulses all of the time.",False
+accumulationBehaviour,累积行为,10,10.timeDelay,"A form of computation which introduces a time delay
+characteristic to the data value",False
+accumulationBehaviour,累积行为,12,12.instantaneous,"Typically measured over the fastest period of time
+allowed by the definition of the metric (usually
+milliseconds or tens of milliseconds.) (Note:
+“Instantaneous” was moved to attribute #4 in 61968-
+9Ed2 from attribute #1 in 61968-9:2009.)",False
+accumulationBehaviour,累积行为,13,13.latchingQuantity,"When this description is applied to a metered value, it
+implies that the value is a time-independent cumulative
+quantity much a BulkQuantity, except that it latches upon
+the maximum value upon reaching that value. Any
+additional accumulation (positive or negative) is
+discarded until a reset occurs.
+NOTE 5 A LatchingQuantity may also occur in the
+downward direction – upon reaching a minimum value.
+The terms “maximum” or “minimum” will usually be
+included as an attribute when this type of accumulation
+behaviour is present.
+When this description is applied to an encoded value
+(UOM= “Code”), it implies that the value has one or more
+bits which are latching. The condition that caused the bit
+to be set may have long since evaporated.
+In either case, the timestamp that accompanies the value
+may not coincide with the moment the value was initially
+set.
+In both cases a system will need to perform an operation
+to clear the latched value.",False
+accumulationBehaviour,累积行为,14,14.boundedQuantity,"A time-independent cumulative quantity much a
+BulkQuantity or a LatchingQuantity, except that the
+accumulation stops at the maximum or minimum values.
+When the maximum is reached, any additional positive
+accumulation is discarded, but negative accumulation
+may be accepted (thus lowering the counter.) Likewise,
+when the negative bound is reached, any additional
+negative accumulation is discarded, but positive
+accumulation is accepted (thus increasing the counter.)",False
+flowDirection,流向,0,0.none,Not Applicable (N/A),False
+flowDirection,流向,1,1.forward,,False
+flowDirection,流向,2,2.lagging,"Typically used to describe that a power factor is lagging
+the reference value (or to say that the current is lagging
+the voltage.)
+NOTE 1 When used to describe power factor, the term
+“Lagging” implies that the PF is negative. The term
+“lagging” in this case takes the place of the negative sign. If a signed PF value is to be passed by the data
+producer, then the direction of flow enumeration zero
+(none) should be used in order to avoid the possibility
+of creating an expression that employs a double
+negative. The data consumer should be able to tell from
+the sign of the data if the PF is leading or lagging. This
+principle is analogous to the concept that “Reverse”
+energy is an implied negative value, and to publish a
+negative reverse value would be ambiguous.
+NOTE 2 Lagging power factors typically indicate
+inductive loading",False
+flowDirection,流向,3,3.leading,"Typically used to describe that a power factor is leading
+the reference value (or to say that the current is leading
+the voltage.)
+NOTE 3 Leading power factors typically indicate
+capacitive loading.",False
+flowDirection,流向,4,4.net,"Defined as |Forward| - |Reverse|, See IEC/TS 61968-2.
+NOTE 4 In some systems, the value passed as a “net”
+value could become negative. In other systems the
+value passed as a “net” value is always a positive
+number, and rolls-over and rolls-under as needed.",False
+flowDirection,流向,5,5.q1plusQ2,Reactive positive quadrants.,False
+flowDirection,流向,7,7.q1plusQ3,Quadrants 1 and 3,False
+flowDirection,流向,8,8.q1plusQ4,"Quadrants 1 and 4 usually represent forward active
+energy",False
+flowDirection,流向,9,9.q1minusQ4,Q1 minus Q4,False
+flowDirection,流向,10,10.q2plusQ3,"Quadrants 2 and 3 usually represent reverse active
+energy",False
+flowDirection,流向,11,11.q2plusQ4,Quadrants 2 and 4,False
+flowDirection,流向,12,12.q2minusQ3,Q2 minus Q3,False
+flowDirection,流向,13,13.q3plusQ4,Reactive negative quadrants.,False
+flowDirection,流向,14,14.q3minusQ2,Q3 minus Q2,False
+flowDirection,流向,15,15.quadrant1,,False
+flowDirection,流向,16,16.quadrant2,,False
+flowDirection,流向,17,17.quadrant3,,False
+flowDirection,流向,18,18.quadrant4,,False
+flowDirection,流向,19,19.reverse,,False
+flowDirection,流向,20,20.total,"|Forward| + |Reverse|, See IEC/TS 61968-2.
+The sum of the commodity in all quadrants
+Q1+Q2+Q3+Q4.
+In polyphase metering, the total energy register is
+incremented when the absolute value of the sum of the
+phase energies is greater than zero:
+| EnergyA + EnergyB + EnergyC | > 0",False
+flowDirection,流向,21,21.totalByPhase,"In polyphase metering, the total by phase energy
+register is incremented when the sum of the absolute
+values of the phase energies is greater than zero:
+| EnergyA | + | EnergyB | + | EnergyC | > 0
+In single phase metering, the formulas for “Total” and
+“Total by phase” collapse to the same expression. For
+communication purposes however, the “Total”
+enumeration should be used with single phase meter
+data.",False
+commodity,商品,0,0.none,Not Applicable,False
+commodity,商品,1,"1.electricity
+SecondaryMetered","All types of metered quantities. This type of reading
+comes from the meter and represents a “secondary”
+metered value.",False
+commodity,商品,2,"2.electricity
+PrimaryMetered","It is possible for a meter to be outfitted with an
+external VT and/or CT. The meter might not be aware
+of these devices, and the display not compensate for
+their presence. Ultimately, when these scalars are
+applied, the value that represents the service value is
+called the “primary metered” value. The “index” in
+sub-category 3 mirrors those of sub-category 0.",False
+commodity,商品,3,3.communication,"A measurement of the communication infrastructure
+itself.",False
+commodity,商品,4,4.air,N,False
+commodity,商品,5,5.insulativeGas,(SF6 is found separately below.),False
+commodity,商品,6,6.insulativeOil,Typically mineral oil,False
+commodity,商品,7,7.naturalGas,Naturally occurring hydrocarbon gas,False
+commodity,商品,8,8.propane,C3H8,False
+commodity,商品,9,9.potableWater,Drinkable water,False
+commodity,商品,10,10.steam,"Water in steam form, usually used for heating.",False
+commodity,商品,11,11.wasteWater,(Sewerage),False
+commodity,商品,12,12.heatingFluid,"This fluid is likely in liquid form. It is not necessarily
+water or water based. The warm fluid returns cooler
+than when it was sent. The heat conveyed may be
+metered.",False
+commodity,商品,13,13.coolingFluid,"The cool fluid returns warmer than when it was sent.
+The heat conveyed may be metered.",False
+commodity,商品,14,14.nonpotableWater,"Reclaimed water – possibly used for irrigation but not
+sufficiently treated to be considered safe for drinking.
+Moisture in oil",False
+commodity,商品,15,15.nox,"Nitrous Oxides, NOX",False
+commodity,商品,16,16.so2,"Sulfur Dioxide, SO2",False
+commodity,商品,17,17.ch4,"Methane, CH4",False
+commodity,商品,18,18.co2,"Carbon Dioxide, CO2",False
+commodity,商品,19,19.carbon,C,False
+commodity,商品,20,20.hch,"Hexachlorocyclohexane, HCH",False
+commodity,商品,21,21.pfc,"Perfluorocarbons, PFC",False
+commodity,商品,22,22.sf6,"Sulfurhexafluoride, SF6",False
+commodity,商品,23,23.tvLicence,Television,False
+commodity,商品,24,24.internet,Internet service,False
+commodity,商品,25,25.refuse,Trash,False
+commodity,商品,26,26.h2,"Hydrogen, H2",False
+commodity,商品,27,27.c2h2,"Acetylene, C2H2",False
+commodity,商品,28,28.c2h4,"Ethylene, C2H4",False
+commodity,商品,29,29.c2h6,"Ethane, C2H6",False
+commodity,商品,30,30.co,"Carbon monoxide, CO",False
+commodity,商品,31,31.o2,"Oxygen, O2",False
+commodity,商品,32,32.dissolvedCombustibleGas,"Dissolved Combustible Gas (A combination of
+combustible gasses such as H2, CH4, C2H2, C2H4,
+C
+2H6, and/or CO in some mixture.)",False
+commodity,商品,33,33.co2e,Carbon Dioxide CO2 Equivalent,False
+commodity,商品,34,34.lead,"Lead, Pb",False
+commodity,商品,35,35.mercury,"Mercury, Hg",False
+commodity,商品,36,36.ozone,"Ozone, O3",False
+commodity,商品,37,37.pm10,Particulate matter whose maximum size is 10 µm.,False
+commodity,商品,38,38.pm25,"Particulate matter whose maximum size is 2,5 µm.",False
+commodity,商品,39,39.sox,"Sulfur Oxides, SOX",False
+commodity,商品,40,40.weather,Weather or meteorological conditions.,False
+commodity,商品,41,41.device,"Condition of the meter or end device itself. For
+example, this enumeration might be used in
+combination with an enumeration for temperature to
+represent the internal temperature of a meter.",False
+commodity,商品,42,42.pole,The power pole as an end device,False
+commodity,商品,43,43.conductor,A wire as an end device,False
+commodity,商品,44,44.acceleration,A measurement of acceleration,False
+commodity,商品,45,45.tilt,A measurement of tilt,False
+commodity,商品,46,46.magneticField,A measurement of the magnetic field,False
+commodity,商品,50,50.Gas,"Generic commodity for gas. Note that there are
+specific commodities for natural gas and propane.",False
+commodity,商品,60,60.Water,"Generic commodity for water. Note that there are
+specific commodities for waste water and potable
+water.",False
+commodity,商品,901,"901.electricity
+DirectMetered","All types of metered quantities. This type of reading
+comes from the meter and represents a “DC”
+metered value.",False
+commodity,商品,902,902.BMS of Storage,All types of BMS of Storage,False
+commodity,商品,903,903 PCS of Storage,All types of PCS of Storage,False
+commodity,商品,904,904 Monitor of Storage,All types of  Monitor of Storage,False
+measurementKind,测量类型,0,0.none,Not Applicable,False
+measurementKind,测量类型,2,2.apparentPowerFactor,D,False
+measurementKind,测量类型,3,3.currency,funds,False
+measurementKind,测量类型,4,4.current,The flow of electrons,False
+measurementKind,测量类型,5,5.currentAngle,"A phase current zerocross timing
+measurement releative to a
+reference voltage zerocross",False
+measurementKind,测量类型,6,6.currentImbalance,"A measurement of the departure of a
+phase current relative to the average
+current of all phases",False
+measurementKind,测量类型,7,7.date,"A measurement of the date and/or
+time in a clock, or a time stamp
+indicating when data was captured,
+when a maximum or minimum
+occurred, or to commemorate some
+other important aspect of a
+measurement",False
+measurementKind,测量类型,8,8.demand,"The measurement of maximum
+power flow which is computed as
+energy usage over time, the
+dimensions of which are defined by a
+tariff",False
+measurementKind,测量类型,9,9.distance,A linear distance or range radius,False
+measurementKind,测量类型,10,10.distortionVoltAmperes,"A measurement in which a V2 I2 term
+has both real and reactive
+components removed leaving only
+distortion. For example, distortion
+VAh = Sqrt( (V2h)(I2h) – (Wh)2 –
+(VArh)2)",False
+measurementKind,测量类型,11,11.energization,Pertaining to the presence of voltage,False
+measurementKind,测量类型,12,12.energy,"Scalar quantity which may be
+increased or decreased in a system
+when it receives or produces work,
+respectively",False
+measurementKind,测量类型,13,13.energizationLoadSide,"Measuring the presence or absence
+of voltage on the load side of an
+electricity meter",False
+measurementKind,测量类型,14,14.fan,A forced air moving device,False
+measurementKind,测量类型,15,15.frequency,Reciprocal of the period,False
+measurementKind,测量类型,17,17.ieee1366ASAI,"A measurement of IEEE-1366
+Average Service Availability Index",False
+measurementKind,测量类型,18,18.ieee1366ASIDI,"A measurement of the IEEE-1366
+Average Service Interruptio Duration
+Index",False
+measurementKind,测量类型,19,19.ieee1366ASIFI,"A measurement of the IEEE-1366
+Average Service Interruption
+Frequency Index",False
+measurementKind,测量类型,20,20.ieee1366CAIDI,"A measurement of the IEEE-1366
+Customer averate interruption
+duration index",False
+measurementKind,测量类型,21,21.ieee1366CAIFI,"A measurement of the IEEE-1366
+Customer average interruption
+frequency index",False
+measurementKind,测量类型,22,22.ieee1366CEMIn,"A measurement of the IEEE-1366
+Customers Experiencing Multiple
+Interruptions",False
+measurementKind,测量类型,23,23.ieee1366CEMSMIn,"A measurement of the IEEE-1366
+Customers Experiencing Multiple
+Sustained and Momentary
+Interruptions",False
+measurementKind,测量类型,24,24.ieee1366CTAIDI,"A measurement of the IEEE-1366
+Customer Total Average Interruption
+Duration Index",False
+measurementKind,测量类型,25,25.ieee1366MAIFI,"A measurement of the IEEE-1366
+Momentary Average Interruption
+Frequency Index",False
+measurementKind,测量类型,26,26.ieee1366MAIFIe,"A measurement of the IEEE-1366
+Momentary Average event
+Interruption Frequency Index",False
+measurementKind,测量类型,27,27.ieee1366SAIDI,"IEEE-1366 System Average
+Interruption Duration Index",False
+measurementKind,测量类型,28,28.ieee1366SAIFI,"IEEE-1366 System Average
+Interruption Frequency Index",False
+measurementKind,测量类型,31,31.lineLosses,"An energy, power, voltage, or current
+loss attributed to transmission or
+distribution line impedance",False
+measurementKind,测量类型,32,32.losses,"A quantity lost due to “technical”
+reasons (such as line loss) or “non
+technical” reasons (such as theft.)",False
+measurementKind,测量类型,33,33.negativeSequence,"A quantity that has a rotation
+sequence which is opposite to that of
+the power system",False
+measurementKind,测量类型,34,34.phasorPowerFactor,"The ratio of real energy (usually net
+Wh) to phasor apparent energy
+(kVAh)",False
+measurementKind,测量类型,35,35.phasorReactivePower,D,False
+measurementKind,测量类型,36,36.positiveSequence,"A quantity that has a rotation
+sequence in agreement with that of
+the power system",False
+measurementKind,测量类型,37,37.power,"The derivative of energy with respect
+to time, where the energy is being
+transferred or transformed.",False
+measurementKind,测量类型,38,38.powerFactor,"The ratio of real energy (usually net
+kWh) to apparent energy (kVAh)",False
+measurementKind,测量类型,40,40.quantityPower,"A power measurement of Qh, where
+Qh is defined to be half of the sum of
+the Wh measurements on each
+phase plus the squareroot of 3 over
+two times the sum of the VArh
+measurements on each phase.",False
+measurementKind,测量类型,41,41.sag,"A temporary dip in the supply voltage
+below the nominal value",False
+measurementKind,测量类型,42,42.swell,"A temporary rise of the supply
+voltage over the nominal value",False
+measurementKind,测量类型,43,43.switchPosition,"A physical or logical switch position
+status which includes “opened” and
+“closed”, but for some products may
+also include “armed,” or other states
+that indicate a temporary state due
+to some condition.",False
+measurementKind,测量类型,44,44.tapPosition,Tap changer position,False
+measurementKind,测量类型,45,45.tariffRate,"An energy price defined in a
+contract. The rate might be a price
+for energy, for power (usually
+expressed as a demand value), or
+some other measurement. The rate
+might be currency based, or as a
+code, or as a component of a larger
+tariff description.",False
+measurementKind,测量类型,46,46.temperature,"A quantity proportional to the energy
+of a system",False
+measurementKind,测量类型,47,47.totalHarmonicDistortion,"The ratio of the sum of the
+harmonics to the fundamental. (THD
+may measure either voltage or
+current, and may isolated to a given
+phase)",False
+measurementKind,测量类型,48,48.transformerLosses,"A measurement of the energy or
+power loss in a transformer due to
+inefficiency",False
+measurementKind,测量类型,49,49.unipedeVoltageDip10to15,"A voltage dip classification per
+EN50160 or a similar national
+standard measuring the number of
+dips in the 10-15% range",False
+measurementKind,测量类型,50,50.unipedeVoltageDip15to30,"A voltage dip classification per
+EN50160 or a similar national
+standard measuring the number of
+dips in the 15-30% range",False
+measurementKind,测量类型,51,51.unipedeVoltageDip30to60,"A voltage dip classification per
+EN50160 or a similar national
+standard measuring the number of
+dips in the 30-60% range",False
+measurementKind,测量类型,52,52.unipedeVoltageDip60to90,"A voltage dip classification per
+EN50160 or a similar national
+standard measuring the number of
+dips in the 60-90% range",False
+measurementKind,测量类型,53,53.unipedeVoltageDip90to100,"A voltage dip classification per
+EN50160 or a similar national
+standard measuring the number of
+dips in the 90-100% range",False
+measurementKind,测量类型,54,54.Voltage (rms),"The difference in electric potential
+between two points",False
+measurementKind,测量类型,55,55.voltageAngle,"A phase voltage zerocross timing
+measurement releative to a
+reference voltage zerocross",False
+measurementKind,测量类型,56,56.voltageExcursion,"A measurement of the departure of
+the voltage from the nominal voltage",False
+measurementKind,测量类型,57,57.voltageImbalance,"A measurement of the departure of a
+phase voltage relative to the average
+voltage of all phases.",False
+measurementKind,测量类型,58,58.volume,fluid volume,False
+measurementKind,测量类型,59,59.zeroFlowDuration,"The amount of time that current flow
+drops to a zero level or level below
+the ability of the sensor to sense",False
+measurementKind,测量类型,60,60.zeroSequence,"The zero sequence current is the
+vector sum of the phase currents",False
+measurementKind,测量类型,64,64.distortionPowerFactor,"The ratio of the distortion VAh to the
+apparent VAh",False
+measurementKind,测量类型,81,81.frequencyExcursion,"A measurement of the departure of
+the frequency from the nominal
+frequency",False
+measurementKind,测量类型,90,90.applicationContext,"Information that describes the logical
+context in which a request,
+measurement, or command is made.",False
+measurementKind,测量类型,91,91.apTitle,"An application name which is making
+or has made a request",False
+measurementKind,测量类型,92,92.assetNumber,An asset identifier,False
+measurementKind,测量类型,93,93.bandwidth,A measurement of dataflow,False
+measurementKind,测量类型,94,94.batteryVoltage,Battery voltage,False
+measurementKind,测量类型,95,95.broadcastAddress,"A message target address implying
+all endpoint units within range of a
+particular sender",False
+measurementKind,测量类型,96,96.deviceAddressType1,Endpoint target address Type1,False
+measurementKind,测量类型,97,97.deviceAddressType2,Endpoint target address Type2,False
+measurementKind,测量类型,98,98.deviceAddressType3,Endpoint target address Type3,False
+measurementKind,测量类型,99,99.deviceAddressType4,Endpoint target address Type4,False
+measurementKind,测量类型,100,100.deviceClass,"A unique identifier for the Endpoint’s
+configuration",False
+measurementKind,测量类型,101,101.electronicSerialNumber,A device serial number,False
+measurementKind,测量类型,102,102.endDeviceID,"A unique identifier of the endDevice
+– the device providing
+measurements or under control of
+the network",False
+measurementKind,测量类型,103,103.groupAddressType1,Group target address Type1,False
+measurementKind,测量类型,104,104.groupAddressType2,Group target address Type2,False
+measurementKind,测量类型,105,105.groupAddressType3,Group target address Type3,False
+measurementKind,测量类型,106,106.groupAddressType4,Group target address Type4,False
+measurementKind,测量类型,107,107.ipAddress,An IP address for the endpoint,False
+measurementKind,测量类型,108,108.macAddress,A MAC address for the endpoint,False
+measurementKind,测量类型,109,109.mfgAssignedConfigurationID,The at time of manufacture configuration given to a device,False
+measurementKind,测量类型,110,110.mfgAssignedPhysicalSerialNumber,The serial number assigned to a device at time of manufacture,False
+measurementKind,测量类型,111,111.mfgAssignedProductNumber,The product number assigned to a device at time of manufacture,False
+measurementKind,测量类型,112,112.mfgAssignedUniqueCommunicationAddress,A communication address assigned to a device at time of manufacture,False
+measurementKind,测量类型,113,113.multiCastAddress,"A message target address implying a
+large group of endpoint units within
+range of a particular sender",False
+measurementKind,测量类型,114,114.oneWayAddress,"A communication address of a
+network endpoint used in one-way
+communication",False
+measurementKind,测量类型,115,115.signalStrength,A measurement of RF signal strength,False
+measurementKind,测量类型,116,116.twoWayAddress,"A communication address used for
+bidirectional communication",False
+measurementKind,测量类型,117,117.signaltoNoiseRatio,"A measurement of received (RF)
+signal strength divided by the (RF)
+noise floor",False
+measurementKind,测量类型,118,118.alarm,A measurement releated to an alarm,False
+measurementKind,测量类型,119,119.batteryCarryover,"An estimate of the battery
+ridethrough capacity",False
+measurementKind,测量类型,120,120.dataOverflowAlarm,"An indication of or measurement of a
+loss of data",False
+measurementKind,测量类型,121,121.demandLimit,"A threshold setting that determines
+the trip point that if exceeded would
+trigger a demand limiting action or
+alarm",False
+measurementKind,测量类型,122,122.demandReset,"A count of the number of times
+demand has been reset (remotely,
+locally, and/or automatically.)",False
+measurementKind,测量类型,123,123.diagnostic,"A measurement releated to
+equipment diagnostics",False
+measurementKind,测量类型,124,124.emergencyLimit,"A setting that indicates an
+emergency limit",False
+measurementKind,测量类型,125,125.encoderTamper,"An indication of tampering with a
+meter encoder",False
+measurementKind,测量类型,126,126.ieee1366MomentaryInterruption,"IEEE-1366 Momentary Interruption
+count",False
+measurementKind,测量类型,127,127.ieee1366MomentaryInterruptionEvent,"IEEE-1366 Momentary Interruption
+event count",False
+measurementKind,测量类型,128,128.ieee1366SustainedInterruption,"IEEE-1366 Sustained Interruption
+duration",False
+measurementKind,测量类型,129,129.interruptionBehaviour,"A measurement related to power
+interruptions (Note: often an
+interruption count or duration.)",False
+measurementKind,测量类型,130,130.inversionTamper,"A measurement related to inversion
+tamper (Note: typically a count of
+inversions)",False
+measurementKind,测量类型,131,131.loadInterrupt,"A measurement related to load
+interruption (Note: typically a load
+interruption count or measurement of
+duration)",False
+measurementKind,测量类型,132,132.loadShed,"A measurement related to load shed
+(Note: typically a load shed count or
+load shed duration)",False
+measurementKind,测量类型,133,133.maintenance,"A measurement related to the
+pending maintenance of equipment",False
+measurementKind,测量类型,134,134.physicalTamper,"A measurement related to physical
+tampering (Note: typically a tamper
+count)",False
+measurementKind,测量类型,135,135.powerLossTamper,"Tamper indicated while power was
+out",False
+measurementKind,测量类型,136,136.powerOutage,"A measurement related to power
+outages (Note: typically a status)",False
+measurementKind,测量类型,137,137.powerQuality,"A measurement related to power
+quality",False
+measurementKind,测量类型,138,138.powerRestoration,"A measurement related to power
+restoration (Note: typically a status)",False
+measurementKind,测量类型,139,139.programmed,"A measurement related to device
+programming (Note: typically a
+status measurement)",False
+measurementKind,测量类型,140,140.pushbutton,"A measurement related to
+pushbutton (Note: typically a status
+or count)",False
+measurementKind,测量类型,141,141.relayActivation,"A measurement related to relay
+activations",False
+measurementKind,测量类型,142,142.relayCycle,"A measurement related to relay
+cycling (Note1: one open and one
+closure together is one cycle, Note2:
+Usually expressed as a count)",False
+measurementKind,测量类型,143,143.removalTamper,"An indication of equipment tampering
+that shows equipment was moved or
+opened",False
+measurementKind,测量类型,144,144.reprogrammingTamper,"An indication of equipment tampering
+that shows equipment has been
+reprogrammed",False
+measurementKind,测量类型,145,145.reverseRotationTamper,"An indication of tampering as
+evidenced by reverse power flow",False
+measurementKind,测量类型,146,146.switchArmed,"A measurement of the switch arm
+condition",False
+measurementKind,测量类型,147,147.switchDisabled,"A measurement of the switch
+enablement status",False
+measurementKind,测量类型,148,148.tamper,An indication of equipment tampering,False
+measurementKind,测量类型,149,149.watchdogTimeout,"A reset triggered by a hardware
+“watchdog” circuit",False
+measurementKind,测量类型,150,150.billLastPeriod,"Customer’s bill for the previous
+billing period Expressed as currency.",False
+measurementKind,测量类型,151,151.billToDate,"Customer’s bill, as known thus far
+within the present billing period.
+Expressed as currency.",False
+measurementKind,测量类型,152,152.billCarryover,"Customer’s bill, part of a previous
+obligation carried over from a
+previous billing period. Expressed as
+currency.",False
+measurementKind,测量类型,153,153.connectionFee,"Monthly fee for connection to
+commodity.",False
+measurementKind,测量类型,154,154.audibleVolume,Sound,False
+measurementKind,测量类型,155,155.volumetricFlow,A fluid flow rate,False
+measurementKind,测量类型,156,156.relativeHumidity,"Most common usage is in expressing
+weather or meteorological conditions",False
+measurementKind,测量类型,157,157.skyCover,"Degree of sky cover. Used in
+expressing weather or
+meteorological conditions.",False
+measurementKind,测量类型,158,158.voltage,Unspecified,False
+measurementKind,测量类型,159,159.dcVoltage,I,False
+measurementKind,测量类型,160,160.acVoltagePeak,Vp=√2 × Vrms,False
+measurementKind,测量类型,161,161.acVoltagePeakToPeak,Vpp=2 × Vp,False
+measurementKind,测量类型,162,162.pressure,Force over area,False
+measurementKind,测量类型,163,163.density,I,False
+measurementKind,测量类型,164,164.energyDensity,I,False
+measurementKind,测量类型,165,165.dateOfLastDemandReset,I,False
+measurementKind,测量类型,166,166.arithmeticApparentEnergy,"The arithmetic sum of the per
+element VAh quantities, where each
+element apparent VAh uantity is
+calculated each momentary interval
+as: sqrt(V2hx)(I2hx), where x= each
+element A, B, C, and V2hx and I2hx
+are fundamental plus harmonics
+values.",False
+measurementKind,测量类型,167,167.arithmeticApparentPower,"The rate of arithmetic Apparent
+Energy",False
+measurementKind,测量类型,168,168.arithmeticApparentDemand,I,False
+measurementKind,测量类型,169,169.phasorApparentEnergy,"Sqrt((Whx)2+(VArhx)2) where x each
+element A,B,C and VArh is measured
+with IEEE VArs",False
+measurementKind,测量类型,170,170.phasorApparentPower,The rate of phasor apparent energy,False
+measurementKind,测量类型,171,171.phasorApparentDemand,I,False
+measurementKind,测量类型,172,172.distortionApparentEnergy,"distortion VAhx = Sqrt( (V2hx)(I2hx) –
+(Whx)2 – (VArhx)2), where x= each
+element A, B, or C and V2hx, I2hx,
+Whx, and varhx are fundamental plus
+harmonic values",False
+measurementKind,测量类型,173,173.distortionApparentPower,"The rate of distortion apparent
+energy",False
+measurementKind,测量类型,174,174.distortionApparentDemand,"Distoration apparent energy passed
+through a demand function",False
+measurementKind,测量类型,175,175.totalHarmonicDistortionDemand,THD treated as a demand,False
+measurementKind,测量类型,176,176.tddDemand,"Total Demand Distortion treated as a
+demand",False
+measurementKind,测量类型,177,177.totalDemandDistortion,"(RMS of harmonic content of current)
+/ (maximum installation current)",False
+measurementKind,测量类型,178,178.distortionPowerFactorDemand,"distortionPF treated as a demand
+value",False
+measurementKind,测量类型,179,179.fuzzyEnergy,"Fuzzyvarh = sqrt((varh)2 + (distortion
+VAh)2), where varh is a fundamental
+plus harmonics value",False
+measurementKind,测量类型,180,180.fuzzyPower,The rate of fuzzy energy,False
+measurementKind,测量类型,181,181.fuzzyDemand,Fuzzy energy as a demand,False
+measurementKind,测量类型,183,183.batteryChargeMoved,Charge used or added,False
+measurementKind,测量类型,184,184.batteryChargeStored,Charge present,False
+measurementKind,测量类型,188,188.quadrant,"One of four quadrants relative to the
+reference axix",False
+measurementKind,测量类型,189,189.processorReset,The type of reset,False
+measurementKind,测量类型,190,190.xAxis,"Measurement along the x axis
+relative to the reference axis",False
+measurementKind,测量类型,191,191.yAxis,Measurement along the y axis,False
+measurementKind,测量类型,192,192.zAxis,Measurement along the z axis,False
+measurementKind,测量类型,193,193.XYPlane,Measurement in the XY Plane,False
+measurementKind,测量类型,194,194.YZPlane,Measurement in the YZ Plane,False
+measurementKind,测量类型,195,195.XZPlane,Measurement in the XZ Plane,False
+measurementKind,测量类型,901,SOC,State of Charge,False
+measurementKind,测量类型,902,SOH,State of Health,False
+measurementKind,测量类型,903,efficiency,efficiency,False
+measurementKind,测量类型,904,ControlMode,ControlMode,False
+harmonic,谐波,0,0.0.none,Not Applicable,False
+harmonic,谐波,1.1,1.1.fundamental,fundamental,False
+harmonic,谐波,1.2,1.2.interharmonic1/2,Interharmonic of ½,False
+harmonic,谐波,2.1,2.1.harmonic2,second harmonic,False
+harmonic,谐波,3.1,3.1.harmonic3,third harmonic,False
+harmonic,谐波,4.1,4.1.harmonic4,fourth harmonic,False
+harmonic,谐波,5.1,5.1.harmonic5,fifth harmonic,False
+harmonic,谐波,6.1,6.1.harmonic6,sixth harmonic,False
+harmonic,谐波,7.1,7.1.harmonic7,seventh harmonic,False
+argumentNumerator,分子参数,0,0.0.none,Not Applicable,False
+argumentNumerator,分子参数,0.1,0.1.n0,"“Zero” (for systems that use zero based
+numbering schemes)",False
+argumentNumerator,分子参数,1.1,1.1.n1,"""One,” where the measure needs an
+argument such as CEMI(n=1)",False
+argumentNumerator,分子参数,1.2,1.2.n½,One-half,False
+argumentNumerator,分子参数,2.1,2.1.n2,"""Two"" where the measure needs an
+argument such as CEMI(n=2)",False
+argumentNumerator,分子参数,3.1,3.1.n3,"""Three"" where the measure needs an
+argument such as CEMI(n=3)",False
+argumentNumerator,分子参数,4.1,4.1.n4,"""Four"" where the measure needs an
+argument such as CEMI(n=4)",False
+argumentNumerator,分子参数,5.1,5.1.n5,"""Five"" where the measure needs an
+argument",False
+argumentNumerator,分子参数,6.1,6.1.n6,Six,False
+argumentNumerator,分子参数,7.1,7.1.n7,Seven,False
+argumentNumerator,分子参数,8.1,8.1.n8,Eight,False
+argumentNumerator,分子参数,9.1,9.1.n9,Nine,False
+argumentNumerator,分子参数,10.1,10.1.n10,Ten,False
+argumentNumerator,分子参数,15.1,15.1.n15,Fifteen,False
+argumentNumerator,分子参数,30.1,30.1.n30,Thirty,False
+argumentNumerator,分子参数,45.1,45.1.n45,Fourtyfive,False
+argumentNumerator,分子参数,60.1,60.1.n60,Sixty,False
+argumentNumerator,分子参数,120.1,120.1.n120,2 × 60 = 120,False
+argumentNumerator,分子参数,155.1,155.1.n155,One hundred fifty five,False
+argumentNumerator,分子参数,240.1,240.1.n240,4 × 60 = 240,False
+argumentNumerator,分子参数,305.1,305.1.n305,Three hundred and five.,False
+argumentNumerator,分子参数,360.1,360.1.n360,6 × 60 = 360,False
+argumentNumerator,分子参数,480.1,480.1.n480,8 × 60 = 480,False
+argumentNumerator,分子参数,720.1,720.1.n720,12 × 60 = 720,False
+argumentNumerator,分子参数,720.12,720.120.n720/120,12 × 60/2 × 60,False
+argumentNumerator,分子参数,720.18,720.180.n720/180,12 × 60/3 × 60,False
+argumentNumerator,分子参数,720.24,720.240.n720/240,12 × 60/4 × 60,False
+argumentNumerator,分子参数,720.36,720.360.n720/360,12 × 60/6 × 60,False
+argumentNumerator,分子参数,720.6,720.60.n720/60,12 × 60/1 × 60,False
+TOU,分时电价,0,0.none,Not Applicable,False
+TOU,分时电价,1,1.touA,Usage in the first defined TOU bucket,False
+TOU,分时电价,2,2.touB,Usage in the second defined TOU bucket,False
+TOU,分时电价,3,3.touC,Usage in the third defined TOU bucket,False
+TOU,分时电价,4,4.touD,Usage in the fourth defined TOU bucket,False
+TOU,分时电价,5,5.touE,Usage in the fifth defined TOU bucket,False
+TOU,分时电价,6,6.touF,Usage in the sixth defined TOU bucket,False
+TOU,分时电价,7,7.touG,Etc.,False
+cpp,临界峰值,0,0.none,Not Applicable,False
+cpp,临界峰值,1,1.cppA,Consumption associated with critical peak period A,False
+cpp,临界峰值,2,2.cppB,Consumption associated with critical peak period B,False
+cpp,临界峰值,3,3.cppC,Consumption associated with critical peak period C,False
+cpp,临界峰值,4,4.cppD,Consumption associated with critical peak period D,False
+cpp,临界峰值,5,5.cppE,Consumption associated with critical peak period E,False
+cpp,临界峰值,6,6.cppF,Consumption associated with critical peak period F,False
+cpp,临界峰值,7,7.cppG,Etc.,False
+tier,分阶梯号,0,0.none,Not Applicable,False
+tier,分阶梯号,1,1.consumptionTier1,Usage in the first defined consumption bucket,False
+tier,分阶梯号,2,2.consumptionTier2,Usage in the second defined consumption bucket,False
+tier,分阶梯号,3,3.consumptionTier3,Usage in the third defined consumption bucket,False
+tier,分阶梯号,4,4.consumptionTier4,Usage in the fourth defined consumption bucket,False
+tier,分阶梯号,5,5.consumptionTier5,Usage in the fifth defined consumption bucket,False
+tier,分阶梯号,6,6.consumptionTier6,Usage in the sixth defined consumption bucket,False
+tier,分阶梯号,7,7.consumptionTier7,Additional consumption tiers may be created as necessary.,False
+phase,相位,0,0.none,Not applicable to any phase,False
+phase,相位,16,16.phaseN,Neutral,False
+phase,相位,17,17.phaseNtoGnd,Neutral to ground,False
+phase,相位,32,32.phaseC,Phase C,False
+phase,相位,33,33.phaseCtoN,Phase C to Neutral,False
+phase,相位,40,40.phaseCtoAv,"Phase C current or voltage relative to
+Phase A voltage",False
+phase,相位,41,41.phaseCAtoN,CA to Neutral,False
+phase,相位,64,64.phaseB,Phase B,False
+phase,相位,65,65.phaseBtoN,Phase B to Neutral,False
+phase,相位,66,66.phaseBtoC,Phase B to C,False
+phase,相位,72,72.phaseBtoAv,"Phase B current or voltage relative to
+Phase A voltage",False
+phase,相位,93,93.phaseABtoN,AB to Neutral,False
+phase,相位,97,97.phaseBCtoN,BC to Neutral,False
+phase,相位,128,128.phaseA,Phase A,False
+phase,相位,129,129.phaseAtoN,Phase A to Neutral,False
+phase,相位,132,132.phaseAtoB,Phase A to B,False
+phase,相位,136,136.phaseAtoAv,"Phase A current relative to Phase A
+voltage",False
+phase,相位,224,224.phasesABC,Involving all phases,False
+phase,相位,225,225.phaseABCtoN,ABC to Neutral,False
+phase,相位,256,256.s2,Phase S2,False
+phase,相位,257,257.s2N,Phase S2 to Neutral,False
+phase,相位,512,512.s1,Phase S1,False
+phase,相位,513,513.s1N,Phase S1 to Neutral,False
+phase,相位,768,768.s12,Phase S1 to S2,False
+phase,相位,769,769.s12N,"Phase S1, S2 to Neutral",False
+phase,相位,1248,1248.threeWireWye,3W Wye,False
+phase,相位,1249,1249.fourWireWye,4W Wye,False
+phase,相位,2272,2272.threeWireDelta,3W Delta,False
+phase,相位,2273,2273.fourWireDelta,4W Delta,False
+phase,相位,6369,6369.fourWireHLDelta,4W High-leg Delta,False
+phase,相位,10465,10465.fourWireOpenDelta,4W Open Delta,False
+phase,相位,17153,17153.networked,Networked meter,False
+multiplier,乘数因子,–24,–24 .y,yocto = ×10–24,False
+multiplier,乘数因子,–21,–21 .z,zepto = ×10–21,False
+multiplier,乘数因子,–18,–18 .a,atto = ×10–18,False
+multiplier,乘数因子,–15,–15 .f,femto = ×10–15,False
+multiplier,乘数因子,–12,–12 .p,pico = ×10–12,False
+multiplier,乘数因子,–9,–9 .n,nano = ×10–9,False
+multiplier,乘数因子,–6,–6 .µ,micro = ×10–6,False
+multiplier,乘数因子,–3,–3 .m,milli= ×10–3,False
+multiplier,乘数因子,–2,–2 .c,centi = ×10–2,False
+multiplier,乘数因子,–1,–1 .d,deci = ×10–1,False
+multiplier,乘数因子,0,"0.Not applicable or ""×1""",N,False
+multiplier,乘数因子,1,1.da,deca = ×101,False
+multiplier,乘数因子,2,2.h,hecto = ×102,False
+multiplier,乘数因子,3,3.k,kilo = ×103,False
+multiplier,乘数因子,6,6.M,Mega = ×106,False
+multiplier,乘数因子,9,9.G,Giga = ×109,False
+multiplier,乘数因子,12,12.T,Tera = ×1012,False
+multiplier,乘数因子,15,15.P,Peta = ×1015,False
+multiplier,乘数因子,18,18.E,Exa = ×1018,False
+multiplier,乘数因子,21,21.Z,Zetta = ×1021,False
+multiplier,乘数因子,24,24.Y,Yotta = ×1024,False
+uom,计量单位,0,0.N/A,,False
+uom,计量单位,2,2.metre,,False
+uom,计量单位,3,3.gram,,False
+uom,计量单位,4,4.rotations per second,,False
+uom,计量单位,5,5.A,ampere,False
+uom,计量单位,6,6.K,Kelvin,False
+uom,计量单位,7,7.mole,,False
+uom,计量单位,8,8.candela,,False
+uom,计量单位,9,9.degree,,False
+uom,计量单位,10,10.Radian (m/m),,False
+uom,计量单位,11,11.Steradian (m2/m2),,False
+uom,计量单位,21,21.Gray (J/kg),,False
+uom,计量单位,22,22.Becquerel (1/s),,False
+uom,计量单位,23,23.degrees Celsius,,False
+uom,计量单位,24,24.Sievert (J/kg),,False
+uom,计量单位,25,25.Farad (C/V),,False
+uom,计量单位,26,26.Coulomb (Amp second),,False
+uom,计量单位,27,27.second,,False
+uom,计量单位,28,28.Henry (Wb/A),,False
+uom,计量单位,29,29.V,.Volt (W/A),False
+uom,计量单位,30,30.Ohm (V/A),,False
+uom,计量单位,31,31.J,N·m = C·V = W·s,False
+uom,计量单位,32,32.(kg m/s2),,False
+uom,计量单位,33,33.Hz,Cycles per second or (1/s),False
+uom,计量单位,34,34.(lm/m2),,False
+uom,计量单位,35,35.lumen (cd sr),,False
+uom,计量单位,36,36.Weber (V s),,False
+uom,计量单位,37,37.Tesla (Wb/m2),,False
+uom,计量单位,38,38.W,Watt.,False
+uom,计量单位,39,39.Pascal (N/m2),,False
+uom,计量单位,41,41.square metre,,False
+uom,计量单位,42,42.M³,cubic metre,False
+uom,计量单位,43,43.metre per second (m/s),,False
+uom,计量单位,44,44.metre per second squared,,False
+uom,计量单位,45,45.cubic metres per second,,False
+uom,计量单位,46,46.metre / cubic metre,,False
+uom,计量单位,47,47.kilogram metre (kg·m),,False
+uom,计量单位,48,48.gram/cubic metre,,False
+uom,计量单位,49,49.metre squared / second,,False
+uom,计量单位,50,50.Watt/metre Kelvin,,False
+uom,计量单位,51,51.Joule/Kelvin,,False
+uom,计量单位,53,53.Siemens (A / V = 1 / Ω),,False
+uom,计量单位,54,54.radians per second,,False
+uom,计量单位,61,61.VA,Volt Ampere,False
+uom,计量单位,63,63.var,Volt Ampere reactive,False
+uom,计量单位,65,65.Cosφ,Power factor,False
+uom,计量单位,66,66.Volt seconds (Ws/A),,False
+uom,计量单位,67,67.Volt squared (W2/A2),,False
+uom,计量单位,68,68.Amp seconds,,False
+uom,计量单位,69,69.Amp squared,,False
+uom,计量单位,70,70.square Amp second,,False
+uom,计量单位,71,71.Vah,Volt Ampere hours,False
+uom,计量单位,72,72.W·h,Watt hours,False
+uom,计量单位,73,73.varh,Volt Ampere reactive hours,False
+uom,计量单位,74,74.Volt per Hertz,,False
+uom,计量单位,75,75.Hertz per second,,False
+uom,计量单位,76,76.characters,,False
+uom,计量单位,77,77.characters per second,,False
+uom,计量单位,78,78.kg m2,,False
+uom,计量单位,79,79.Logrithmic ratio,,False
+uom,计量单位,80,80.Generic money,,False
+uom,计量单位,81,81.Watt per second,,False
+uom,计量单位,82,82.litre per second,,False
+uom,计量单位,100,100.Q,,False
+uom,计量单位,101,101.Qh,,False
+uom,计量单位,102,"102.Ohm metre, ρ (rho)",,False
+uom,计量单位,103,"103.magnetic field strength, Ampere per metre",,False
+uom,计量单位,104,104.Volt-squared-hours,,False
+uom,计量单位,105,105.Ampere-squared hour,,False
+uom,计量单位,106,106.Ah,Ampere-hours,False
+uom,计量单位,107,107.energy per volume,,False
+uom,计量单位,108,108.time and date per ISO 8601 format,,False
+uom,计量单位,109,109.State,,False
+uom,计量单位,111,111.Amount of substance,,False
+uom,计量单位,113,113.Logrithmic ratio of signal strength,,False
+uom,计量单位,114,114.Application Value,,False
+uom,计量单位,115,115.active energy metering constant,,False
+uom,计量单位,116,116.reactive energy metering constant,,False
+uom,计量单位,117,117.apparent energy metering constant,,False
+uom,计量单位,118,118.EndDeviceEvent,,False
+uom,计量单位,119,119.cubic foot,,False
+uom,计量单位,120,120.cubic foot compensated for weather,,False
+uom,计量单位,121,121.cubic foot uncompensated for weather,,False
+uom,计量单位,122,122.cubic foot per hour,,False
+uom,计量单位,123,123.compensated cubic feet per hour,,False
+uom,计量单位,124,124.uncompensated cubic feet per hour,,False
+uom,计量单位,125,125.cubic metre per hour,,False
+uom,计量单位,126,126.compensated cubic metre per hour,,False
+uom,计量单位,127,127.uncompensated cubic metre per hour,,False
+uom,计量单位,128,128.US gallon (1 gal = 231 in3 = 128 fl oz.),,False
+uom,计量单位,129,129.US gallon per hour,,False
+uom,计量单位,130,130.Imperial gallon,,False
+uom,计量单位,131,131.Imperial gallon per hour,,False
+uom,计量单位,132,132.British Thermal Unit,,False
+uom,计量单位,133,133.BTU per hour,,False
+uom,计量单位,134,134.L,litre = dm3 = m3/1 000,False
+uom,计量单位,137,137.L/h,litre per hour,False
+uom,计量单位,138,138.litre (compensated) per hour,,False
+uom,计量单位,139,139.litre (uncompensated) per hour,,False
+uom,计量单位,140,140.PA,"Pascal, gauge pressure",False
+uom,计量单位,141,"141.Pound per square inch, absolute",,False
+uom,计量单位,142,"142.Pound per square inch, gauge",,False
+uom,计量单位,143,143.Concentration,,False
+uom,计量单位,144,144.Concentration,,False
+uom,计量单位,145,145.Concentration,,False
+uom,计量单位,146,146.Concentration,,False
+uom,计量单位,147,147.Molality,,False
+uom,计量单位,148,148.Ratio of length,,False
+uom,计量单位,149,149.Ratio of time,,False
+uom,计量单位,150,150.Rate of frequency change,,False
+uom,计量单位,151,151.Ratio of voltages,,False
+uom,计量单位,152,152.Ratio of Amperages,,False
+uom,计量单位,153,"153.PF, the ratio of the active power to the apparent power.",,False
+uom,计量单位,154,154.Revolutions,,False
+uom,计量单位,155,155.PA,"Pascal, absolute pressure",False
+uom,计量单位,156,"156.Litre, with the value uncompensated for weather effects",,False
+uom,计量单位,157,"157.Litre, with the value compensated for weather effects",,False
+uom,计量单位,158,158.katal = mol / s,,False
+uom,计量单位,159,159.minute = 60 s,,False
+uom,计量单位,160,160.hour = 60 min = 3 600 s,,False
+uom,计量单位,161,161.Q measured at 45º,,False
+uom,计量单位,162,162.Q measured at 60º,,False
+uom,计量单位,163,163.Qh measured at 45º,,False
+uom,计量单位,164,164.Qh measured at 60º,,False
+uom,计量单位,165,165.Joule / kg,,False
+uom,计量单位,166,"166.cubic metre, with the value uncompensated for weather effects.",,False
+uom,计量单位,167,"167.cubic metre, with the value compensated for weather effects.",,False
+uom,计量单位,168,168.Ratio of power,,False
+uom,计量单位,169,169.Therm,,False
+uom,计量单位,170,170.n,,False
+uom,计量单位,171,171.μr,,False
+uom,计量单位,172,172.Neper,,False
+uom,计量单位,173,"173.reciprocal metre, (1/m)",,False
+uom,计量单位,174,"174.cubic metre per kilogram, v",,False
+uom,计量单位,175,175.Pascal second,,False
+uom,计量单位,176,176.Newton metre,,False
+uom,计量单位,177,177.Newton per metre,,False
+uom,计量单位,178,178.radian per second squared,,False
+uom,计量单位,179,179.Watt per square metre,,False
+uom,计量单位,180,180.Joule per kilogram kelvin,,False
+uom,计量单位,181,181.Joule per cubic metre,,False
+uom,计量单位,182,182.Volt per metre,,False
+uom,计量单位,183,183.Coulomb per cubic metre,,False
+uom,计量单位,184,184.Coulomb per square metre,,False
+uom,计量单位,185,185.Farad per metre,,False
+uom,计量单位,186,186.Henry per metre,,False
+uom,计量单位,187,187.Joule per mole,,False
+uom,计量单位,188,188.Joule per mole kelvin,,False
+uom,计量单位,189,189.Coulomb per kilogram,,False
+uom,计量单位,190,190.Gray per second,,False
+uom,计量单位,191,191.Watt per steradian,,False
+uom,计量单位,192,192.Watt per square metre steradian,,False
+uom,计量单位,193,193.katal per cubic metre,,False
+uom,计量单位,195,195.day = 24 h = 86 400 s,,False
+uom,计量单位,196,196.minute,,False
+uom,计量单位,197,197.second,,False
+uom,计量单位,198,198.hectare,,False
+uom,计量单位,199,199.“tonne” or “metric ton” (1 000 kg = 1 Mg),,False
+uom,计量单位,200,200.electronvolt,,False
+uom,计量单位,201,201.dalton,,False
+uom,计量单位,202,202.unified atomic mass unit,,False
+uom,计量单位,203,"203.astronomical unit (1ua = 1,495 978 × 1011 m)",,False
+uom,计量单位,204,204.natural unit of speed (speed of light in a vacuum),,False
+uom,计量单位,205,205.natural unit of action (reduced planck constant),,False
+uom,计量单位,206,206.natural unit of mass (electron mass),,False
+uom,计量单位,207,207.natural unit of time,,False
+uom,计量单位,208,208.atomic units of charge (elementary charge),,False
+uom,计量单位,209,209.atomic units of mass (electron mass),,False
+uom,计量单位,210,210.atomic unit of action (reduced planck constant),,False
+uom,计量单位,211,"211.atomic unit of length, bohr ( Bohr radius)",,False
+uom,计量单位,212,"212.atomic unit of energy, hartree",,False
+uom,计量单位,213,213.atomic unit of time,,False
+uom,计量单位,214,214.bar (1 bar = 100 kPa),,False
+uom,计量单位,215,"215.millimeter of mercury (1 mmHg ≈ 133,3 Pa)",,False
+uom,计量单位,216,216.ångström (1Å = 10–10 m),,False
+uom,计量单位,217,217.nautical mile (1 M = 1852 m),,False
+uom,计量单位,218,218.barn (1 b = 100 fm2 = 10–28 m2),,False
+uom,计量单位,219,219.knot (1 kn = 1852/3600) m/s,,False
+uom,计量单位,220,"220.curie (1 Ci = 3,7 × 1010 Bq)",,False
+uom,计量单位,221,"221.roentgen (1 R = 2,58 × 10–4 C/kg)",,False
+uom,计量单位,222,222.rad (1 rd = 1 cGy),,False
+uom,计量单位,223,223.rem (1 rem = 10–2 Sv),,False
+uom,计量单位,224,224.inch,,False
+uom,计量单位,225,225.foot (1 ft = 12 in),,False
+uom,计量单位,226,"226.rod (1 rod = 16,5 ft)",,False
+uom,计量单位,227,227.furlong (1 fur = 660 ft),,False
+uom,计量单位,228,228.mile (1 statute mile = 8 fur = 80 chains = 320 rods = 5280,,False
+uom,计量单位,229,229.square foot (1 ft2 = 144 in2),,False
+uom,计量单位,230,230.square yard (1 yd2 = 9 ft2),,False
+uom,计量单位,231,"231.square rod (1 rod2 = 272,25 ft2)",,False
+uom,计量单位,232,232.acre (1 acre = 160 rd2 = 43 560 ft2),,False
+uom,计量单位,233,233.square mile (1 mi2 = 640 acres),,False
+uom,计量单位,234,234.section of land (1 mi2 = 1 section of land),,False
+uom,计量单位,235,235.township (1 township = 6 miles square),,False
+uom,计量单位,237,237.cubic yard (1 yd3 = 27 ft3),,False
+uom,计量单位,238,"238.link (1 li = 0,66 ft)",,False
+uom,计量单位,239,239.chain (1 ch = 100 links = 4 rods = 66 ft),,False
+uom,计量单位,240,"240.US liquid pint (1 pt = 28,875 in3 = 128 fl dr)",,False
+uom,计量单位,241,241.US liquid quart (1 qt = 2 pt),,False
+uom,计量单位,242,242.Apothecaries fluid dram,,False
+uom,计量单位,243,243.Apothecaries fluid ounce (1 fl oz ap = 8 fl dr ap),,False
+uom,计量单位,244,"244.US dry pint (1 pt = 67,2 in3)",,False
+uom,计量单位,245,245.US dry quart (1 qt = 2 pints),,False
+uom,计量单位,246,246.US peck (1 pk = 8 qt),,False
+uom,计量单位,247,247.US bushel (1 bu = 4 pk),,False
+uom,计量单位,248,248.grain (1 grain = 1/7000 avdp lb),,False
+uom,计量单位,249,249.Avoirdupois dram (1 Avdp dr = 27-11/32 gr),,False
+uom,计量单位,250,250.Avoirdupois ounce (1 Avdp oz = 16 Avdp dr),,False
+uom,计量单位,251,251.Avoirdupois pound (1 lb = 16 oz),,False
+uom,计量单位,252,252.Avoirdupois hundredweight (1 cwt = 100 lbs),,False
+uom,计量单位,253,253.Avoirdupois ton (1 short ton = 2000 lbs),,False
+uom,计量单位,254,254.Avoirdupois gross or long hundredweight,,False
+uom,计量单位,255,255.Avoirdupois gross or long ton,,False
+uom,计量单位,256,256.Troy pennyweight (1 dwt = 24 grains),,False
+uom,计量单位,257,257.Troy ounce (1 oz t = 20 dwt),,False
+uom,计量单位,258,258.Troy pound (1 lb t = 12 oz t),,False
+uom,计量单位,259,259.Apothecaries scruple (1 s ap = 20 grains),,False
+uom,计量单位,260,260.Apothecaries dram (1 dr ap = 3 s ap),,False
+uom,计量单位,261,261.Apothecaries ounce (1 oz ap = 8 dr ap),,False
+uom,计量单位,262,262.Apothecaries pound (1 lp ap = 12 oz ap),,False
+uom,计量单位,263,263.mile per imperial gallon,,False
+uom,计量单位,264,264.mile per US gallon,,False
+uom,计量单位,265,265.mile per US gallon equivalent,,False
+uom,计量单位,266,266.litre per 100 km,,False
+uom,计量单位,267,267.killowatt-hour per mile,,False
+uom,计量单位,268,268.kilowatt-hour per 100 mile,,False
+uom,计量单位,269,269.erg (1 erg = 10–7 J),,False
+uom,计量单位,270,270.dyne (1 dyn = 10–5 N),,False
+uom,计量单位,271,"271.poise (1 P = 0,1 Pa s)",,False
+uom,计量单位,272,272.stokes (1 St = 1 cm2/s),,False
+uom,计量单位,273,273.stilb (1 sb = 104 cd/m2),,False
+uom,计量单位,274,274.phot (1 ph = 104 lx),,False
+uom,计量单位,275,275.gal (1 Gal = 10–2 m s–2),,False
+uom,计量单位,276,276.Maxwell (1 Mx = 10–8 Wb),,False
+uom,计量单位,277,277.Gauss (1 G = 10–4 T),,False
+uom,计量单位,278,278.OErsted (1 Oe = (103/4π) A/m),,False
+uom,计量单位,278,278.278.Œrsted (1 Oe = (103/4π) A/m),,False
+uom,计量单位,279,279.degrees Fahrenheit,,False
+uom,计量单位,280,280.Volt hours,,False
+uom,计量单位,281,281.Relative humidity,,False
+uom,计量单位,282,282.Ratio of covered sky to total sky.,,False
+uom,计量单位,801,%,,False
+uom,计量单位,802,RMB,,False
+currency,货币单位,0,0.None,N,False
+currency,货币单位,36,36.AUD,Australian Dollar,False
+currency,货币单位,124,124.CAD,Canadian Dollar,False
+currency,货币单位,156,156.CNY,Chinese Yuan Renminbi,False
+currency,货币单位,208,208.DKK,Danish Crown,False
+currency,货币单位,356,356.INR,India Rupee,False
+currency,货币单位,392,392.JPY,Japanese Yen,False
+currency,货币单位,578,578.NOK,Norwegian Crown,False
+currency,货币单位,643,643.RUB,Russian Ruble,False
+currency,货币单位,710,710.ZAR,South African Rand,False
+currency,货币单位,752,752.SEK,Swedish Krona,False
+currency,货币单位,756,756.CHF,Swiss Franc,False
+currency,货币单位,826,826.GBP,British Pound,False
+currency,货币单位,840,840.USD,US Dollar,False
+currency,货币单位,978,978.EUR,Euro,False

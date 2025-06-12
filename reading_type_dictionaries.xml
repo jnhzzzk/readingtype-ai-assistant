@@ -1,0 +1,776 @@
+<?xml version="1.0" ?>
+<ReadingTypeDictionaries version="IEC61968-9-2024" created="2025-06-10 15:23:18">
+  <Field name="macroPeriod" chinese_name="宏周期"/>
+  <Field name="aggregate" chinese_name="聚合方式"/>
+  <Field name="measurePeriod" chinese_name="测量周期"/>
+  <Field name="accumulationBehaviour" chinese_name="累加方式"/>
+  <Field name="flowDirection" chinese_name="流动方向"/>
+  <Field name="commodity" chinese_name="能源分类"/>
+  <Field name="measurementKind" chinese_name="测量类别"/>
+  <Field name="harmonic" chinese_name="谐波"/>
+  <Field name="argumentNumerator" chinese_name="测量序号"/>
+  <Field name="TOU" chinese_name="分时段号"/>
+  <Field name=" cpp" chinese_name="临界峰值"/>
+  <Field name="Tier" chinese_name="分阶梯号"/>
+  <Field name="Phase" chinese_name="相"/>
+  <Field name="multiplier" chinese_name="公乘因子"/>
+  <Field name="uom" chinese_name="统一计量单位"/>
+  <Field name=" currency" chinese_name="货币计量单位">
+    <Item value="0" name="0.none" description="Not applicable."/>
+    <Item value="0" name="0.none" description="Not Applicable"/>
+    <Item value="0" name="0.none" description="Not Applicable"/>
+    <Item value="0" name="0.none " description="Not Applicable, or implied by the unit of measure. "/>
+    <Item value="0" name="0.none" description="Not Applicable (N/A)"/>
+    <Item value="0" name="0.none " description="Not Applicable "/>
+    <Item value="0" name="0.none " description="Not Applicable "/>
+    <Item value="0.0" name="0.0.none " description="Not Applicable "/>
+    <Item value="0.0" name="0.0.none " description="Not Applicable "/>
+    <Item value="0" name="0.none " description="Not Applicable "/>
+    <Item value="0" name="0.none " description="Not Applicable "/>
+    <Item value="0" name="0.none " description="Not applicable "/>
+    <Item value="0" name="0.none " description="Not applicable to any phase "/>
+    <Item value="–24 " name="–24 .y " description="yocto = ×10–24 "/>
+    <Item value="2" name="2.metre"/>
+    <Item value="0" name="0.None " description="N"/>
+    <Item value="8" name="8.billingPeriod" description="Captured during the billing period starting at&#10;midnight of the first day of the billing period (as&#10;defined by the billing cycle day). If during the&#10;current billing period, it specifies a period from&#10;the start of the current billing period until &quot;now&quot;."/>
+    <Item value="2" name="2.average"/>
+    <Item value="1" name="1.tenMinute" description="10 min"/>
+    <Item value="1" name="1.bulkQuantity" description="A value from a register which represents the bulk&#10;quantity of a commodity. This quantity is computed as&#10;the integral of the commodity usage rate. This value is&#10;typically used as the basis for the dial reading at the&#10;meter, and as a result, will roll over upon reaching a&#10;maximum dial value.&#10;NOTE 1 With the metering system, the roll-over&#10;behaviour typically implies a roll-under behavior so that&#10;the value presented is always a positive value (e.g.&#10;unsigned integer or positive decimal.) However, when&#10;communicating data between enterprise applications a&#10;negative value might occur in a case such as net&#10;metering.&#10;NOTE 2 A BulkQuantity refers primarily to the dial&#10;reading and not the consumption over a specific period&#10;of time."/>
+    <Item value="1" name="1.forward"/>
+    <Item value="1" name="1.electricity&#10;SecondaryMetered" description="All types of metered quantities. This type of reading&#10;comes from the meter and represents a “secondary”&#10;metered value."/>
+    <Item value="2" name="2.apparentPowerFactor " description="D"/>
+    <Item value="1.2" name="1.2.interharmonic1/2 " description="Interharmonic of ½ "/>
+    <Item value="1.2" name="1.2.n½ " description="One-half "/>
+    <Item value="1" name="1.touA " description="Usage in the first defined TOU bucket "/>
+    <Item value="1" name="1.cppA " description="Consumption associated with critical peak period A "/>
+    <Item value="1" name="1.consumptionTier1 " description="Usage in the first defined consumption bucket "/>
+    <Item value="16" name="16.phaseN " description="Neutral "/>
+    <Item value="–21 " name="–21 .z " description="zepto = ×10–21 "/>
+    <Item value="3" name="3.gram"/>
+    <Item value="36" name="36.AUD " description="Australian Dollar "/>
+    <Item value="11" name="11.daily" description="Daily period starting at midnight. If for the&#10;current day, this specifies the time from midnight&#10;to &quot;now&quot;."/>
+    <Item value="4" name="4.excess" description="The value represents an amount over which a threshold was&#10;exceeded."/>
+    <Item value="2" name="2.fifteenMinute" description="15 min"/>
+    <Item value="2" name="2.continuousCumulative" description="The sum of the previous billing period values and the&#10;present period value. Note: “ContinuousCumulative” is&#10;commonly used in conjunction with “demand.” The&#10;“ContinuousCumulative Demand” would be the&#10;cumulative sum of the previous billing period maximum&#10;demand values (as occurring with each demand reset)&#10;summed with the present period maximum demand value&#10;(which has yet to be reset.)"/>
+    <Item value="2" name="2.lagging" description="Typically used to describe that a power factor is lagging&#10;the reference value (or to say that the current is lagging&#10;the voltage.)&#10;NOTE 1 When used to describe power factor, the term&#10;“Lagging” implies that the PF is negative. The term&#10;“lagging” in this case takes the place of the negative sign. If a signed PF value is to be passed by the data&#10;producer, then the direction of flow enumeration zero&#10;(none) should be used in order to avoid the possibility&#10;of creating an expression that employs a double&#10;negative. The data consumer should be able to tell from&#10;the sign of the data if the PF is leading or lagging. This&#10;principle is analogous to the concept that “Reverse”&#10;energy is an implied negative value, and to publish a&#10;negative reverse value would be ambiguous.&#10;NOTE 2 Lagging power factors typically indicate&#10;inductive loading"/>
+    <Item value="2" name="2.electricity&#10;PrimaryMetered" description="It is possible for a meter to be outfitted with an&#10;external VT and/or CT. The meter might not be aware&#10;of these devices, and the display not compensate for&#10;their presence. Ultimately, when these scalars are&#10;applied, the value that represents the service value is&#10;called the “primary metered” value. The “index” in&#10;sub-category 3 mirrors those of sub-category 0."/>
+    <Item value="3" name="3.currency " description="funds "/>
+    <Item value="1.1" name="1.1.fundamental " description="fundamental "/>
+    <Item value="0.1" name="0.1.n0" description="“Zero” (for systems that use zero based&#10;numbering schemes)"/>
+    <Item value="2" name="2.touB " description="Usage in the second defined TOU bucket "/>
+    <Item value="2" name="2.cppB " description="Consumption associated with critical peak period B "/>
+    <Item value="2" name="2.consumptionTier2 " description="Usage in the second defined consumption bucket "/>
+    <Item value="17" name="17.phaseNtoGnd " description="Neutral to ground "/>
+    <Item value="–18 " name="–18 .a " description="atto = ×10–18 "/>
+    <Item value="5" name="5.A" description="ampere"/>
+    <Item value="124" name="124.CAD " description="Canadian Dollar "/>
+    <Item value="13" name="13.monthly" description="Monthly period starting at midnight on the first&#10;day of the month. If within the current month,&#10;this specifies the period from the start of the&#10;month until &quot;now."/>
+    <Item value="5" name="5.highThreshold" description="The value represents a programmed threshold."/>
+    <Item value="3" name="3.oneMinute" description="1 min"/>
+    <Item value="3" name="3.cumulative" description="The sum of the previous billing period values. Note:&#10;“Cumulative” is commonly used in conjunction with&#10;“demand.” Each demand reset causes the maximum&#10;demand value for the present billing period (since the&#10;last demand reset) to accumulate as an accumulative&#10;total of all maximum demands. So instead of “zeroing”&#10;the demand register, a demand reset has the affect of&#10;adding the present maximum demand to this&#10;accumulating total."/>
+    <Item value="3" name="3.leading" description="Typically used to describe that a power factor is leading&#10;the reference value (or to say that the current is leading&#10;the voltage.)&#10;NOTE 3 Leading power factors typically indicate&#10;capacitive loading."/>
+    <Item value="3" name="3.communication " description="A measurement of the communication infrastructure&#10;itself. "/>
+    <Item value="4" name="4.current " description="The flow of electrons "/>
+    <Item value="2.1" name="2.1.harmonic2 " description="second harmonic "/>
+    <Item value="1.1" name="1.1.n1" description="&quot;One,” where the measure needs an&#10;argument such as CEMI(n=1)"/>
+    <Item value="3" name="3.touC " description="Usage in the third defined TOU bucket "/>
+    <Item value="3" name="3.cppC " description="Consumption associated with critical peak period C "/>
+    <Item value="3" name="3.consumptionTier3 " description="Usage in the third defined consumption bucket "/>
+    <Item value="32" name="32.phaseC " description="Phase C "/>
+    <Item value="–15 " name="–15 .f " description="femto = ×10–15 "/>
+    <Item value="6" name="6.K" description="Kelvin"/>
+    <Item value="156" name="156.CNY " description="Chinese Yuan Renminbi "/>
+    <Item value="22" name="22.seasonal" description="A season of time spanning multiple months. E.g.&#10;&quot;Summer,&quot; &quot;Spring,&quot; &quot;Fall,&quot; and &quot;Winter&quot; based&#10;cycle. If within the current season, it specifies the period from the start of the current season&#10;until &quot;now.&quot;"/>
+    <Item value="7" name="7.lowThreshold" description="The value represents a programmed threshold."/>
+    <Item value="4" name="4.twentyfourHour" description="24 hour"/>
+    <Item value="4" name="4.deltaData" description="The difference between the value at the end of the&#10;prescribed interval and the beginning of the interval. This&#10;is used for incremental interval data.&#10;NOTE 3 One common application would be for load&#10;profile data, another use might be to report the number&#10;of events within an interval (such as the number of&#10;equipment energizations within the specified period of&#10;time.)"/>
+    <Item value="4" name="4.net" description="Defined as |Forward| - |Reverse|, See IEC/TS 61968-2.&#10;NOTE 4 In some systems, the value passed as a “net”&#10;value could become negative. In other systems the&#10;value passed as a “net” value is always a positive&#10;number, and rolls-over and rolls-under as needed."/>
+    <Item value="4" name="4.air " description="N"/>
+    <Item value="5" name="5.currentAngle" description="A phase current zerocross timing&#10;measurement releative to a&#10;reference voltage zerocross"/>
+    <Item value="3.1" name="3.1.harmonic3 " description="third harmonic "/>
+    <Item value="2.1" name="2.1.n2" description="&quot;Two&quot; where the measure needs an&#10;argument such as CEMI(n=2)"/>
+    <Item value="4" name="4.touD " description="Usage in the fourth defined TOU bucket "/>
+    <Item value="4" name="4.cppD " description="Consumption associated with critical peak period D "/>
+    <Item value="4" name="4.consumptionTier4 " description="Usage in the fourth defined consumption bucket "/>
+    <Item value="33" name="33.phaseCtoN " description="Phase C to Neutral "/>
+    <Item value="–12 " name="–12 .p " description="pico = ×10–12 "/>
+    <Item value="7" name="7.mole"/>
+    <Item value="208" name="208.DKK " description="Danish Crown "/>
+    <Item value="24" name="24.weekly" description="Weekly period starting at midnight on the first&#10;day of the week and ending the instant before&#10;midnight the last day of the week. If within the&#10;current week, it specifies the period from the&#10;start of the week until &quot;now.&quot;"/>
+    <Item value="8" name="8.maximum" description="The highest value observed"/>
+    <Item value="5" name="5.thirtyMinute" description="30 min"/>
+    <Item value="6" name="6.indicating" description="As if a needle is swung out on the meter face to a value&#10;to indicate the current value. (Note: An “indicating” value&#10;is typically measured over hundreds of milliseconds or&#10;greater, or may imply a “pusher” mechanism to capture a&#10;value. Compare this to “instantaneous” which is&#10;measured over a shorter period of time.)"/>
+    <Item value="5" name="5.q1plusQ2 " description="Reactive positive quadrants. "/>
+    <Item value="5" name="5.insulativeGas " description="(SF6 is found separately below.) "/>
+    <Item value="6" name="6.currentImbalance" description="A measurement of the departure of a&#10;phase current relative to the average&#10;current of all phases"/>
+    <Item value="4.1" name="4.1.harmonic4 " description="fourth harmonic "/>
+    <Item value="3.1" name="3.1.n3" description="&quot;Three&quot; where the measure needs an&#10;argument such as CEMI(n=3)"/>
+    <Item value="5" name="5.touE " description="Usage in the fifth defined TOU bucket "/>
+    <Item value="5" name="5.cppE " description="Consumption associated with critical peak period E "/>
+    <Item value="5" name="5.consumptionTier5 " description="Usage in the fifth defined consumption bucket "/>
+    <Item value="40" name="40.phaseCtoAv " description="Phase C current or voltage relative to&#10;Phase A voltage "/>
+    <Item value="–9 " name="–9 .n " description="nano = ×10–9 "/>
+    <Item value="8" name="8.candela"/>
+    <Item value="356" name="356.INR " description="India Rupee "/>
+    <Item value="32" name="32.specifiedPeriod" description="For the period defined by the start and end of&#10;the TimePeriod element in the message."/>
+    <Item value="9" name="9.minimum" description="The smallest value observed"/>
+    <Item value="6" name="6.fiveMinute" description="5 min"/>
+    <Item value="9" name="9.summation" description="A form of accumulation which is selective with respect to&#10;time.&#10;NOTE 4 “Summation” could be considered a&#10;specialization of “Bulk Quantity” according to the rules of&#10;inheritance where “Summation” selectively accumulates&#10;pulses over a timing pattern, and “BulkQuantity”&#10;accumulates pulses all of the time."/>
+    <Item value="7" name="7.q1plusQ3 " description="Quadrants 1 and 3 "/>
+    <Item value="6" name="6.insulativeOil " description="Typically mineral oil "/>
+    <Item value="7" name="7.date" description="A measurement of the date and/or&#10;time in a clock, or a time stamp&#10;indicating when data was captured,&#10;when a maximum or minimum&#10;occurred, or to commemorate some&#10;other important aspect of a&#10;measurement"/>
+    <Item value="5.1" name="5.1.harmonic5 " description="fifth harmonic "/>
+    <Item value="4.1" name="4.1.n4" description="&quot;Four&quot; where the measure needs an&#10;argument such as CEMI(n=4)"/>
+    <Item value="6" name="6.touF " description="Usage in the sixth defined TOU bucket "/>
+    <Item value="6" name="6.cppF " description="Consumption associated with critical peak period F "/>
+    <Item value="6" name="6.consumptionTier6 " description="Usage in the sixth defined consumption bucket "/>
+    <Item value="41" name="41.phaseCAtoN " description="CA to Neutral "/>
+    <Item value="–6 " name="–6 .µ " description="micro = ×10–6 "/>
+    <Item value="27" name="27.second"/>
+    <Item value="392" name="392.JPY " description="Japanese Yen "/>
+    <Item value="11" name="11.nominal"/>
+    <Item value="7" name="7.sixtyMinute" description="60 min "/>
+    <Item value="10" name="10.timeDelay " description="A form of computation which introduces a time delay&#10;characteristic to the data value "/>
+    <Item value="8" name="8.q1plusQ4 " description="Quadrants 1 and 4 usually represent forward active&#10;energy"/>
+    <Item value="7" name="7.naturalGas " description="Naturally occurring hydrocarbon gas "/>
+    <Item value="8" name="8.demand" description="The measurement of maximum&#10;power flow which is computed as&#10;energy usage over time, the&#10;dimensions of which are defined by a&#10;tariff"/>
+    <Item value="6.1" name="6.1.harmonic6 " description="sixth harmonic "/>
+    <Item value="5.1" name="5.1.n5" description="&quot;Five&quot; where the measure needs an&#10;argument"/>
+    <Item value="7" name="7.touG " description="Etc. "/>
+    <Item value="7" name="7.cppG " description="Etc. "/>
+    <Item value="7" name="7.consumptionTier7 " description="Additional consumption tiers may be created as&#10;necessary."/>
+    <Item value="64" name="64.phaseB " description="Phase B "/>
+    <Item value="–3 " name="–3 .m " description="milli= ×10–3 "/>
+    <Item value="10" name="10.Radian (m/m)"/>
+    <Item value="578" name="578.NOK " description="Norwegian Crown "/>
+    <Item value="12" name="12.normal"/>
+    <Item value="10" name="10.twoMinute" description="2 min"/>
+    <Item value="12" name="12.instantaneous" description="Typically measured over the fastest period of time&#10;allowed by the definition of the metric (usually&#10;milliseconds or tens of milliseconds.) (Note:&#10;“Instantaneous” was moved to attribute #4 in 61968-&#10;9Ed2 from attribute #1 in 61968-9:2009.)"/>
+    <Item value="9" name="9.q1minusQ4 " description="Q1 minus Q4"/>
+    <Item value="8" name="8.propane " description="C3H8 "/>
+    <Item value="9" name="9.distance " description="A linear distance or range radius "/>
+    <Item value="7.1" name="7.1.harmonic7 " description="seventh harmonic "/>
+    <Item value="6.1" name="6.1.n6 " description="Six "/>
+    <Item value="65" name="65.phaseBtoN " description="Phase B to Neutral "/>
+    <Item value="–2 " name="–2 .c " description="centi = ×10–2 "/>
+    <Item value="11" name="11.Steradian (m2/m2)"/>
+    <Item value="643" name="643.RUB " description="Russian Ruble "/>
+    <Item value="16" name="16.secondMaximum" description=" The second highest value observed"/>
+    <Item value="14" name="14.threeMinute" description="3 min"/>
+    <Item value="13" name="13.latchingQuantity" description="When this description is applied to a metered value, it&#10;implies that the value is a time-independent cumulative&#10;quantity much a BulkQuantity, except that it latches upon&#10;the maximum value upon reaching that value. Any&#10;additional accumulation (positive or negative) is&#10;discarded until a reset occurs.&#10;NOTE 5 A LatchingQuantity may also occur in the&#10;downward direction – upon reaching a minimum value.&#10;The terms “maximum” or “minimum” will usually be&#10;included as an attribute when this type of accumulation&#10;behaviour is present.&#10;When this description is applied to an encoded value&#10;(UOM= “Code”), it implies that the value has one or more&#10;bits which are latching. The condition that caused the bit&#10;to be set may have long since evaporated.&#10;In either case, the timestamp that accompanies the value&#10;may not coincide with the moment the value was initially&#10;set.&#10;In both cases a system will need to perform an operation&#10;to clear the latched value."/>
+    <Item value="10" name="10.q2plusQ3 " description="Quadrants 2 and 3 usually represent reverse active&#10;energy"/>
+    <Item value="9" name="9.potableWater " description="Drinkable water "/>
+    <Item value="10" name="10.distortionVoltAmperes" description="A measurement in which a V2 I2 term&#10;has both real and reactive&#10;components removed leaving only&#10;distortion. For example, distortion&#10;VAh = Sqrt( (V2h)(I2h) – (Wh)2 –&#10;(VArh)2)"/>
+    <Item value="7.1" name="7.1.n7 " description="Seven "/>
+    <Item value="66" name="66.phaseBtoC " description="Phase B to C "/>
+    <Item value="–1 " name="–1 .d " description="deci = ×10–1 "/>
+    <Item value="21" name="21.Gray (J/kg)"/>
+    <Item value="710" name="710.ZAR " description="South African Rand "/>
+    <Item value="17" name="17.secondMinimum" description="The second smallest value observed"/>
+    <Item value="15" name="15.present" description="Within the present period of time"/>
+    <Item value="14" name="14.boundedQuantity" description="A time-independent cumulative quantity much a&#10;BulkQuantity or a LatchingQuantity, except that the&#10;accumulation stops at the maximum or minimum values.&#10;When the maximum is reached, any additional positive&#10;accumulation is discarded, but negative accumulation&#10;may be accepted (thus lowering the counter.) Likewise,&#10;when the negative bound is reached, any additional&#10;negative accumulation is discarded, but positive&#10;accumulation is accepted (thus increasing the counter.)"/>
+    <Item value="11" name="11.q2plusQ4 " description="Quadrants 2 and 4"/>
+    <Item value="10" name="10.steam " description="Water in steam form, usually used for heating. "/>
+    <Item value="11" name="11.energization " description="Pertaining to the presence of voltage "/>
+    <Item value="8.1" name="8.1.n8 " description="Eight "/>
+    <Item value="72" name="72.phaseBtoAv " description="Phase B current or voltage relative to&#10;Phase A voltage "/>
+    <Item value="0" name="0.Not applicable or &quot;×1&quot; " description="N"/>
+    <Item value="22" name="22.Becquerel (1/s)"/>
+    <Item value="752" name="752.SEK " description="Swedish Krona "/>
+    <Item value="23" name="23.thirdMaximum" description="The third highest value observed"/>
+    <Item value="16" name="16.previous " description="Shifted within the previous monthly cycle and&#10;data set"/>
+    <Item value="12" name="12.q2minusQ3 " description="Q2 minus Q3"/>
+    <Item value="11" name="11.wasteWater " description="(Sewerage) "/>
+    <Item value="12" name="12.energy" description="Scalar quantity which may be&#10;increased or decreased in a system&#10;when it receives or produces work,&#10;respectively"/>
+    <Item value="9.1" name="9.1.n9 " description="Nine "/>
+    <Item value="97" name="97.phaseBCtoN " description="BC to Neutral "/>
+    <Item value="1" name="1.da " description="deca = ×101 "/>
+    <Item value="23" name="23.degrees Celsius"/>
+    <Item value="756" name="756.CHF " description="Swiss Franc "/>
+    <Item value="24" name="24.fourthMaximum" description="The fourth highest value observed"/>
+    <Item value="31" name="31.twentyMinute " description="20 min interval"/>
+    <Item value="13" name="13.q3plusQ4 " description="Reactive negative quadrants."/>
+    <Item value="12" name="12.heatingFluid" description="This fluid is likely in liquid form. It is not necessarily&#10;water or water based. The warm fluid returns cooler&#10;than when it was sent. The heat conveyed may be&#10;metered."/>
+    <Item value="13" name="13.energizationLoadSide" description="Measuring the presence or absence&#10;of voltage on the load side of an&#10;electricity meter"/>
+    <Item value="10.1" name="10.1.n10 " description="Ten "/>
+    <Item value="128" name="128.phaseA " description="Phase A "/>
+    <Item value="2" name="2.h " description="hecto = ×102 "/>
+    <Item value="24" name="24.Sievert (J/kg)"/>
+    <Item value="826" name="826.GBP " description="British Pound "/>
+    <Item value="25" name="25.fifthMaximum" description="The fifth highest value observed"/>
+    <Item value="50" name="50.fixedBlock60Min " description="60 min Fixed Block "/>
+    <Item value="14" name="14.q3minusQ2 " description="Q3 minus Q2"/>
+    <Item value="13" name="13.coolingFluid " description="The cool fluid returns warmer than when it was sent.&#10;The heat conveyed may be metered. "/>
+    <Item value="14" name="14.fan " description="A forced air moving device "/>
+    <Item value="15.1" name="15.1.n15 " description="Fifteen "/>
+    <Item value="129" name="129.phaseAtoN " description="Phase A to Neutral "/>
+    <Item value="3" name="3.k " description="kilo = ×103 "/>
+    <Item value="25" name="25.Farad (C/V)"/>
+    <Item value="840" name="840.USD " description="US Dollar "/>
+    <Item value="26" name="26.sum" description="The accumulated sum"/>
+    <Item value="51" name="51.fixedBlock30Min " description="30 min Fixed Block "/>
+    <Item value="15" name="15.quadrant1"/>
+    <Item value="14" name="14.nonpotableWater" description="Reclaimed water – possibly used for irrigation but not&#10;sufficiently treated to be considered safe for drinking.&#10;Moisture in oil"/>
+    <Item value="15" name="15.frequency " description="Reciprocal of the period "/>
+    <Item value="30.1" name="30.1.n30 " description="Thirty "/>
+    <Item value="132" name="132.phaseAtoB " description="Phase A to B "/>
+    <Item value="6" name="6.M " description="Mega = ×106 "/>
+    <Item value="26" name="26.Coulomb (Amp second)"/>
+    <Item value="978" name="978.EUR " description="Euro "/>
+    <Item value="27" name="27.high" description="Typically used to identify the high volume flow port of a&#10;compound water meter."/>
+    <Item value="52" name="52.fixedBlock20Min " description="20 min Fixed Block"/>
+    <Item value="16" name="16.quadrant2"/>
+    <Item value="15" name="15.nox " description="Nitrous Oxides, NOX "/>
+    <Item value="17" name="17.ieee1366ASAI " description="A measurement of IEEE-1366&#10;Average Service Availability Index "/>
+    <Item value="45.1" name="45.1.n45 " description="Fourtyfive "/>
+    <Item value="136" name="136.phaseAtoAv " description="Phase A current relative to Phase A&#10;voltage "/>
+    <Item value="9" name="9.G " description="Giga = ×109 "/>
+    <Item value="28" name="28.Henry (Wb/A)"/>
+    <Item value="28" name="28.low" description="Typically used to identify the low volume flow port of a&#10;compound water meter."/>
+    <Item value="53" name="53.fixedBlock15Min " description="15 min Fixed Block"/>
+    <Item value="17" name="17.quadrant3"/>
+    <Item value="16" name="16.so2 " description="Sulfur Dioxide, SO2 "/>
+    <Item value="18" name="18.ieee1366ASIDI" description="A measurement of the IEEE-1366&#10;Average Service Interruptio Duration&#10;Index"/>
+    <Item value="60.1" name="60.1.n60 " description="Sixty "/>
+    <Item value="93" name="93.phaseABtoN " description="AB to Neutral "/>
+    <Item value="12" name="12.T " description="Tera = ×1012 "/>
+    <Item value="29" name="29.V" description=".Volt (W/A)"/>
+    <Item value="29" name="29.Standard Deviation&#10;Population" description="The standard deviation of a population (indicated by lower case&#10;sigma)"/>
+    <Item value="54" name="54.fixedBlock10Min " description="10 min Fixed Block "/>
+    <Item value="18" name="18.quadrant4"/>
+    <Item value="17" name="17.ch4 " description="Methane, CH4 "/>
+    <Item value="19" name="19.ieee1366ASIFI" description="A measurement of the IEEE-1366&#10;Average Service Interruption&#10;Frequency Index"/>
+    <Item value="120.1" name="120.1.n120 " description="2 × 60 = 120 "/>
+    <Item value="224" name="224.phasesABC " description="Involving all phases "/>
+    <Item value="15" name="15.P " description="Peta = ×1015 "/>
+    <Item value="30" name="30.Ohm (V/A)"/>
+    <Item value="30" name="30.Standard Deviation&#10;Sample" description="The standard deviation of a sample drawn from a population&#10;(usually indicated by a lower case ‘s"/>
+    <Item value="55" name="55.fixedBlock5Min " description="5 min Fixed Block"/>
+    <Item value="19" name="19.reverse"/>
+    <Item value="18" name="18.co2 " description="Carbon Dioxide, CO2 "/>
+    <Item value="20" name="20.ieee1366CAIDI" description="A measurement of the IEEE-1366&#10;Customer averate interruption&#10;duration index"/>
+    <Item value="155.1" name="155.1.n155 " description="One hundred fifty five "/>
+    <Item value="225" name="225.phaseABCtoN " description="ABC to Neutral "/>
+    <Item value="18" name="18.E " description="Exa = ×1018 "/>
+    <Item value="31" name="31.J" description="N·m = C·V = W·s"/>
+    <Item value="56" name="56.fixedBlock1Min " description="1 min Fixed Bloc"/>
+    <Item value="20" name="20.total" description="|Forward| + |Reverse|, See IEC/TS 61968-2.&#10;The sum of the commodity in all quadrants&#10;Q1+Q2+Q3+Q4.&#10;In polyphase metering, the total energy register is&#10;incremented when the absolute value of the sum of the&#10;phase energies is greater than zero:&#10;| EnergyA + EnergyB + EnergyC | &gt; 0"/>
+    <Item value="19" name="19.carbon " description="C "/>
+    <Item value="21" name="21.ieee1366CAIFI" description="A measurement of the IEEE-1366&#10;Customer average interruption&#10;frequency index"/>
+    <Item value="240.1" name="240.1.n240 " description="4 × 60 = 240 "/>
+    <Item value="256" name="256.s2 " description="Phase S2 "/>
+    <Item value="21" name="21.Z " description="Zetta = ×1021 "/>
+    <Item value="32" name="32.(kg m/s2)"/>
+    <Item value="57" name="57.rollingBlock60MinIntvl30MinSubIntvl " description="60 min Rolling Block with 30-minute sub&#10;interval"/>
+    <Item value="21" name="21.totalByPhase" description="In polyphase metering, the total by phase energy&#10;register is incremented when the sum of the absolute&#10;values of the phase energies is greater than zero:&#10;| EnergyA | + | EnergyB | + | EnergyC | &gt; 0&#10;In single phase metering, the formulas for “Total” and&#10;“Total by phase” collapse to the same expression. For&#10;communication purposes however, the “Total”&#10;enumeration should be used with single phase meter&#10;data."/>
+    <Item value="20" name="20.hch " description="Hexachlorocyclohexane, HCH "/>
+    <Item value="22" name="22.ieee1366CEMIn" description="A measurement of the IEEE-1366&#10;Customers Experiencing Multiple&#10;Interruptions"/>
+    <Item value="305.1" name="305.1.n305 " description="Three hundred and five. "/>
+    <Item value="257" name="257.s2N " description="Phase S2 to Neutral "/>
+    <Item value="24" name="24.Y " description="Yotta = ×1024 "/>
+    <Item value="33" name="33.Hz" description="Cycles per second or (1/s)"/>
+    <Item value="58" name="58.rollingBlock60MinIntvl20MinSubIntvl " description="60 min Rolling Block with 20-minute sub&#10;intervals"/>
+    <Item value="21" name="21.pfc " description="Perfluorocarbons, PFC "/>
+    <Item value="23" name="23.ieee1366CEMSMIn" description="A measurement of the IEEE-1366&#10;Customers Experiencing Multiple&#10;Sustained and Momentary&#10;Interruptions"/>
+    <Item value="360.1" name="360.1.n360 " description="6 × 60 = 360 "/>
+    <Item value="512" name="512.s1 " description="Phase S1 "/>
+    <Item value="34" name="34.(lm/m2)"/>
+    <Item value="59" name="59.rollingBlock60MinIntvl15MinSubIntvl " description="60 min Rolling Block with 15-minute sub&#10;intervals"/>
+    <Item value="22" name="22.sf6 " description="Sulfurhexafluoride, SF6 "/>
+    <Item value="24" name="24.ieee1366CTAIDI" description="A measurement of the IEEE-1366&#10;Customer Total Average Interruption&#10;Duration Index"/>
+    <Item value="480.1" name="480.1.n480 " description="8 × 60 = 480 "/>
+    <Item value="513" name="513.s1N " description="Phase S1 to Neutral "/>
+    <Item value="35" name="35.lumen (cd sr)"/>
+    <Item value="60" name="60.rollingBlock60MinIntvl12MinSubIntvl " description="60 min Rolling Block with 12-minute sub&#10;intervals"/>
+    <Item value="23" name="23.tvLicence " description="Television "/>
+    <Item value="25" name="25.ieee1366MAIFI" description="A measurement of the IEEE-1366&#10;Momentary Average Interruption&#10;Frequency Index"/>
+    <Item value="720.1" name="720.1.n720 " description="12 × 60 = 720 "/>
+    <Item value="768" name="768.s12 " description="Phase S1 to S2 "/>
+    <Item value="36" name="36.Weber (V s)"/>
+    <Item value="61" name="61.rollingBlock60MinIntvl10MinSubIntvl " description="60 min Rolling Block with 10-minute sub&#10;intervals"/>
+    <Item value="24" name="24.internet " description="Internet service "/>
+    <Item value="26" name="26.ieee1366MAIFIe" description="A measurement of the IEEE-1366&#10;Momentary Average event&#10;Interruption Frequency Index"/>
+    <Item value="720.60" name="720.60.n720/60 " description="12 × 60/1 × 60 "/>
+    <Item value="769" name="769.s12N " description="Phase S1, S2 to Neutral "/>
+    <Item value="37" name="37.Tesla (Wb/m2)"/>
+    <Item value="62" name="62.rollingBlock60MinIntvl6MinSubIntvl " description="60 min Rolling Block with 6-minute sub&#10;intervals"/>
+    <Item value="25" name="25.refuse " description="Trash "/>
+    <Item value="27" name="27.ieee1366SAIDI " description="IEEE-1366 System Average&#10;Interruption Duration Index "/>
+    <Item value="720.120" name="720.120.n720/120 " description="12 × 60/2 × 60 "/>
+    <Item value="1248" name="1248.threeWireWye " description="3W Wye "/>
+    <Item value="38" name="38.W" description="Watt."/>
+    <Item value="63" name="63.rollingBlock60MinIntvl5MinSubIntvl " description="60 min Rolling Block with 5-minute sub&#10;intervals"/>
+    <Item value="26" name="26.h2 " description="Hydrogen, H2 "/>
+    <Item value="28" name="28.ieee1366SAIFI " description="IEEE-1366 System Average&#10;Interruption Frequency Index "/>
+    <Item value="720.180" name="720.180.n720/180 " description="12 × 60/3 × 60 "/>
+    <Item value="1249" name="1249.fourWireWye " description="4W Wye "/>
+    <Item value="39" name="39.Pascal (N/m2)"/>
+    <Item value="64" name="64.rollingBlock60MinIntvl4MinSubIntvl " description="60 min Rolling Block with 4-minute sub&#10;intervals"/>
+    <Item value="27" name="27.c2h2 " description="Acetylene, C2H2 "/>
+    <Item value="31" name="31.lineLosses" description="An energy, power, voltage, or current&#10;loss attributed to transmission or&#10;distribution line impedance"/>
+    <Item value="720.240" name="720.240.n720/240 " description="12 × 60/4 × 60 "/>
+    <Item value="2272" name="2272.threeWireDelta " description="3W Delta "/>
+    <Item value="53" name="53.Siemens (A / V = 1 / Ω)"/>
+    <Item value="65" name="65.rollingBlock30MinIntvl15MinSubIntvl " description="30 min Rolling Block with 15-minute sub&#10;intervals"/>
+    <Item value="28" name="28.c2h4 " description="Ethylene, C2H4 "/>
+    <Item value="32" name="32.losses" description="A quantity lost due to “technical”&#10;reasons (such as line loss) or “non&#10;technical” reasons (such as theft.)"/>
+    <Item value="720.360" name="720.360.n720/360 " description="12 × 60/6 × 60 "/>
+    <Item value="2273" name="2273.fourWireDelta " description="4W Delta "/>
+    <Item value="155" name="155.PA" description="Pascal, absolute pressure"/>
+    <Item value="66" name="66.rollingBlock30MinIntvl10MinSubIntvl " description="30 min Rolling Block with 10-minute sub&#10;intervals"/>
+    <Item value="29" name="29.c2h6 " description="Ethane, C2H6 "/>
+    <Item value="33" name="33.negativeSequence" description="A quantity that has a rotation&#10;sequence which is opposite to that of&#10;the power system"/>
+    <Item value="6369" name="6369.fourWireHLDelta " description="4W High-leg Delta "/>
+    <Item value="140" name="140.PA" description="Pascal, gauge pressure"/>
+    <Item value="67" name="67.rollingBlock30MinIntvl6MinSubIntvl " description="30 min Rolling Block with 6-minute sub&#10;intervals"/>
+    <Item value="30" name="30.co " description="Carbon monoxide, CO "/>
+    <Item value="34" name="34.phasorPowerFactor" description="The ratio of real energy (usually net&#10;Wh) to phasor apparent energy&#10;(kVAh)"/>
+    <Item value="10465" name="10465.fourWireOpenDelta " description="4W Open Delta "/>
+    <Item value="158" name="158.katal = mol / s"/>
+    <Item value="68" name="68.rollingBlock30MinIntvl5MinSubIntvl " description="30 min Rolling Block with 5-minute sub&#10;intervals"/>
+    <Item value="31" name="31.o2 " description="Oxygen, O2 "/>
+    <Item value="35" name="35.phasorReactivePower " description="D"/>
+    <Item value="17153" name="17153.networked " description="Networked meter "/>
+    <Item value="4" name="4.rotations per second"/>
+    <Item value="69" name="69.rollingBlock30MinIntvl3MinSubIntvl " description="30 min Rolling Block with 3-minute sub&#10;intervals"/>
+    <Item value="32" name="32.dissolvedCombustibleGas" description="Dissolved Combustible Gas (A combination of&#10;combustible gasses such as H2, CH4, C2H2, C2H4,&#10;C&#10;2H6, and/or CO in some mixture.)"/>
+    <Item value="36" name="36.positiveSequence" description="A quantity that has a rotation&#10;sequence in agreement with that of&#10;the power system"/>
+    <Item value="41" name="41.square metre"/>
+    <Item value="70" name="70.rollingBlock30MinIntvl2MinSubIntvl " description="30 min Rolling Block with 2-minute sub&#10;intervals"/>
+    <Item value="33" name="33.co2e " description="Carbon Dioxide CO2 Equivalent "/>
+    <Item value="37" name="37.power" description="The derivative of energy with respect&#10;to time, where the energy is being&#10;transferred or transformed."/>
+    <Item value="42" name="42.M³" description="cubic metre"/>
+    <Item value="71" name="71.rollingBlock15MinIntvl5MinSubIntvl " description="15 min Rolling Block with 5-minute sub&#10;intervals"/>
+    <Item value="34" name="34.lead " description="Lead, Pb "/>
+    <Item value="38" name="38.powerFactor " description="The ratio of real energy (usually net&#10;kWh) to apparent energy (kVAh) "/>
+    <Item value="43" name="43.metre per second (m/s)"/>
+    <Item value="72" name="72.rollingBlock15MinIntvl3MinSubIntvl " description="15 min Rolling Block with 3-minute sub&#10;intervals"/>
+    <Item value="35" name="35.mercury " description="Mercury, Hg "/>
+    <Item value="40" name="40.quantityPower" description="A power measurement of Qh, where&#10;Qh is defined to be half of the sum of&#10;the Wh measurements on each&#10;phase plus the squareroot of 3 over&#10;two times the sum of the VArh&#10;measurements on each phase."/>
+    <Item value="44" name="44.metre per second squared"/>
+    <Item value="73" name="73.rollingBlock15MinIntvl1MinSubIntvl " description="15 min Rolling Block with 1-minute sub&#10;intervals"/>
+    <Item value="36" name="36.ozone " description="Ozone, O3 "/>
+    <Item value="41" name="41.sag " description="A temporary dip in the supply voltage&#10;below the nominal value "/>
+    <Item value="45" name="45.cubic metres per second"/>
+    <Item value="74" name="74.rollingBlock10MinIntvl5MinSubIntvl " description="10 min Rolling Block with 5-minute sub&#10;intervals"/>
+    <Item value="37" name="37.pm10 " description="Particulate matter whose maximum size is 10 µm. "/>
+    <Item value="42" name="42.swell " description="A temporary rise of the supply&#10;voltage over the nominal value "/>
+    <Item value="46" name="46.metre / cubic metre"/>
+    <Item value="75" name="75.rollingBlock10MinIntvl2MinSubIntvl " description="10 min Rolling Block with 2-minute sub&#10;intervals"/>
+    <Item value="38" name="38.pm25 " description="Particulate matter whose maximum size is 2,5 µm. "/>
+    <Item value="43" name="43.switchPosition" description="A physical or logical switch position&#10;status which includes “opened” and&#10;“closed”, but for some products may&#10;also include “armed,” or other states&#10;that indicate a temporary state due&#10;to some condition."/>
+    <Item value="47" name="47.kilogram metre (kg·m)"/>
+    <Item value="76" name="76.rollingBlock10MinIntvl1MinSubIntvl " description="10 min Rolling Block with 1-minute sub&#10;intervals"/>
+    <Item value="39" name="39.sox " description="Sulfur Oxides, SOX "/>
+    <Item value="44" name="44.tapPosition " description="Tap changer position "/>
+    <Item value="48" name="48.gram/cubic metre"/>
+    <Item value="77" name="77.rollingBlock5MinIntvl1MinSubIntvl " description="5 min Rolling Block with 1-minute sub&#10;intervals"/>
+    <Item value="40" name="40.weather " description="Weather or meteorological conditions. "/>
+    <Item value="45" name="45.tariffRate" description="An energy price defined in a&#10;contract. The rate might be a price&#10;for energy, for power (usually&#10;expressed as a demand value), or&#10;some other measurement. The rate&#10;might be currency based, or as a&#10;code, or as a component of a larger&#10;tariff description."/>
+    <Item value="49" name="49.metre squared / second"/>
+    <Item value="78" name="78.twelveMinute " description="12 min"/>
+    <Item value="41" name="41.device" description="Condition of the meter or end device itself. For&#10;example, this enumeration might be used in&#10;combination with an enumeration for temperature to&#10;represent the internal temperature of a meter."/>
+    <Item value="46" name="46.temperature " description="A quantity proportional to the energy&#10;of a system "/>
+    <Item value="50" name="50.Watt/metre Kelvin"/>
+    <Item value="79" name="79.twoHour " description="2 h"/>
+    <Item value="42" name="42.pole " description="The power pole as an end device "/>
+    <Item value="47" name="47.totalHarmonicDistortion" description="The ratio of the sum of the&#10;harmonics to the fundamental. (THD&#10;may measure either voltage or&#10;current, and may isolated to a given&#10;phase)"/>
+    <Item value="51" name="51.Joule/Kelvin"/>
+    <Item value="80" name="80.fourHour " description="4 h"/>
+    <Item value="43" name="43.conductor " description="A wire as an end device "/>
+    <Item value="48" name="48.transformerLosses" description="A measurement of the energy or&#10;power loss in a transformer due to&#10;inefficiency"/>
+    <Item value="54" name="54.radians per second"/>
+    <Item value="81" name="81.sixHour " description="6 h"/>
+    <Item value="44" name="44.acceleration " description="A measurement of acceleration "/>
+    <Item value="49" name="49.unipedeVoltageDip10to15" description="A voltage dip classification per&#10;EN50160 or a similar national&#10;standard measuring the number of&#10;dips in the 10-15% range"/>
+    <Item value="61" name="61.VA" description="Volt Ampere"/>
+    <Item value="82" name="82.twelveHour " description="12 h"/>
+    <Item value="45" name="45.tilt " description="A measurement of tilt "/>
+    <Item value="50" name="50.unipedeVoltageDip15to30" description="A voltage dip classification per&#10;EN50160 or a similar national&#10;standard measuring the number of&#10;dips in the 15-30% range"/>
+    <Item value="63" name="63.var" description="Volt Ampere reactive"/>
+    <Item value="83" name="83.threeHour " description="3 h"/>
+    <Item value="46" name="46.magneticField " description="A measurement of the magnetic field "/>
+    <Item value="51" name="51.unipedeVoltageDip30to60" description="A voltage dip classification per&#10;EN50160 or a similar national&#10;standard measuring the number of&#10;dips in the 30-60% range"/>
+    <Item value="66" name="66.Volt seconds (Ws/A)"/>
+    <Item value="100" name="100.specifiedInterval" description="The interval length is described in attribute&#10;#10 in seconds. Attribute #11 should be &quot;1&quot;&#10;for whole seconds."/>
+    <Item value="50" name="50.Gas " description="Generic commodity for gas. Note that there are&#10;specific commodities for natural gas and propane. "/>
+    <Item value="52" name="52.unipedeVoltageDip60to90" description="A voltage dip classification per&#10;EN50160 or a similar national&#10;standard measuring the number of&#10;dips in the 60-90% range"/>
+    <Item value="67" name="67.Volt squared (W2/A2)"/>
+    <Item value="101" name="101.specifiedFixedBlock" description="The fixed block duration is described in&#10;attribute #10 in seconds. Attribute #11 should&#10;be &quot;1&quot; for whole seconds."/>
+    <Item value="60" name="60.Water" description="Generic commodity for water. Note that there are&#10;specific commodities for waste water and potable&#10;water."/>
+    <Item value="53" name="53.unipedeVoltageDip90to100" description="A voltage dip classification per&#10;EN50160 or a similar national&#10;standard measuring the number of&#10;dips in the 90-100% range"/>
+    <Item value="68" name="68.Amp seconds"/>
+    <Item value="102" name="102.specifiedRollingBlock" description="The rolling block size is described by attribute&#10;#10 in seconds, and the sub-interval size by&#10;attribute #11 in seconds."/>
+    <Item value="901" name="901.electricity&#10;DirectMetered" description="All types of metered quantities. This type of reading&#10;comes from the meter and represents a “DC”&#10;metered value."/>
+    <Item value="54" name="54.Voltage (rms) " description="The difference in electric potential&#10;between two points "/>
+    <Item value="69" name="69.Amp squared"/>
+    <Item value="902" name="902.BMS of Storage " description="All types of BMS of Storage "/>
+    <Item value="55" name="55.voltageAngle" description="A phase voltage zerocross timing&#10;measurement releative to a&#10;reference voltage zerocross"/>
+    <Item value="70" name="70.square Amp second"/>
+    <Item value="903" name="903 PCS of Storage " description="All types of PCS of Storage "/>
+    <Item value="56" name="56.voltageExcursion " description="A measurement of the departure of&#10;the voltage from the nominal voltage "/>
+    <Item value="71" name="71.Vah" description="Volt Ampere hours"/>
+    <Item value="904" name="904 Monitor of Storage " description="All types of  Monitor of Storage "/>
+    <Item value="57" name="57.voltageImbalance" description="A measurement of the departure of a&#10;phase voltage relative to the average&#10;voltage of all phases."/>
+    <Item value="72" name="72.W·h" description="Watt hours"/>
+    <Item value="58" name="58.volume " description="fluid volume "/>
+    <Item value="73" name="73.varh" description="Volt Ampere reactive hours"/>
+    <Item value="59" name="59.zeroFlowDuration" description="The amount of time that current flow&#10;drops to a zero level or level below&#10;the ability of the sensor to sense"/>
+    <Item value="74" name="74.Volt per Hertz"/>
+    <Item value="60" name="60.zeroSequence " description="The zero sequence current is the&#10;vector sum of the phase currents "/>
+    <Item value="75" name="75.Hertz per second"/>
+    <Item value="64" name="64.distortionPowerFactor " description="The ratio of the distortion VAh to the&#10;apparent VAh "/>
+    <Item value="78" name="78.kg m2"/>
+    <Item value="81" name="81.frequencyExcursion" description="A measurement of the departure of&#10;the frequency from the nominal&#10;frequency"/>
+    <Item value="81" name="81.Watt per second"/>
+    <Item value="90" name="90.applicationContext" description="Information that describes the logical&#10;context in which a request,&#10;measurement, or command is made."/>
+    <Item value="82" name="82.litre per second"/>
+    <Item value="91" name="91.apTitle " description="An application name which is making&#10;or has made a request "/>
+    <Item value="100" name="100.Q"/>
+    <Item value="92" name="92.assetNumber " description="An asset identifier "/>
+    <Item value="101" name="101.Qh"/>
+    <Item value="93" name="93.bandwidth " description="A measurement of dataflow "/>
+    <Item value="102" name="102.Ohm metre, ρ (rho)"/>
+    <Item value="94" name="94.batteryVoltage " description="Battery voltage "/>
+    <Item value="103" name="103.magnetic field strength, Ampere per metre"/>
+    <Item value="95" name="95.broadcastAddress" description="A message target address implying&#10;all endpoint units within range of a&#10;particular sender"/>
+    <Item value="104" name="104.Volt-squared-hours"/>
+    <Item value="96" name="96.deviceAddressType1 " description="Endpoint target address Type1 "/>
+    <Item value="105" name="105.Ampere-squared hour"/>
+    <Item value="97" name="97.deviceAddressType2 " description="Endpoint target address Type2 "/>
+    <Item value="106" name="106.Ah" description="Ampere-hours"/>
+    <Item value="98" name="98.deviceAddressType3 " description="Endpoint target address Type3 "/>
+    <Item value="107" name="107.energy per volume"/>
+    <Item value="99" name="99.deviceAddressType4 " description="Endpoint target address Type4 "/>
+    <Item value="108" name="108.time and date per ISO 8601 format"/>
+    <Item value="100" name="100.deviceClass " description="A unique identifier for the Endpoint’s&#10;configuration "/>
+    <Item value="115" name="115.active energy metering constant"/>
+    <Item value="101" name="101.electronicSerialNumber " description="A device serial number "/>
+    <Item value="116" name="116.reactive energy metering constant"/>
+    <Item value="102" name="102.endDeviceID" description="A unique identifier of the endDevice&#10;– the device providing&#10;measurements or under control of&#10;the network"/>
+    <Item value="117" name="117.apparent energy metering constant"/>
+    <Item value="103" name="103.groupAddressType1 " description="Group target address Type1 "/>
+    <Item value="125" name="125.cubic metre per hour"/>
+    <Item value="104" name="104.groupAddressType2 " description="Group target address Type2 "/>
+    <Item value="126" name="126.compensated cubic metre per hour"/>
+    <Item value="105" name="105.groupAddressType3 " description="Group target address Type3 "/>
+    <Item value="127" name="127.uncompensated cubic metre per hour"/>
+    <Item value="106" name="106.groupAddressType4 " description="Group target address Type4 "/>
+    <Item value="137" name="137.L/h" description="litre per hour"/>
+    <Item value="107" name="107.ipAddress " description="An IP address for the endpoint "/>
+    <Item value="139" name="139.litre (uncompensated) per hour"/>
+    <Item value="108" name="108.macAddress " description="A MAC address for the endpoint "/>
+    <Item value="138" name="138.litre (compensated) per hour"/>
+    <Item value="109" name="109.mfgAssignedConfigurationID " description="The at time of manufacture configuration given to a device "/>
+    <Item value="161" name="161.Q measured at 45º"/>
+    <Item value="110" name="110.mfgAssignedPhysicalSerialNumber " description="The serial number assigned to a device at time of manufacture "/>
+    <Item value="162" name="162.Q measured at 60º"/>
+    <Item value="111" name="111.mfgAssignedProductNumber " description="The product number assigned to a device at time of manufacture "/>
+    <Item value="163" name="163.Qh measured at 45º"/>
+    <Item value="112" name="112.mfgAssignedUniqueCommunicationAddress " description="A communication address assigned to a device at time of manufacture "/>
+    <Item value="164" name="164.Qh measured at 60º"/>
+    <Item value="113" name="113.multiCastAddress" description="A message target address implying a&#10;large group of endpoint units within&#10;range of a particular sender"/>
+    <Item value="165" name="165.Joule / kg"/>
+    <Item value="114" name="114.oneWayAddress" description="A communication address of a&#10;network endpoint used in one-way&#10;communication"/>
+    <Item value="166" name="166.cubic metre, with the value uncompensated for weather effects."/>
+    <Item value="115" name="115.signalStrength " description="A measurement of RF signal strength "/>
+    <Item value="167" name="167.cubic metre, with the value compensated for weather effects."/>
+    <Item value="116" name="116.twoWayAddress " description="A communication address used for&#10;bidirectional communication "/>
+    <Item value="173" name="173.reciprocal metre, (1/m)"/>
+    <Item value="117" name="117.signaltoNoiseRatio" description="A measurement of received (RF)&#10;signal strength divided by the (RF)&#10;noise floor"/>
+    <Item value="174" name="174.cubic metre per kilogram, v"/>
+    <Item value="118" name="118.alarm " description="A measurement releated to an alarm "/>
+    <Item value="175" name="175.Pascal second"/>
+    <Item value="119" name="119.batteryCarryover " description="An estimate of the battery&#10;ridethrough capacity "/>
+    <Item value="176" name="176.Newton metre"/>
+    <Item value="120" name="120.dataOverflowAlarm " description="An indication of or measurement of a&#10;loss of data "/>
+    <Item value="177" name="177.Newton per metre"/>
+    <Item value="121" name="121.demandLimit" description="A threshold setting that determines&#10;the trip point that if exceeded would&#10;trigger a demand limiting action or&#10;alarm"/>
+    <Item value="178" name="178.radian per second squared"/>
+    <Item value="122" name="122.demandReset" description="A count of the number of times&#10;demand has been reset (remotely,&#10;locally, and/or automatically.)"/>
+    <Item value="179" name="179.Watt per square metre"/>
+    <Item value="123" name="123.diagnostic " description="A measurement releated to&#10;equipment diagnostics "/>
+    <Item value="180" name="180.Joule per kilogram kelvin"/>
+    <Item value="124" name="124.emergencyLimit " description="A setting that indicates an&#10;emergency limit "/>
+    <Item value="181" name="181.Joule per cubic metre"/>
+    <Item value="125" name="125.encoderTamper " description="An indication of tampering with a&#10;meter encoder "/>
+    <Item value="182" name="182.Volt per metre"/>
+    <Item value="126" name="126.ieee1366MomentaryInterruption " description="IEEE-1366 Momentary Interruption&#10;count "/>
+    <Item value="183" name="183.Coulomb per cubic metre"/>
+    <Item value="127" name="127.ieee1366MomentaryInterruptionEvent " description="IEEE-1366 Momentary Interruption&#10;event count "/>
+    <Item value="184" name="184.Coulomb per square metre"/>
+    <Item value="128" name="128.ieee1366SustainedInterruption " description="IEEE-1366 Sustained Interruption&#10;duration "/>
+    <Item value="185" name="185.Farad per metre"/>
+    <Item value="129" name="129.interruptionBehaviour" description="A measurement related to power&#10;interruptions (Note: often an&#10;interruption count or duration.)"/>
+    <Item value="186" name="186.Henry per metre"/>
+    <Item value="130" name="130.inversionTamper" description="A measurement related to inversion&#10;tamper (Note: typically a count of&#10;inversions)"/>
+    <Item value="187" name="187.Joule per mole"/>
+    <Item value="131" name="131.loadInterrupt" description="A measurement related to load&#10;interruption (Note: typically a load&#10;interruption count or measurement of&#10;duration)"/>
+    <Item value="188" name="188.Joule per mole kelvin"/>
+    <Item value="132" name="132.loadShed" description="A measurement related to load shed&#10;(Note: typically a load shed count or&#10;load shed duration)"/>
+    <Item value="189" name="189.Coulomb per kilogram"/>
+    <Item value="133" name="133.maintenance " description="A measurement related to the&#10;pending maintenance of equipment "/>
+    <Item value="190" name="190.Gray per second"/>
+    <Item value="134" name="134.physicalTamper" description="A measurement related to physical&#10;tampering (Note: typically a tamper&#10;count)"/>
+    <Item value="191" name="191.Watt per steradian"/>
+    <Item value="135" name="135.powerLossTamper " description="Tamper indicated while power was&#10;out "/>
+    <Item value="192" name="192.Watt per square metre steradian"/>
+    <Item value="136" name="136.powerOutage " description="A measurement related to power&#10;outages (Note: typically a status) "/>
+    <Item value="193" name="193.katal per cubic metre"/>
+    <Item value="137" name="137.powerQuality " description="A measurement related to power&#10;quality "/>
+    <Item value="280" name="280.Volt hours"/>
+    <Item value="138" name="138.powerRestoration " description="A measurement related to power&#10;restoration (Note: typically a status) "/>
+    <Item value="159" name="159.minute = 60 s"/>
+    <Item value="139" name="139.programmed" description="A measurement related to device&#10;programming (Note: typically a&#10;status measurement)"/>
+    <Item value="160" name="160.hour = 60 min = 3 600 s"/>
+    <Item value="140" name="140.pushbutton" description="A measurement related to&#10;pushbutton (Note: typically a status&#10;or count)"/>
+    <Item value="195" name="195.day = 24 h = 86 400 s"/>
+    <Item value="141" name="141.relayActivation " description="A measurement related to relay&#10;activations "/>
+    <Item value="9" name="9.degree"/>
+    <Item value="142" name="142.relayCycle" description="A measurement related to relay&#10;cycling (Note1: one open and one&#10;closure together is one cycle, Note2:&#10;Usually expressed as a count)"/>
+    <Item value="196" name="196.minute"/>
+    <Item value="143" name="143.removalTamper" description="An indication of equipment tampering&#10;that shows equipment was moved or&#10;opened"/>
+    <Item value="197" name="197.second"/>
+    <Item value="144" name="144.reprogrammingTamper" description="An indication of equipment tampering&#10;that shows equipment has been&#10;reprogrammed"/>
+    <Item value="198" name="198.hectare"/>
+    <Item value="145" name="145.reverseRotationTamper " description="An indication of tampering as&#10;evidenced by reverse power flow "/>
+    <Item value="134" name="134.L" description="litre = dm3 = m3/1 000"/>
+    <Item value="146" name="146.switchArmed " description="A measurement of the switch arm&#10;condition "/>
+    <Item value="199" name="199.“tonne” or “metric ton” (1 000 kg = 1 Mg)"/>
+    <Item value="147" name="147.switchDisabled " description="A measurement of the switch&#10;enablement status "/>
+    <Item value="0" name="0.N/A"/>
+    <Item value="148" name="148.tamper " description="An indication of equipment tampering "/>
+    <Item value="65" name="65.Cosφ" description="Power factor"/>
+    <Item value="149" name="149.watchdogTimeout " description="A reset triggered by a hardware&#10;“watchdog” circuit "/>
+    <Item value="79" name="79.Logrithmic ratio"/>
+    <Item value="150" name="150.billLastPeriod " description="Customer’s bill for the previous&#10;billing period Expressed as currency. "/>
+    <Item value="109" name="109.State"/>
+    <Item value="151" name="151.billToDate" description="Customer’s bill, as known thus far&#10;within the present billing period.&#10;Expressed as currency."/>
+    <Item value="111" name="111.Amount of substance"/>
+    <Item value="152" name="152.billCarryover" description="Customer’s bill, part of a previous&#10;obligation carried over from a&#10;previous billing period. Expressed as&#10;currency."/>
+    <Item value="113" name="113.Logrithmic ratio of signal strength"/>
+    <Item value="153" name="153.connectionFee " description="Monthly fee for connection to&#10;commodity. "/>
+    <Item value="114" name="114.Application Value"/>
+    <Item value="154" name="154.audibleVolume " description="Sound "/>
+    <Item value="118" name="118.EndDeviceEvent"/>
+    <Item value="155" name="155.volumetricFlow " description="A fluid flow rate "/>
+    <Item value="143" name="143.Concentration"/>
+    <Item value="156" name="156.relativeHumidity " description="Most common usage is in expressing&#10;weather or meteorological conditions "/>
+    <Item value="144" name="144.Concentration"/>
+    <Item value="157" name="157.skyCover" description="Degree of sky cover. Used in&#10;expressing weather or&#10;meteorological conditions."/>
+    <Item value="145" name="145.Concentration"/>
+    <Item value="158" name="158.voltage " description="Unspecified "/>
+    <Item value="146" name="146.Concentration"/>
+    <Item value="159" name="159.dcVoltage " description="I"/>
+    <Item value="147" name="147.Molality"/>
+    <Item value="160" name="160.acVoltagePeak " description="Vp=√2 × Vrms "/>
+    <Item value="148" name="148.Ratio of length"/>
+    <Item value="161" name="161.acVoltagePeakToPeak " description="Vpp=2 × Vp "/>
+    <Item value="149" name="149.Ratio of time"/>
+    <Item value="162" name="162.pressure " description="Force over area "/>
+    <Item value="150" name="150.Rate of frequency change"/>
+    <Item value="163" name="163.density " description="I"/>
+    <Item value="151" name="151.Ratio of voltages"/>
+    <Item value="164" name="164.energyDensity " description="I"/>
+    <Item value="152" name="152.Ratio of Amperages"/>
+    <Item value="165" name="165.dateOfLastDemandReset " description="I"/>
+    <Item value="153" name="153.PF, the ratio of the active power to the apparent power."/>
+    <Item value="166" name="166.arithmeticApparentEnergy" description="The arithmetic sum of the per&#10;element VAh quantities, where each&#10;element apparent VAh uantity is&#10;calculated each momentary interval&#10;as: sqrt(V2hx)(I2hx), where x= each&#10;element A, B, C, and V2hx and I2hx&#10;are fundamental plus harmonics&#10;values."/>
+    <Item value="154" name="154.Revolutions"/>
+    <Item value="167" name="167.arithmeticApparentPower " description="The rate of arithmetic Apparent&#10;Energy "/>
+    <Item value="168" name="168.Ratio of power"/>
+    <Item value="168" name="168.arithmeticApparentDemand " description="I"/>
+    <Item value="170" name="170.n"/>
+    <Item value="169" name="169.phasorApparentEnergy" description="Sqrt((Whx)2+(VArhx)2) where x each&#10;element A,B,C and VArh is measured&#10;with IEEE VArs"/>
+    <Item value="171" name="171.μr"/>
+    <Item value="170" name="170.phasorApparentPower " description="The rate of phasor apparent energy "/>
+    <Item value="172" name="172.Neper"/>
+    <Item value="171" name="171.phasorApparentDemand " description="I"/>
+    <Item value="281" name="281.Relative humidity"/>
+    <Item value="172" name="172.distortionApparentEnergy" description="distortion VAhx = Sqrt( (V2hx)(I2hx) –&#10;(Whx)2 – (VArhx)2), where x= each&#10;element A, B, or C and V2hx, I2hx,&#10;Whx, and varhx are fundamental plus&#10;harmonic values"/>
+    <Item value="282" name="282.Ratio of covered sky to total sky."/>
+    <Item value="173" name="173.distortionApparentPower " description="The rate of distortion apparent&#10;energy"/>
+    <Item value="200" name="200.electronvolt "/>
+    <Item value="174" name="174.distortionApparentDemand " description="Distoration apparent energy passed&#10;through a demand function "/>
+    <Item value="201" name="201.dalton"/>
+    <Item value="175" name="175.totalHarmonicDistortionDemand " description="THD treated as a demand "/>
+    <Item value="202" name="202.unified atomic mass unit"/>
+    <Item value="176" name="176.tddDemand " description="Total Demand Distortion treated as a&#10;demand "/>
+    <Item value="203" name="203.astronomical unit (1ua = 1,495 978 × 1011 m)"/>
+    <Item value="177" name="177.totalDemandDistortion " description="(RMS of harmonic content of current)&#10;/ (maximum installation current) "/>
+    <Item value="204" name="204.natural unit of speed (speed of light in a vacuum)"/>
+    <Item value="178" name="178.distortionPowerFactorDemand " description="distortionPF treated as a demand&#10;value "/>
+    <Item value="205" name="205.natural unit of action (reduced planck constant)"/>
+    <Item value="179" name="179.fuzzyEnergy" description="Fuzzyvarh = sqrt((varh)2 + (distortion&#10;VAh)2), where varh is a fundamental&#10;plus harmonics value"/>
+    <Item value="206" name="206.natural unit of mass (electron mass)"/>
+    <Item value="180" name="180.fuzzyPower " description="The rate of fuzzy energy "/>
+    <Item value="207" name="207.natural unit of time"/>
+    <Item value="181" name="181.fuzzyDemand " description="Fuzzy energy as a demand "/>
+    <Item value="208" name="208.atomic units of charge (elementary charge)"/>
+    <Item value="183" name="183.batteryChargeMoved " description="Charge used or added "/>
+    <Item value="209" name="209.atomic units of mass (electron mass)"/>
+    <Item value="184" name="184.batteryChargeStored " description="Charge present "/>
+    <Item value="210" name="210.atomic unit of action (reduced planck constant)"/>
+    <Item value="188" name="188.quadrant " description="One of four quadrants relative to the&#10;reference axix "/>
+    <Item value="211" name="211.atomic unit of length, bohr ( Bohr radius)"/>
+    <Item value="189" name="189.processorReset " description="The type of reset "/>
+    <Item value="212" name="212.atomic unit of energy, hartree"/>
+    <Item value="190" name="190.xAxis " description="Measurement along the x axis&#10;relative to the reference axis "/>
+    <Item value="213" name="213.atomic unit of time"/>
+    <Item value="191" name="191.yAxis " description="Measurement along the y axis "/>
+    <Item value="76" name="76.characters"/>
+    <Item value="192" name="192.zAxis " description="Measurement along the z axis "/>
+    <Item value="77" name="77.characters per second"/>
+    <Item value="193" name="193.XYPlane " description="Measurement in the XY Plane "/>
+    <Item value="80" name="80.Generic money"/>
+    <Item value="194" name="194.YZPlane " description="Measurement in the YZ Plane "/>
+    <Item value="119" name="119.cubic foot"/>
+    <Item value="195" name="195.XZPlane " description="Measurement in the XZ Plane "/>
+    <Item value="120" name="120.cubic foot compensated for weather"/>
+    <Item value="901" name="SOC" description="State of Charge"/>
+    <Item value="121" name="121.cubic foot uncompensated for weather"/>
+    <Item value="902" name="SOH" description="State of Health"/>
+    <Item value="122" name="122.cubic foot per hour"/>
+    <Item value="903" name="efficiency" description="efficiency"/>
+    <Item value="123" name="123.compensated cubic feet per hour"/>
+    <Item value="904" name="ControlMode" description="ControlMode"/>
+    <Item value="124" name="124.uncompensated cubic feet per hour"/>
+    <Item value="128" name="128.US gallon (1 gal = 231 in3 = 128 fl oz.)"/>
+    <Item value="129" name="129.US gallon per hour"/>
+    <Item value="130" name="130.Imperial gallon"/>
+    <Item value="131" name="131.Imperial gallon per hour"/>
+    <Item value="132" name="132.British Thermal Unit"/>
+    <Item value="133" name="133.BTU per hour"/>
+    <Item value="141" name="141.Pound per square inch, absolute"/>
+    <Item value="142" name="142.Pound per square inch, gauge"/>
+    <Item value="156" name="156.Litre, with the value uncompensated for weather effects"/>
+    <Item value="157" name="157.Litre, with the value compensated for weather effects"/>
+    <Item value="169" name="169.Therm"/>
+    <Item value="214" name="214.bar (1 bar = 100 kPa)"/>
+    <Item value="215" name="215.millimeter of mercury (1 mmHg ≈ 133,3 Pa)"/>
+    <Item value="216" name="216.ångström (1Å = 10–10 m)"/>
+    <Item value="217" name="217.nautical mile (1 M = 1852 m)"/>
+    <Item value="218" name="218.barn (1 b = 100 fm2 = 10–28 m2)"/>
+    <Item value="219" name="219.knot (1 kn = 1852/3600) m/s"/>
+    <Item value="220" name="220.curie (1 Ci = 3,7 × 1010 Bq)"/>
+    <Item value="221" name="221.roentgen (1 R = 2,58 × 10–4 C/kg)"/>
+    <Item value="222" name="222.rad (1 rd = 1 cGy)"/>
+    <Item value="223" name="223.rem (1 rem = 10–2 Sv)"/>
+    <Item value="224" name="224.inch"/>
+    <Item value="225" name="225.foot (1 ft = 12 in)"/>
+    <Item value="226" name="226.rod (1 rod = 16,5 ft)"/>
+    <Item value="227" name="227.furlong (1 fur = 660 ft)"/>
+    <Item value="228" name="228.mile (1 statute mile = 8 fur = 80 chains = 320 rods = 5280"/>
+    <Item value="229" name="229.square foot (1 ft2 = 144 in2)"/>
+    <Item value="230" name="230.square yard (1 yd2 = 9 ft2)"/>
+    <Item value="231" name="231.square rod (1 rod2 = 272,25 ft2)"/>
+    <Item value="232" name="232.acre (1 acre = 160 rd2 = 43 560 ft2)"/>
+    <Item value="233" name="233.square mile (1 mi2 = 640 acres)"/>
+    <Item value="234" name="234.section of land (1 mi2 = 1 section of land)"/>
+    <Item value="235" name="235.township (1 township = 6 miles square)"/>
+    <Item value="237" name="237.cubic yard (1 yd3 = 27 ft3)"/>
+    <Item value="238" name="238.link (1 li = 0,66 ft)"/>
+    <Item value="239" name="239.chain (1 ch = 100 links = 4 rods = 66 ft)"/>
+    <Item value="240" name="240.US liquid pint (1 pt = 28,875 in3 = 128 fl dr)"/>
+    <Item value="241" name="241.US liquid quart (1 qt = 2 pt)"/>
+    <Item value="242" name="242.Apothecaries fluid dram"/>
+    <Item value="243" name="243.Apothecaries fluid ounce (1 fl oz ap = 8 fl dr ap)"/>
+    <Item value="244" name="244.US dry pint (1 pt = 67,2 in3)"/>
+    <Item value="245" name="245.US dry quart (1 qt = 2 pints)"/>
+    <Item value="246" name="246.US peck (1 pk = 8 qt)"/>
+    <Item value="247" name="247.US bushel (1 bu = 4 pk)"/>
+    <Item value="248" name="248.grain (1 grain = 1/7000 avdp lb)"/>
+    <Item value="249" name="249.Avoirdupois dram (1 Avdp dr = 27-11/32 gr)"/>
+    <Item value="250" name="250.Avoirdupois ounce (1 Avdp oz = 16 Avdp dr)"/>
+    <Item value="251" name="251.Avoirdupois pound (1 lb = 16 oz)"/>
+    <Item value="252" name="252.Avoirdupois hundredweight (1 cwt = 100 lbs)"/>
+    <Item value="253" name="253.Avoirdupois ton (1 short ton = 2000 lbs)"/>
+    <Item value="254" name="254.Avoirdupois gross or long hundredweight"/>
+    <Item value="255" name="255.Avoirdupois gross or long ton"/>
+    <Item value="256" name="256.Troy pennyweight (1 dwt = 24 grains)"/>
+    <Item value="257" name="257.Troy ounce (1 oz t = 20 dwt)"/>
+    <Item value="258" name="258.Troy pound (1 lb t = 12 oz t)"/>
+    <Item value="259" name="259.Apothecaries scruple (1 s ap = 20 grains)"/>
+    <Item value="260" name="260.Apothecaries dram (1 dr ap = 3 s ap)"/>
+    <Item value="261" name="261.Apothecaries ounce (1 oz ap = 8 dr ap)"/>
+    <Item value="262" name="262.Apothecaries pound (1 lp ap = 12 oz ap)"/>
+    <Item value="263" name="263.mile per imperial gallon"/>
+    <Item value="264" name="264.mile per US gallon"/>
+    <Item value="265" name="265.mile per US gallon equivalent"/>
+    <Item value="266" name="266.litre per 100 km"/>
+    <Item value="267" name="267.killowatt-hour per mile"/>
+    <Item value="268" name="268.kilowatt-hour per 100 mile"/>
+    <Item value="279" name="279.degrees Fahrenheit"/>
+    <Item value="269" name="269.erg (1 erg = 10–7 J)"/>
+    <Item value="270" name="270.dyne (1 dyn = 10–5 N)"/>
+    <Item value="271" name="271.poise (1 P = 0,1 Pa s)"/>
+    <Item value="272" name="272.stokes (1 St = 1 cm2/s)"/>
+    <Item value="273" name="273.stilb (1 sb = 104 cd/m2)"/>
+    <Item value="274" name="274.phot (1 ph = 104 lx)"/>
+    <Item value="275" name="275.gal (1 Gal = 10–2 m s–2)"/>
+    <Item value="276" name="276.Maxwell (1 Mx = 10–8 Wb)"/>
+    <Item value="277" name="277.Gauss (1 G = 10–4 T)"/>
+    <Item value="278" name="278.OErsted (1 Oe = (103/4π) A/m)"/>
+    <Item value="278" name="278.278.Œrsted (1 Oe = (103/4π) A/m) "/>
+    <Item value="801" name="%"/>
+    <Item value="802" name="RMB"/>
+  </Field>
+  <Field name="argumentNumerator&#10;分子参数">
+    <Item value="0.0" name="none" description="Not Applicable"/>
+    <Item value="1.2" name="n½" description="One-half"/>
+    <Item value="0.1" name="n0" description="“Zero” (for systems that use zero based&#10;numbering schemes)"/>
+    <Item value="1.1" name="n1" description="&quot;One,” where the measure needs an&#10;argument such as CEMI(n=1)"/>
+    <Item value="2.1" name="n2" description="&quot;Two&quot; where the measure needs an&#10;argument such as CEMI(n=2)"/>
+    <Item value="3.1" name="n3" description="&quot;Three&quot; where the measure needs an&#10;argument such as CEMI(n=3)"/>
+    <Item value="4.1" name="n4" description="&quot;Four&quot; where the measure needs an&#10;argument such as CEMI(n=4)"/>
+    <Item value="5.1" name="n5" description="&quot;Five&quot; where the measure needs an&#10;argument"/>
+    <Item value="6.1" name="n6" description="Six"/>
+    <Item value="7.1" name="n7" description="Seven"/>
+    <Item value="8.1" name="n8" description="Eight"/>
+    <Item value="9.1" name="n9" description="Nine"/>
+    <Item value="10.1" name="n10" description="Ten"/>
+    <Item value="15.1" name="n15" description="Fifteen"/>
+    <Item value="30.1" name="n30" description="Thirty"/>
+    <Item value="45.1" name="n45" description="Fourtyfive"/>
+    <Item value="60.1" name="n60" description="Sixty"/>
+    <Item value="120.1" name="n120" description="2 × 60 = 120"/>
+    <Item value="155.1" name="n155" description="One hundred fifty five"/>
+    <Item value="240.1" name="n240" description="4 × 60 = 240"/>
+    <Item value="305.1" name="n305" description="Three hundred and five."/>
+    <Item value="360.1" name="n360" description="6 × 60 = 360"/>
+    <Item value="480.1" name="n480" description="8 × 60 = 480"/>
+    <Item value="720.1" name="n720" description="12 × 60 = 720"/>
+    <Item value="720.60" name="n720/60" description="12 × 60/1 × 60"/>
+    <Item value="720.120" name="n720/120" description="12 × 60/2 × 60"/>
+    <Item value="720.180" name="n720/180" description="12 × 60/3 × 60"/>
+    <Item value="720.240" name="n720/240" description="12 × 60/4 × 60"/>
+    <Item value="720.360" name="n720/360" description="12 × 60/6 × 60"/>
+  </Field>
+  <Field name="cpp&#10;临界峰值">
+    <Item value="0" name="none" description="Not Applicable"/>
+    <Item value="1" name="cppA" description="Consumption associated with critical peak period A"/>
+    <Item value="2" name="cppB" description="Consumption associated with critical peak period B"/>
+    <Item value="3" name="cppC" description="Consumption associated with critical peak period C"/>
+    <Item value="4" name="cppD" description="Consumption associated with critical peak period D"/>
+    <Item value="5" name="cppE" description="Consumption associated with critical peak period E"/>
+    <Item value="6" name="cppF" description="Consumption associated with critical peak period F"/>
+    <Item value="7" name="cppG" description="Etc."/>
+  </Field>
+  <Field name="currency&#10;货币计量单位">
+    <Item value="0" name="None" description="N"/>
+    <Item value="36" name="AUD" description="Australian Dollar"/>
+    <Item value="124" name="CAD" description="Canadian Dollar"/>
+    <Item value="156" name="CNY" description="Chinese Yuan Renminbi"/>
+    <Item value="208" name="DKK" description="Danish Crown"/>
+    <Item value="356" name="INR" description="India Rupee"/>
+    <Item value="392" name="JPY" description="Japanese Yen"/>
+    <Item value="578" name="NOK" description="Norwegian Crown"/>
+    <Item value="643" name="RUB" description="Russian Ruble"/>
+    <Item value="710" name="ZAR" description="South African Rand"/>
+    <Item value="752" name="SEK" description="Swedish Krona"/>
+    <Item value="756" name="CHF" description="Swiss Franc"/>
+    <Item value="826" name="GBP" description="British Pound"/>
+    <Item value="840" name="USD" description="US Dollar"/>
+    <Item value="978" name="EUR" description="Euro"/>
+  </Field>
+</ReadingTypeDictionaries>

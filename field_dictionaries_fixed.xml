@@ -1,0 +1,765 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ReadingTypeDictionaries version="IEC61968-9-2024" created="2025-06-12T10:53:57.866979">
+  <Dictionary name="macroPeriod">
+    <Item key="0" value="0.none" is_custom="False" comment="Not applicable." />
+    <Item key="1" value="1.secondly" is_custom="False" comment="Per second interval" />
+    <Item key="2" value="2.minutely" is_custom="False" comment="Per minute interval" />
+    <Item key="3" value="3.hourly" is_custom="False" comment="Per hour interval" />
+    <Item key="4" value="4.daily" is_custom="False" comment="Per day interval" />
+    <Item key="5" value="5.weekly" is_custom="False" comment="Per week interval" />
+    <Item key="6" value="6.monthly" is_custom="False" comment="Per month interval" />
+    <Item key="7" value="7.yearly" is_custom="False" comment="Per year interval" />
+    <Item key="8" value="8.billingPeriod" is_custom="False" comment="Captured during the billing period starting at&#10;midnight of the first day of the billing period (as&#10;defined by the billing cycle day). If during the&#10;current billing period, it specifies a period from&#10;the start of the current billing period until &quot;now&quot;." />
+    <Item key="9" value="9.fixedBlock" is_custom="False" comment="Fixed block period" />
+    <Item key="10" value="10.rollingBlock" is_custom="False" comment="Rolling block period" />
+    <Item key="11" value="11.daily" is_custom="False" comment="Daily period starting at midnight. If for the&#10;current day, this specifies the time from midnight&#10;to &quot;now&quot;." />
+    <Item key="12" value="12.tenYearly" is_custom="False" comment="Per ten years period" />
+    <Item key="13" value="13.monthly" is_custom="False" comment="Monthly period starting at midnight on the first&#10;day of the month. If within the current month,&#10;this specifies the period from the start of the&#10;month until &quot;now." />
+    <Item key="22" value="22.seasonal" is_custom="False" comment="A season of time spanning multiple months. E.g.&#10;&quot;Summer,&quot; &quot;Spring,&quot; &quot;Fall,&quot; and &quot;Winter&quot; based&#10;cycle. If within the current season, it specifies the period from the start of the current season&#10;until &quot;now.&quot;" />
+    <Item key="24" value="24.weekly" is_custom="False" comment="Weekly period starting at midnight on the first&#10;day of the week and ending the instant before&#10;midnight the last day of the week. If within the&#10;current week, it specifies the period from the&#10;start of the week until &quot;now.&quot;" />
+    <Item key="32" value="32.specifiedPeriod" is_custom="False" comment="For the period defined by the start and end of&#10;the TimePeriod element in the message." />
+  </Dictionary>
+  <Dictionary name="aggregate">
+    <Item key="0" value="0.none" is_custom="False" comment="Not Applicable" />
+    <Item key="1" value="1.notApplicable" is_custom="False" comment="Not applicable aggregation" />
+    <Item key="2" value="2.average" is_custom="False" />
+    <Item key="3" value="3.delta" is_custom="False" comment="Delta aggregation" />
+    <Item key="4" value="4.excess" is_custom="False" comment="The value represents an amount over which a threshold was&#10;exceeded." />
+    <Item key="5" value="5.highThreshold" is_custom="False" comment="The value represents a programmed threshold." />
+    <Item key="6" value="6.maximum" is_custom="False" comment="Maximum value aggregation" />
+    <Item key="7" value="7.lowThreshold" is_custom="False" comment="The value represents a programmed threshold." />
+    <Item key="8" value="8.maximum" is_custom="False" comment="The highest value observed" />
+    <Item key="9" value="9.minimum" is_custom="False" comment="The smallest value observed" />
+    <Item key="11" value="11.nominal" is_custom="False" />
+    <Item key="12" value="12.normal" is_custom="False" />
+    <Item key="16" value="16.secondMaximum" is_custom="False" comment="The second highest value observed" />
+    <Item key="17" value="17.secondMinimum" is_custom="False" comment="The second smallest value observed" />
+    <Item key="23" value="23.thirdMaximum" is_custom="False" comment="The third highest value observed" />
+    <Item key="24" value="24.fourthMaximum" is_custom="False" comment="The fourth highest value observed" />
+    <Item key="25" value="25.fifthMaximum" is_custom="False" comment="The fifth highest value observed" />
+    <Item key="26" value="26.sum" is_custom="False" comment="The accumulated sum" />
+    <Item key="27" value="27.high" is_custom="False" comment="Typically used to identify the high volume flow port of a&#10;compound water meter." />
+    <Item key="28" value="28.low" is_custom="False" comment="Typically used to identify the low volume flow port of a&#10;compound water meter." />
+    <Item key="29" value="29.Standard Deviation&#10;Population" is_custom="False" comment="The standard deviation of a population (indicated by lower case&#10;sigma)" />
+    <Item key="30" value="30.Standard Deviation&#10;Sample" is_custom="False" comment="The standard deviation of a sample drawn from a population&#10;(usually indicated by a lower case ‘s" />
+  </Dictionary>
+  <Dictionary name="measurePeriod">
+    <Item key="0" value="0.none" is_custom="False" comment="Not Applicable" />
+    <Item key="1" value="1.tenMinute" is_custom="False" comment="10 min" />
+    <Item key="2" value="2.fifteenMinute" is_custom="False" comment="15 min" />
+    <Item key="3" value="3.oneMinute" is_custom="False" comment="1 min" />
+    <Item key="4" value="4.twentyfourHour" is_custom="False" comment="24 hour" />
+    <Item key="5" value="5.thirtyMinute" is_custom="False" comment="30 min" />
+    <Item key="6" value="6.fiveMinute" is_custom="False" comment="5 min" />
+    <Item key="7" value="7.sixtyMinute" is_custom="False" comment="60 min" />
+    <Item key="8" value="8.fourMinute" is_custom="False" comment="4 min" />
+    <Item key="9" value="9.sixMinute" is_custom="False" comment="6 min" />
+    <Item key="10" value="10.twoMinute" is_custom="False" comment="2 min" />
+    <Item key="11" value="11.sevenMinute" is_custom="False" comment="7 min" />
+    <Item key="12" value="12.eightMinute" is_custom="False" comment="8 min" />
+    <Item key="13" value="13.nineMinute" is_custom="False" comment="9 min" />
+    <Item key="14" value="14.threeMinute" is_custom="False" comment="3 min" />
+    <Item key="15" value="15.present" is_custom="False" comment="Within the present period of time" />
+    <Item key="16" value="16.previous" is_custom="False" comment="Shifted within the previous monthly cycle and&#10;data set" />
+    <Item key="17" value="17.thirteenMinute" is_custom="False" comment="13 min" />
+    <Item key="18" value="18.fourteenMinute" is_custom="False" comment="14 min" />
+    <Item key="19" value="19.sixteenMinute" is_custom="False" comment="16 min" />
+    <Item key="20" value="20.seventeenMinute" is_custom="False" comment="17 min" />
+    <Item key="21" value="21.eighteenMinute" is_custom="False" comment="18 min" />
+    <Item key="22" value="22.nineteenMinute" is_custom="False" comment="19 min" />
+    <Item key="23" value="23.twentyOneMinute" is_custom="False" comment="21 min" />
+    <Item key="24" value="24.twentyTwoMinute" is_custom="False" comment="22 min" />
+    <Item key="25" value="25.twentyThreeMinute" is_custom="False" comment="23 min" />
+    <Item key="26" value="26.twentyFourMinute" is_custom="False" comment="24 min" />
+    <Item key="27" value="27.twentyFiveMinute" is_custom="False" comment="25 min" />
+    <Item key="28" value="28.twentySixMinute" is_custom="False" comment="26 min" />
+    <Item key="29" value="29.twentySevenMinute" is_custom="False" comment="27 min" />
+    <Item key="30" value="30.twentyEightMinute" is_custom="False" comment="28 min" />
+    <Item key="31" value="31.twentyMinute" is_custom="False" comment="20 min interval" />
+    <Item key="50" value="50.fixedBlock60Min" is_custom="False" comment="60 min Fixed Block" />
+    <Item key="51" value="51.fixedBlock30Min" is_custom="False" comment="30 min Fixed Block" />
+    <Item key="52" value="52.fixedBlock20Min" is_custom="False" comment="20 min Fixed Block" />
+    <Item key="53" value="53.fixedBlock15Min" is_custom="False" comment="15 min Fixed Block" />
+    <Item key="54" value="54.fixedBlock10Min" is_custom="False" comment="10 min Fixed Block" />
+    <Item key="55" value="55.fixedBlock5Min" is_custom="False" comment="5 min Fixed Block" />
+    <Item key="56" value="56.fixedBlock1Min" is_custom="False" comment="1 min Fixed Bloc" />
+    <Item key="57" value="57.rollingBlock60MinIntvl30MinSubIntvl" is_custom="False" comment="60 min Rolling Block with 30-minute sub&#10;interval" />
+    <Item key="58" value="58.rollingBlock60MinIntvl20MinSubIntvl" is_custom="False" comment="60 min Rolling Block with 20-minute sub&#10;intervals" />
+    <Item key="59" value="59.rollingBlock60MinIntvl15MinSubIntvl" is_custom="False" comment="60 min Rolling Block with 15-minute sub&#10;intervals" />
+    <Item key="60" value="60.rollingBlock60MinIntvl12MinSubIntvl" is_custom="False" comment="60 min Rolling Block with 12-minute sub&#10;intervals" />
+    <Item key="61" value="61.rollingBlock60MinIntvl10MinSubIntvl" is_custom="False" comment="60 min Rolling Block with 10-minute sub&#10;intervals" />
+    <Item key="62" value="62.rollingBlock60MinIntvl6MinSubIntvl" is_custom="False" comment="60 min Rolling Block with 6-minute sub&#10;intervals" />
+    <Item key="63" value="63.rollingBlock60MinIntvl5MinSubIntvl" is_custom="False" comment="60 min Rolling Block with 5-minute sub&#10;intervals" />
+    <Item key="64" value="64.rollingBlock60MinIntvl4MinSubIntvl" is_custom="False" comment="60 min Rolling Block with 4-minute sub&#10;intervals" />
+    <Item key="65" value="65.rollingBlock30MinIntvl15MinSubIntvl" is_custom="False" comment="30 min Rolling Block with 15-minute sub&#10;intervals" />
+    <Item key="66" value="66.rollingBlock30MinIntvl10MinSubIntvl" is_custom="False" comment="30 min Rolling Block with 10-minute sub&#10;intervals" />
+    <Item key="67" value="67.rollingBlock30MinIntvl6MinSubIntvl" is_custom="False" comment="30 min Rolling Block with 6-minute sub&#10;intervals" />
+    <Item key="68" value="68.rollingBlock30MinIntvl5MinSubIntvl" is_custom="False" comment="30 min Rolling Block with 5-minute sub&#10;intervals" />
+    <Item key="69" value="69.rollingBlock30MinIntvl3MinSubIntvl" is_custom="False" comment="30 min Rolling Block with 3-minute sub&#10;intervals" />
+    <Item key="70" value="70.rollingBlock30MinIntvl2MinSubIntvl" is_custom="False" comment="30 min Rolling Block with 2-minute sub&#10;intervals" />
+    <Item key="71" value="71.rollingBlock15MinIntvl5MinSubIntvl" is_custom="False" comment="15 min Rolling Block with 5-minute sub&#10;intervals" />
+    <Item key="72" value="72.rollingBlock15MinIntvl3MinSubIntvl" is_custom="False" comment="15 min Rolling Block with 3-minute sub&#10;intervals" />
+    <Item key="73" value="73.rollingBlock15MinIntvl1MinSubIntvl" is_custom="False" comment="15 min Rolling Block with 1-minute sub&#10;intervals" />
+    <Item key="74" value="74.rollingBlock10MinIntvl5MinSubIntvl" is_custom="False" comment="10 min Rolling Block with 5-minute sub&#10;intervals" />
+    <Item key="75" value="75.rollingBlock10MinIntvl2MinSubIntvl" is_custom="False" comment="10 min Rolling Block with 2-minute sub&#10;intervals" />
+    <Item key="76" value="76.rollingBlock10MinIntvl1MinSubIntvl" is_custom="False" comment="10 min Rolling Block with 1-minute sub&#10;intervals" />
+    <Item key="77" value="77.rollingBlock5MinIntvl1MinSubIntvl" is_custom="False" comment="5 min Rolling Block with 1-minute sub&#10;intervals" />
+    <Item key="78" value="78.twelveMinute" is_custom="False" comment="12 min" />
+    <Item key="79" value="79.twoHour" is_custom="False" comment="2 h" />
+    <Item key="80" value="80.fourHour" is_custom="False" comment="4 h" />
+    <Item key="81" value="81.sixHour" is_custom="False" comment="6 h" />
+    <Item key="82" value="82.twelveHour" is_custom="False" comment="12 h" />
+    <Item key="83" value="83.threeHour" is_custom="False" comment="3 h" />
+    <Item key="100" value="100.specifiedInterval" is_custom="False" comment="The interval length is described in attribute&#10;#10 in seconds. Attribute #11 should be &quot;1&quot;&#10;for whole seconds." />
+    <Item key="101" value="101.specifiedFixedBlock" is_custom="False" comment="The fixed block duration is described in&#10;attribute #10 in seconds. Attribute #11 should&#10;be &quot;1&quot; for whole seconds." />
+    <Item key="102" value="102.specifiedRollingBlock" is_custom="False" comment="The rolling block size is described by attribute&#10;#10 in seconds, and the sub-interval size by&#10;attribute #11 in seconds." />
+  </Dictionary>
+  <Dictionary name="accumulationBehaviour">
+    <Item key="0" value="0.none" is_custom="False" comment="Not Applicable, or implied by the unit of measure." />
+    <Item key="1" value="1.bulkQuantity" is_custom="False" comment="A value from a register which represents the bulk&#10;quantity of a commodity. This quantity is computed as&#10;the integral of the commodity usage rate. This value is&#10;typically used as the basis for the dial reading at the&#10;meter, and as a result, will roll over upon reaching a&#10;maximum dial value.&#10;NOTE 1 With the metering system, the roll-over&#10;behaviour typically implies a roll-under behavior so that&#10;the value presented is always a positive value (e.g.&#10;unsigned integer or positive decimal.) However, when&#10;communicating data between enterprise applications a&#10;negative value might occur in a case such as net&#10;metering.&#10;NOTE 2 A BulkQuantity refers primarily to the dial&#10;reading and not the consumption over a specific period&#10;of time." />
+    <Item key="2" value="2.continuousCumulative" is_custom="False" comment="The sum of the previous billing period values and the&#10;present period value. Note: “ContinuousCumulative” is&#10;commonly used in conjunction with “demand.” The&#10;“ContinuousCumulative Demand” would be the&#10;cumulative sum of the previous billing period maximum&#10;demand values (as occurring with each demand reset)&#10;summed with the present period maximum demand value&#10;(which has yet to be reset.)" />
+    <Item key="3" value="3.cumulative" is_custom="False" comment="The sum of the previous billing period values. Note:&#10;“Cumulative” is commonly used in conjunction with&#10;“demand.” Each demand reset causes the maximum&#10;demand value for the present billing period (since the&#10;last demand reset) to accumulate as an accumulative&#10;total of all maximum demands. So instead of “zeroing”&#10;the demand register, a demand reset has the affect of&#10;adding the present maximum demand to this&#10;accumulating total." />
+    <Item key="4" value="4.deltaData" is_custom="False" comment="The difference between the value at the end of the&#10;prescribed interval and the beginning of the interval. This&#10;is used for incremental interval data.&#10;NOTE 3 One common application would be for load&#10;profile data, another use might be to report the number&#10;of events within an interval (such as the number of&#10;equipment energizations within the specified period of&#10;time.)" />
+    <Item key="6" value="6.indicating" is_custom="False" comment="As if a needle is swung out on the meter face to a value&#10;to indicate the current value. (Note: An “indicating” value&#10;is typically measured over hundreds of milliseconds or&#10;greater, or may imply a “pusher” mechanism to capture a&#10;value. Compare this to “instantaneous” which is&#10;measured over a shorter period of time.)" />
+    <Item key="9" value="9.summation" is_custom="False" comment="A form of accumulation which is selective with respect to&#10;time.&#10;NOTE 4 “Summation” could be considered a&#10;specialization of “Bulk Quantity” according to the rules of&#10;inheritance where “Summation” selectively accumulates&#10;pulses over a timing pattern, and “BulkQuantity”&#10;accumulates pulses all of the time." />
+    <Item key="10" value="10.timeDelay" is_custom="False" comment="A form of computation which introduces a time delay&#10;characteristic to the data value" />
+    <Item key="12" value="12.instantaneous" is_custom="False" comment="Typically measured over the fastest period of time&#10;allowed by the definition of the metric (usually&#10;milliseconds or tens of milliseconds.) (Note:&#10;“Instantaneous” was moved to attribute #4 in 61968-&#10;9Ed2 from attribute #1 in 61968-9:2009.)" />
+    <Item key="13" value="13.latchingQuantity" is_custom="False" comment="When this description is applied to a metered value, it&#10;implies that the value is a time-independent cumulative&#10;quantity much a BulkQuantity, except that it latches upon&#10;the maximum value upon reaching that value. Any&#10;additional accumulation (positive or negative) is&#10;discarded until a reset occurs.&#10;NOTE 5 A LatchingQuantity may also occur in the&#10;downward direction – upon reaching a minimum value.&#10;The terms “maximum” or “minimum” will usually be&#10;included as an attribute when this type of accumulation&#10;behaviour is present.&#10;When this description is applied to an encoded value&#10;(UOM= “Code”), it implies that the value has one or more&#10;bits which are latching. The condition that caused the bit&#10;to be set may have long since evaporated.&#10;In either case, the timestamp that accompanies the value&#10;may not coincide with the moment the value was initially&#10;set.&#10;In both cases a system will need to perform an operation&#10;to clear the latched value." />
+    <Item key="14" value="14.boundedQuantity" is_custom="False" comment="A time-independent cumulative quantity much a&#10;BulkQuantity or a LatchingQuantity, except that the&#10;accumulation stops at the maximum or minimum values.&#10;When the maximum is reached, any additional positive&#10;accumulation is discarded, but negative accumulation&#10;may be accepted (thus lowering the counter.) Likewise,&#10;when the negative bound is reached, any additional&#10;negative accumulation is discarded, but positive&#10;accumulation is accepted (thus increasing the counter.)" />
+  </Dictionary>
+  <Dictionary name="flowDirection">
+    <Item key="0" value="0.none" is_custom="False" comment="Not Applicable (N/A)" />
+    <Item key="1" value="1.forward" is_custom="False" />
+    <Item key="2" value="2.lagging" is_custom="False" comment="Typically used to describe that a power factor is lagging&#10;the reference value (or to say that the current is lagging&#10;the voltage.)&#10;NOTE 1 When used to describe power factor, the term&#10;“Lagging” implies that the PF is negative. The term&#10;“lagging” in this case takes the place of the negative sign. If a signed PF value is to be passed by the data&#10;producer, then the direction of flow enumeration zero&#10;(none) should be used in order to avoid the possibility&#10;of creating an expression that employs a double&#10;negative. The data consumer should be able to tell from&#10;the sign of the data if the PF is leading or lagging. This&#10;principle is analogous to the concept that “Reverse”&#10;energy is an implied negative value, and to publish a&#10;negative reverse value would be ambiguous.&#10;NOTE 2 Lagging power factors typically indicate&#10;inductive loading" />
+    <Item key="3" value="3.leading" is_custom="False" comment="Typically used to describe that a power factor is leading&#10;the reference value (or to say that the current is leading&#10;the voltage.)&#10;NOTE 3 Leading power factors typically indicate&#10;capacitive loading." />
+    <Item key="4" value="4.net" is_custom="False" comment="Defined as |Forward| - |Reverse|, See IEC/TS 61968-2.&#10;NOTE 4 In some systems, the value passed as a “net”&#10;value could become negative. In other systems the&#10;value passed as a “net” value is always a positive&#10;number, and rolls-over and rolls-under as needed." />
+    <Item key="5" value="5.q1plusQ2" is_custom="False" comment="Reactive positive quadrants." />
+    <Item key="7" value="7.q1plusQ3" is_custom="False" comment="Quadrants 1 and 3" />
+    <Item key="8" value="8.q1plusQ4" is_custom="False" comment="Quadrants 1 and 4 usually represent forward active&#10;energy" />
+    <Item key="9" value="9.q1minusQ4" is_custom="False" comment="Q1 minus Q4" />
+    <Item key="10" value="10.q2plusQ3" is_custom="False" comment="Quadrants 2 and 3 usually represent reverse active&#10;energy" />
+    <Item key="11" value="11.q2plusQ4" is_custom="False" comment="Quadrants 2 and 4" />
+    <Item key="12" value="12.q2minusQ3" is_custom="False" comment="Q2 minus Q3" />
+    <Item key="13" value="13.q3plusQ4" is_custom="False" comment="Reactive negative quadrants." />
+    <Item key="14" value="14.q3minusQ2" is_custom="False" comment="Q3 minus Q2" />
+    <Item key="15" value="15.quadrant1" is_custom="False" />
+    <Item key="16" value="16.quadrant2" is_custom="False" />
+    <Item key="17" value="17.quadrant3" is_custom="False" />
+    <Item key="18" value="18.quadrant4" is_custom="False" />
+    <Item key="19" value="19.reverse" is_custom="False" />
+    <Item key="20" value="20.total" is_custom="False" comment="|Forward| + |Reverse|, See IEC/TS 61968-2.&#10;The sum of the commodity in all quadrants&#10;Q1+Q2+Q3+Q4.&#10;In polyphase metering, the total energy register is&#10;incremented when the absolute value of the sum of the&#10;phase energies is greater than zero:&#10;| EnergyA + EnergyB + EnergyC | &gt; 0" />
+    <Item key="21" value="21.totalByPhase" is_custom="False" comment="In polyphase metering, the total by phase energy&#10;register is incremented when the sum of the absolute&#10;values of the phase energies is greater than zero:&#10;| EnergyA | + | EnergyB | + | EnergyC | &gt; 0&#10;In single phase metering, the formulas for “Total” and&#10;“Total by phase” collapse to the same expression. For&#10;communication purposes however, the “Total”&#10;enumeration should be used with single phase meter&#10;data." />
+  </Dictionary>
+  <Dictionary name="commodity">
+    <Item key="0" value="0.none" is_custom="False" comment="Not Applicable" />
+    <Item key="1" value="1.electricity&#10;SecondaryMetered" is_custom="False" comment="All types of metered quantities. This type of reading&#10;comes from the meter and represents a “secondary”&#10;metered value." />
+    <Item key="2" value="2.electricity&#10;PrimaryMetered" is_custom="False" comment="It is possible for a meter to be outfitted with an&#10;external VT and/or CT. The meter might not be aware&#10;of these devices, and the display not compensate for&#10;their presence. Ultimately, when these scalars are&#10;applied, the value that represents the service value is&#10;called the “primary metered” value. The “index” in&#10;sub-category 3 mirrors those of sub-category 0." />
+    <Item key="3" value="3.communication" is_custom="False" comment="A measurement of the communication infrastructure&#10;itself." />
+    <Item key="4" value="4.air" is_custom="False" comment="N" />
+    <Item key="5" value="5.insulativeGas" is_custom="False" comment="(SF6 is found separately below.)" />
+    <Item key="6" value="6.insulativeOil" is_custom="False" comment="Typically mineral oil" />
+    <Item key="7" value="7.naturalGas" is_custom="False" comment="Naturally occurring hydrocarbon gas" />
+    <Item key="8" value="8.propane" is_custom="False" comment="C3H8" />
+    <Item key="9" value="9.potableWater" is_custom="False" comment="Drinkable water" />
+    <Item key="10" value="10.steam" is_custom="False" comment="Water in steam form, usually used for heating." />
+    <Item key="11" value="11.wasteWater" is_custom="False" comment="(Sewerage)" />
+    <Item key="12" value="12.heatingFluid" is_custom="False" comment="This fluid is likely in liquid form. It is not necessarily&#10;water or water based. The warm fluid returns cooler&#10;than when it was sent. The heat conveyed may be&#10;metered." />
+    <Item key="13" value="13.coolingFluid" is_custom="False" comment="The cool fluid returns warmer than when it was sent.&#10;The heat conveyed may be metered." />
+    <Item key="14" value="14.nonpotableWater" is_custom="False" comment="Reclaimed water – possibly used for irrigation but not&#10;sufficiently treated to be considered safe for drinking.&#10;Moisture in oil" />
+    <Item key="15" value="15.nox" is_custom="False" comment="Nitrous Oxides, NOX" />
+    <Item key="16" value="16.so2" is_custom="False" comment="Sulfur Dioxide, SO2" />
+    <Item key="17" value="17.ch4" is_custom="False" comment="Methane, CH4" />
+    <Item key="18" value="18.co2" is_custom="False" comment="Carbon Dioxide, CO2" />
+    <Item key="19" value="19.carbon" is_custom="False" comment="C" />
+    <Item key="20" value="20.hch" is_custom="False" comment="Hexachlorocyclohexane, HCH" />
+    <Item key="21" value="21.pfc" is_custom="False" comment="Perfluorocarbons, PFC" />
+    <Item key="22" value="22.sf6" is_custom="False" comment="Sulfurhexafluoride, SF6" />
+    <Item key="23" value="23.tvLicence" is_custom="False" comment="Television" />
+    <Item key="24" value="24.internet" is_custom="False" comment="Internet service" />
+    <Item key="25" value="25.refuse" is_custom="False" comment="Trash" />
+    <Item key="26" value="26.h2" is_custom="False" comment="Hydrogen, H2" />
+    <Item key="27" value="27.c2h2" is_custom="False" comment="Acetylene, C2H2" />
+    <Item key="28" value="28.c2h4" is_custom="False" comment="Ethylene, C2H4" />
+    <Item key="29" value="29.c2h6" is_custom="False" comment="Ethane, C2H6" />
+    <Item key="30" value="30.co" is_custom="False" comment="Carbon monoxide, CO" />
+    <Item key="31" value="31.o2" is_custom="False" comment="Oxygen, O2" />
+    <Item key="32" value="32.dissolvedCombustibleGas" is_custom="False" comment="Dissolved Combustible Gas (A combination of&#10;combustible gasses such as H2, CH4, C2H2, C2H4,&#10;C&#10;2H6, and/or CO in some mixture.)" />
+    <Item key="33" value="33.co2e" is_custom="False" comment="Carbon Dioxide CO2 Equivalent" />
+    <Item key="34" value="34.lead" is_custom="False" comment="Lead, Pb" />
+    <Item key="35" value="35.mercury" is_custom="False" comment="Mercury, Hg" />
+    <Item key="36" value="36.ozone" is_custom="False" comment="Ozone, O3" />
+    <Item key="37" value="37.pm10" is_custom="False" comment="Particulate matter whose maximum size is 10 µm." />
+    <Item key="38" value="38.pm25" is_custom="False" comment="Particulate matter whose maximum size is 2,5 µm." />
+    <Item key="39" value="39.sox" is_custom="False" comment="Sulfur Oxides, SOX" />
+    <Item key="40" value="40.weather" is_custom="False" comment="Weather or meteorological conditions." />
+    <Item key="41" value="41.device" is_custom="False" comment="Condition of the meter or end device itself. For&#10;example, this enumeration might be used in&#10;combination with an enumeration for temperature to&#10;represent the internal temperature of a meter." />
+    <Item key="42" value="42.pole" is_custom="False" comment="The power pole as an end device" />
+    <Item key="43" value="43.conductor" is_custom="False" comment="A wire as an end device" />
+    <Item key="44" value="44.acceleration" is_custom="False" comment="A measurement of acceleration" />
+    <Item key="45" value="45.tilt" is_custom="False" comment="A measurement of tilt" />
+    <Item key="46" value="46.magneticField" is_custom="False" comment="A measurement of the magnetic field" />
+    <Item key="50" value="50.Gas" is_custom="False" comment="Generic commodity for gas. Note that there are&#10;specific commodities for natural gas and propane." />
+    <Item key="60" value="60.Water" is_custom="False" comment="Generic commodity for water. Note that there are&#10;specific commodities for waste water and potable&#10;water." />
+    <Item key="901" value="901.electricity&#10;DirectMetered" is_custom="False" comment="All types of metered quantities. This type of reading&#10;comes from the meter and represents a “DC”&#10;metered value." />
+    <Item key="902" value="902.BMS of Storage" is_custom="False" comment="All types of BMS of Storage" />
+    <Item key="903" value="903 PCS of Storage" is_custom="False" comment="All types of PCS of Storage" />
+    <Item key="904" value="904 Monitor of Storage" is_custom="False" comment="All types of  Monitor of Storage" />
+  </Dictionary>
+  <Dictionary name="measurementKind">
+    <Item key="0" value="0.none" is_custom="False" comment="Not Applicable" />
+    <Item key="2" value="2.apparentPowerFactor" is_custom="False" comment="D" />
+    <Item key="3" value="3.currency" is_custom="False" comment="funds" />
+    <Item key="4" value="4.current" is_custom="False" comment="The flow of electrons" />
+    <Item key="5" value="5.currentAngle" is_custom="False" comment="A phase current zerocross timing&#10;measurement releative to a&#10;reference voltage zerocross" />
+    <Item key="6" value="6.currentImbalance" is_custom="False" comment="A measurement of the departure of a&#10;phase current relative to the average&#10;current of all phases" />
+    <Item key="7" value="7.date" is_custom="False" comment="A measurement of the date and/or&#10;time in a clock, or a time stamp&#10;indicating when data was captured,&#10;when a maximum or minimum&#10;occurred, or to commemorate some&#10;other important aspect of a&#10;measurement" />
+    <Item key="8" value="8.demand" is_custom="False" comment="The measurement of maximum&#10;power flow which is computed as&#10;energy usage over time, the&#10;dimensions of which are defined by a&#10;tariff" />
+    <Item key="9" value="9.distance" is_custom="False" comment="A linear distance or range radius" />
+    <Item key="10" value="10.distortionVoltAmperes" is_custom="False" comment="A measurement in which a V2 I2 term&#10;has both real and reactive&#10;components removed leaving only&#10;distortion. For example, distortion&#10;VAh = Sqrt( (V2h)(I2h) – (Wh)2 –&#10;(VArh)2)" />
+    <Item key="11" value="11.energization" is_custom="False" comment="Pertaining to the presence of voltage" />
+    <Item key="12" value="12.energy" is_custom="False" comment="Scalar quantity which may be&#10;increased or decreased in a system&#10;when it receives or produces work,&#10;respectively" />
+    <Item key="13" value="13.energizationLoadSide" is_custom="False" comment="Measuring the presence or absence&#10;of voltage on the load side of an&#10;electricity meter" />
+    <Item key="14" value="14.fan" is_custom="False" comment="A forced air moving device" />
+    <Item key="15" value="15.frequency" is_custom="False" comment="Reciprocal of the period" />
+    <Item key="17" value="17.ieee1366ASAI" is_custom="False" comment="A measurement of IEEE-1366&#10;Average Service Availability Index" />
+    <Item key="18" value="18.ieee1366ASIDI" is_custom="False" comment="A measurement of the IEEE-1366&#10;Average Service Interruptio Duration&#10;Index" />
+    <Item key="19" value="19.ieee1366ASIFI" is_custom="False" comment="A measurement of the IEEE-1366&#10;Average Service Interruption&#10;Frequency Index" />
+    <Item key="20" value="20.ieee1366CAIDI" is_custom="False" comment="A measurement of the IEEE-1366&#10;Customer averate interruption&#10;duration index" />
+    <Item key="21" value="21.ieee1366CAIFI" is_custom="False" comment="A measurement of the IEEE-1366&#10;Customer average interruption&#10;frequency index" />
+    <Item key="22" value="22.ieee1366CEMIn" is_custom="False" comment="A measurement of the IEEE-1366&#10;Customers Experiencing Multiple&#10;Interruptions" />
+    <Item key="23" value="23.ieee1366CEMSMIn" is_custom="False" comment="A measurement of the IEEE-1366&#10;Customers Experiencing Multiple&#10;Sustained and Momentary&#10;Interruptions" />
+    <Item key="24" value="24.ieee1366CTAIDI" is_custom="False" comment="A measurement of the IEEE-1366&#10;Customer Total Average Interruption&#10;Duration Index" />
+    <Item key="25" value="25.ieee1366MAIFI" is_custom="False" comment="A measurement of the IEEE-1366&#10;Momentary Average Interruption&#10;Frequency Index" />
+    <Item key="26" value="26.ieee1366MAIFIe" is_custom="False" comment="A measurement of the IEEE-1366&#10;Momentary Average event&#10;Interruption Frequency Index" />
+    <Item key="27" value="27.ieee1366SAIDI" is_custom="False" comment="IEEE-1366 System Average&#10;Interruption Duration Index" />
+    <Item key="28" value="28.ieee1366SAIFI" is_custom="False" comment="IEEE-1366 System Average&#10;Interruption Frequency Index" />
+    <Item key="31" value="31.lineLosses" is_custom="False" comment="An energy, power, voltage, or current&#10;loss attributed to transmission or&#10;distribution line impedance" />
+    <Item key="32" value="32.losses" is_custom="False" comment="A quantity lost due to “technical”&#10;reasons (such as line loss) or “non&#10;technical” reasons (such as theft.)" />
+    <Item key="33" value="33.negativeSequence" is_custom="False" comment="A quantity that has a rotation&#10;sequence which is opposite to that of&#10;the power system" />
+    <Item key="34" value="34.phasorPowerFactor" is_custom="False" comment="The ratio of real energy (usually net&#10;Wh) to phasor apparent energy&#10;(kVAh)" />
+    <Item key="35" value="35.phasorReactivePower" is_custom="False" comment="D" />
+    <Item key="36" value="36.positiveSequence" is_custom="False" comment="A quantity that has a rotation&#10;sequence in agreement with that of&#10;the power system" />
+    <Item key="37" value="37.power" is_custom="False" comment="The derivative of energy with respect&#10;to time, where the energy is being&#10;transferred or transformed." />
+    <Item key="38" value="38.powerFactor" is_custom="False" comment="The ratio of real energy (usually net&#10;kWh) to apparent energy (kVAh)" />
+    <Item key="40" value="40.quantityPower" is_custom="False" comment="A power measurement of Qh, where&#10;Qh is defined to be half of the sum of&#10;the Wh measurements on each&#10;phase plus the squareroot of 3 over&#10;two times the sum of the VArh&#10;measurements on each phase." />
+    <Item key="41" value="41.sag" is_custom="False" comment="A temporary dip in the supply voltage&#10;below the nominal value" />
+    <Item key="42" value="42.swell" is_custom="False" comment="A temporary rise of the supply&#10;voltage over the nominal value" />
+    <Item key="43" value="43.switchPosition" is_custom="False" comment="A physical or logical switch position&#10;status which includes “opened” and&#10;“closed”, but for some products may&#10;also include “armed,” or other states&#10;that indicate a temporary state due&#10;to some condition." />
+    <Item key="44" value="44.tapPosition" is_custom="False" comment="Tap changer position" />
+    <Item key="45" value="45.tariffRate" is_custom="False" comment="An energy price defined in a&#10;contract. The rate might be a price&#10;for energy, for power (usually&#10;expressed as a demand value), or&#10;some other measurement. The rate&#10;might be currency based, or as a&#10;code, or as a component of a larger&#10;tariff description." />
+    <Item key="46" value="46.temperature" is_custom="False" comment="A quantity proportional to the energy&#10;of a system" />
+    <Item key="47" value="47.totalHarmonicDistortion" is_custom="False" comment="The ratio of the sum of the&#10;harmonics to the fundamental. (THD&#10;may measure either voltage or&#10;current, and may isolated to a given&#10;phase)" />
+    <Item key="48" value="48.transformerLosses" is_custom="False" comment="A measurement of the energy or&#10;power loss in a transformer due to&#10;inefficiency" />
+    <Item key="49" value="49.unipedeVoltageDip10to15" is_custom="False" comment="A voltage dip classification per&#10;EN50160 or a similar national&#10;standard measuring the number of&#10;dips in the 10-15% range" />
+    <Item key="50" value="50.unipedeVoltageDip15to30" is_custom="False" comment="A voltage dip classification per&#10;EN50160 or a similar national&#10;standard measuring the number of&#10;dips in the 15-30% range" />
+    <Item key="51" value="51.unipedeVoltageDip30to60" is_custom="False" comment="A voltage dip classification per&#10;EN50160 or a similar national&#10;standard measuring the number of&#10;dips in the 30-60% range" />
+    <Item key="52" value="52.unipedeVoltageDip60to90" is_custom="False" comment="A voltage dip classification per&#10;EN50160 or a similar national&#10;standard measuring the number of&#10;dips in the 60-90% range" />
+    <Item key="53" value="53.unipedeVoltageDip90to100" is_custom="False" comment="A voltage dip classification per&#10;EN50160 or a similar national&#10;standard measuring the number of&#10;dips in the 90-100% range" />
+    <Item key="54" value="54.Voltage (rms)" is_custom="False" comment="The difference in electric potential&#10;between two points" />
+    <Item key="55" value="55.voltageAngle" is_custom="False" comment="A phase voltage zerocross timing&#10;measurement releative to a&#10;reference voltage zerocross" />
+    <Item key="56" value="56.voltageExcursion" is_custom="False" comment="A measurement of the departure of&#10;the voltage from the nominal voltage" />
+    <Item key="57" value="57.voltageImbalance" is_custom="False" comment="A measurement of the departure of a&#10;phase voltage relative to the average&#10;voltage of all phases." />
+    <Item key="58" value="58.volume" is_custom="False" comment="fluid volume" />
+    <Item key="59" value="59.zeroFlowDuration" is_custom="False" comment="The amount of time that current flow&#10;drops to a zero level or level below&#10;the ability of the sensor to sense" />
+    <Item key="60" value="60.zeroSequence" is_custom="False" comment="The zero sequence current is the&#10;vector sum of the phase currents" />
+    <Item key="64" value="64.distortionPowerFactor" is_custom="False" comment="The ratio of the distortion VAh to the&#10;apparent VAh" />
+    <Item key="81" value="81.frequencyExcursion" is_custom="False" comment="A measurement of the departure of&#10;the frequency from the nominal&#10;frequency" />
+    <Item key="90" value="90.applicationContext" is_custom="False" comment="Information that describes the logical&#10;context in which a request,&#10;measurement, or command is made." />
+    <Item key="91" value="91.apTitle" is_custom="False" comment="An application name which is making&#10;or has made a request" />
+    <Item key="92" value="92.assetNumber" is_custom="False" comment="An asset identifier" />
+    <Item key="93" value="93.bandwidth" is_custom="False" comment="A measurement of dataflow" />
+    <Item key="94" value="94.batteryVoltage" is_custom="False" comment="Battery voltage" />
+    <Item key="95" value="95.broadcastAddress" is_custom="False" comment="A message target address implying&#10;all endpoint units within range of a&#10;particular sender" />
+    <Item key="96" value="96.deviceAddressType1" is_custom="False" comment="Endpoint target address Type1" />
+    <Item key="97" value="97.deviceAddressType2" is_custom="False" comment="Endpoint target address Type2" />
+    <Item key="98" value="98.deviceAddressType3" is_custom="False" comment="Endpoint target address Type3" />
+    <Item key="99" value="99.deviceAddressType4" is_custom="False" comment="Endpoint target address Type4" />
+    <Item key="100" value="100.deviceClass" is_custom="False" comment="A unique identifier for the Endpoint’s&#10;configuration" />
+    <Item key="101" value="101.electronicSerialNumber" is_custom="False" comment="A device serial number" />
+    <Item key="102" value="102.endDeviceID" is_custom="False" comment="A unique identifier of the endDevice&#10;– the device providing&#10;measurements or under control of&#10;the network" />
+    <Item key="103" value="103.groupAddressType1" is_custom="False" comment="Group target address Type1" />
+    <Item key="104" value="104.groupAddressType2" is_custom="False" comment="Group target address Type2" />
+    <Item key="105" value="105.groupAddressType3" is_custom="False" comment="Group target address Type3" />
+    <Item key="106" value="106.groupAddressType4" is_custom="False" comment="Group target address Type4" />
+    <Item key="107" value="107.ipAddress" is_custom="False" comment="An IP address for the endpoint" />
+    <Item key="108" value="108.macAddress" is_custom="False" comment="A MAC address for the endpoint" />
+    <Item key="109" value="109.mfgAssignedConfigurationID" is_custom="False" comment="The at time of manufacture configuration given to a device" />
+    <Item key="110" value="110.mfgAssignedPhysicalSerialNumber" is_custom="False" comment="The serial number assigned to a device at time of manufacture" />
+    <Item key="111" value="111.mfgAssignedProductNumber" is_custom="False" comment="The product number assigned to a device at time of manufacture" />
+    <Item key="112" value="112.mfgAssignedUniqueCommunicationAddress" is_custom="False" comment="A communication address assigned to a device at time of manufacture" />
+    <Item key="113" value="113.multiCastAddress" is_custom="False" comment="A message target address implying a&#10;large group of endpoint units within&#10;range of a particular sender" />
+    <Item key="114" value="114.oneWayAddress" is_custom="False" comment="A communication address of a&#10;network endpoint used in one-way&#10;communication" />
+    <Item key="115" value="115.signalStrength" is_custom="False" comment="A measurement of RF signal strength" />
+    <Item key="116" value="116.twoWayAddress" is_custom="False" comment="A communication address used for&#10;bidirectional communication" />
+    <Item key="117" value="117.signaltoNoiseRatio" is_custom="False" comment="A measurement of received (RF)&#10;signal strength divided by the (RF)&#10;noise floor" />
+    <Item key="118" value="118.alarm" is_custom="False" comment="A measurement releated to an alarm" />
+    <Item key="119" value="119.batteryCarryover" is_custom="False" comment="An estimate of the battery&#10;ridethrough capacity" />
+    <Item key="120" value="120.dataOverflowAlarm" is_custom="False" comment="An indication of or measurement of a&#10;loss of data" />
+    <Item key="121" value="121.demandLimit" is_custom="False" comment="A threshold setting that determines&#10;the trip point that if exceeded would&#10;trigger a demand limiting action or&#10;alarm" />
+    <Item key="122" value="122.demandReset" is_custom="False" comment="A count of the number of times&#10;demand has been reset (remotely,&#10;locally, and/or automatically.)" />
+    <Item key="123" value="123.diagnostic" is_custom="False" comment="A measurement releated to&#10;equipment diagnostics" />
+    <Item key="124" value="124.emergencyLimit" is_custom="False" comment="A setting that indicates an&#10;emergency limit" />
+    <Item key="125" value="125.encoderTamper" is_custom="False" comment="An indication of tampering with a&#10;meter encoder" />
+    <Item key="126" value="126.ieee1366MomentaryInterruption" is_custom="False" comment="IEEE-1366 Momentary Interruption&#10;count" />
+    <Item key="127" value="127.ieee1366MomentaryInterruptionEvent" is_custom="False" comment="IEEE-1366 Momentary Interruption&#10;event count" />
+    <Item key="128" value="128.ieee1366SustainedInterruption" is_custom="False" comment="IEEE-1366 Sustained Interruption&#10;duration" />
+    <Item key="129" value="129.interruptionBehaviour" is_custom="False" comment="A measurement related to power&#10;interruptions (Note: often an&#10;interruption count or duration.)" />
+    <Item key="130" value="130.inversionTamper" is_custom="False" comment="A measurement related to inversion&#10;tamper (Note: typically a count of&#10;inversions)" />
+    <Item key="131" value="131.loadInterrupt" is_custom="False" comment="A measurement related to load&#10;interruption (Note: typically a load&#10;interruption count or measurement of&#10;duration)" />
+    <Item key="132" value="132.loadShed" is_custom="False" comment="A measurement related to load shed&#10;(Note: typically a load shed count or&#10;load shed duration)" />
+    <Item key="133" value="133.maintenance" is_custom="False" comment="A measurement related to the&#10;pending maintenance of equipment" />
+    <Item key="134" value="134.physicalTamper" is_custom="False" comment="A measurement related to physical&#10;tampering (Note: typically a tamper&#10;count)" />
+    <Item key="135" value="135.powerLossTamper" is_custom="False" comment="Tamper indicated while power was&#10;out" />
+    <Item key="136" value="136.powerOutage" is_custom="False" comment="A measurement related to power&#10;outages (Note: typically a status)" />
+    <Item key="137" value="137.powerQuality" is_custom="False" comment="A measurement related to power&#10;quality" />
+    <Item key="138" value="138.powerRestoration" is_custom="False" comment="A measurement related to power&#10;restoration (Note: typically a status)" />
+    <Item key="139" value="139.programmed" is_custom="False" comment="A measurement related to device&#10;programming (Note: typically a&#10;status measurement)" />
+    <Item key="140" value="140.pushbutton" is_custom="False" comment="A measurement related to&#10;pushbutton (Note: typically a status&#10;or count)" />
+    <Item key="141" value="141.relayActivation" is_custom="False" comment="A measurement related to relay&#10;activations" />
+    <Item key="142" value="142.relayCycle" is_custom="False" comment="A measurement related to relay&#10;cycling (Note1: one open and one&#10;closure together is one cycle, Note2:&#10;Usually expressed as a count)" />
+    <Item key="143" value="143.removalTamper" is_custom="False" comment="An indication of equipment tampering&#10;that shows equipment was moved or&#10;opened" />
+    <Item key="144" value="144.reprogrammingTamper" is_custom="False" comment="An indication of equipment tampering&#10;that shows equipment has been&#10;reprogrammed" />
+    <Item key="145" value="145.reverseRotationTamper" is_custom="False" comment="An indication of tampering as&#10;evidenced by reverse power flow" />
+    <Item key="146" value="146.switchArmed" is_custom="False" comment="A measurement of the switch arm&#10;condition" />
+    <Item key="147" value="147.switchDisabled" is_custom="False" comment="A measurement of the switch&#10;enablement status" />
+    <Item key="148" value="148.tamper" is_custom="False" comment="An indication of equipment tampering" />
+    <Item key="149" value="149.watchdogTimeout" is_custom="False" comment="A reset triggered by a hardware&#10;“watchdog” circuit" />
+    <Item key="150" value="150.billLastPeriod" is_custom="False" comment="Customer’s bill for the previous&#10;billing period Expressed as currency." />
+    <Item key="151" value="151.billToDate" is_custom="False" comment="Customer’s bill, as known thus far&#10;within the present billing period.&#10;Expressed as currency." />
+    <Item key="152" value="152.billCarryover" is_custom="False" comment="Customer’s bill, part of a previous&#10;obligation carried over from a&#10;previous billing period. Expressed as&#10;currency." />
+    <Item key="153" value="153.connectionFee" is_custom="False" comment="Monthly fee for connection to&#10;commodity." />
+    <Item key="154" value="154.audibleVolume" is_custom="False" comment="Sound" />
+    <Item key="155" value="155.volumetricFlow" is_custom="False" comment="A fluid flow rate" />
+    <Item key="156" value="156.relativeHumidity" is_custom="False" comment="Most common usage is in expressing&#10;weather or meteorological conditions" />
+    <Item key="157" value="157.skyCover" is_custom="False" comment="Degree of sky cover. Used in&#10;expressing weather or&#10;meteorological conditions." />
+    <Item key="158" value="158.voltage" is_custom="False" comment="Unspecified" />
+    <Item key="159" value="159.dcVoltage" is_custom="False" comment="I" />
+    <Item key="160" value="160.acVoltagePeak" is_custom="False" comment="Vp=√2 × Vrms" />
+    <Item key="161" value="161.acVoltagePeakToPeak" is_custom="False" comment="Vpp=2 × Vp" />
+    <Item key="162" value="162.pressure" is_custom="False" comment="Force over area" />
+    <Item key="163" value="163.density" is_custom="False" comment="I" />
+    <Item key="164" value="164.energyDensity" is_custom="False" comment="I" />
+    <Item key="165" value="165.dateOfLastDemandReset" is_custom="False" comment="I" />
+    <Item key="166" value="166.arithmeticApparentEnergy" is_custom="False" comment="The arithmetic sum of the per&#10;element VAh quantities, where each&#10;element apparent VAh uantity is&#10;calculated each momentary interval&#10;as: sqrt(V2hx)(I2hx), where x= each&#10;element A, B, C, and V2hx and I2hx&#10;are fundamental plus harmonics&#10;values." />
+    <Item key="167" value="167.arithmeticApparentPower" is_custom="False" comment="The rate of arithmetic Apparent&#10;Energy" />
+    <Item key="168" value="168.arithmeticApparentDemand" is_custom="False" comment="I" />
+    <Item key="169" value="169.phasorApparentEnergy" is_custom="False" comment="Sqrt((Whx)2+(VArhx)2) where x each&#10;element A,B,C and VArh is measured&#10;with IEEE VArs" />
+    <Item key="170" value="170.phasorApparentPower" is_custom="False" comment="The rate of phasor apparent energy" />
+    <Item key="171" value="171.phasorApparentDemand" is_custom="False" comment="I" />
+    <Item key="172" value="172.distortionApparentEnergy" is_custom="False" comment="distortion VAhx = Sqrt( (V2hx)(I2hx) –&#10;(Whx)2 – (VArhx)2), where x= each&#10;element A, B, or C and V2hx, I2hx,&#10;Whx, and varhx are fundamental plus&#10;harmonic values" />
+    <Item key="173" value="173.distortionApparentPower" is_custom="False" comment="The rate of distortion apparent&#10;energy" />
+    <Item key="174" value="174.distortionApparentDemand" is_custom="False" comment="Distoration apparent energy passed&#10;through a demand function" />
+    <Item key="175" value="175.totalHarmonicDistortionDemand" is_custom="False" comment="THD treated as a demand" />
+    <Item key="176" value="176.tddDemand" is_custom="False" comment="Total Demand Distortion treated as a&#10;demand" />
+    <Item key="177" value="177.totalDemandDistortion" is_custom="False" comment="(RMS of harmonic content of current)&#10;/ (maximum installation current)" />
+    <Item key="178" value="178.distortionPowerFactorDemand" is_custom="False" comment="distortionPF treated as a demand&#10;value" />
+    <Item key="179" value="179.fuzzyEnergy" is_custom="False" comment="Fuzzyvarh = sqrt((varh)2 + (distortion&#10;VAh)2), where varh is a fundamental&#10;plus harmonics value" />
+    <Item key="180" value="180.fuzzyPower" is_custom="False" comment="The rate of fuzzy energy" />
+    <Item key="181" value="181.fuzzyDemand" is_custom="False" comment="Fuzzy energy as a demand" />
+    <Item key="183" value="183.batteryChargeMoved" is_custom="False" comment="Charge used or added" />
+    <Item key="184" value="184.batteryChargeStored" is_custom="False" comment="Charge present" />
+    <Item key="188" value="188.quadrant" is_custom="False" comment="One of four quadrants relative to the&#10;reference axix" />
+    <Item key="189" value="189.processorReset" is_custom="False" comment="The type of reset" />
+    <Item key="190" value="190.xAxis" is_custom="False" comment="Measurement along the x axis&#10;relative to the reference axis" />
+    <Item key="191" value="191.yAxis" is_custom="False" comment="Measurement along the y axis" />
+    <Item key="192" value="192.zAxis" is_custom="False" comment="Measurement along the z axis" />
+    <Item key="193" value="193.XYPlane" is_custom="False" comment="Measurement in the XY Plane" />
+    <Item key="194" value="194.YZPlane" is_custom="False" comment="Measurement in the YZ Plane" />
+    <Item key="195" value="195.XZPlane" is_custom="False" comment="Measurement in the XZ Plane" />
+    <Item key="901" value="SOC" is_custom="False" comment="State of Charge" />
+    <Item key="902" value="SOH" is_custom="False" comment="State of Health" />
+    <Item key="903" value="efficiency" is_custom="False" comment="efficiency" />
+    <Item key="904" value="ControlMode" is_custom="False" comment="ControlMode" />
+  </Dictionary>
+  <Dictionary name="harmonic">
+    <Item key="0" value="0.0.none" is_custom="False" comment="Not Applicable" />
+    <Item key="1.2" value="1.2.interharmonic1/2" is_custom="False" comment="Interharmonic of ½" />
+    <Item key="1.1" value="1.1.fundamental" is_custom="False" comment="fundamental" />
+    <Item key="2.1" value="2.1.harmonic2" is_custom="False" comment="second harmonic" />
+    <Item key="3.1" value="3.1.harmonic3" is_custom="False" comment="third harmonic" />
+    <Item key="4.1" value="4.1.harmonic4" is_custom="False" comment="fourth harmonic" />
+    <Item key="5.1" value="5.1.harmonic5" is_custom="False" comment="fifth harmonic" />
+    <Item key="6.1" value="6.1.harmonic6" is_custom="False" comment="sixth harmonic" />
+    <Item key="7.1" value="7.1.harmonic7" is_custom="False" comment="seventh harmonic" />
+  </Dictionary>
+  <Dictionary name="argumentNumerator">
+    <Item key="0" value="0.0.none" is_custom="False" comment="Not Applicable" />
+    <Item key="1.2" value="1.2.n½" is_custom="False" comment="One-half" />
+    <Item key="0.1" value="0.1.n0" is_custom="False" comment="“Zero” (for systems that use zero based&#10;numbering schemes)" />
+    <Item key="1.1" value="1.1.n1" is_custom="False" comment="&quot;One,” where the measure needs an&#10;argument such as CEMI(n=1)" />
+    <Item key="2.1" value="2.1.n2" is_custom="False" comment="&quot;Two&quot; where the measure needs an&#10;argument such as CEMI(n=2)" />
+    <Item key="3.1" value="3.1.n3" is_custom="False" comment="&quot;Three&quot; where the measure needs an&#10;argument such as CEMI(n=3)" />
+    <Item key="4.1" value="4.1.n4" is_custom="False" comment="&quot;Four&quot; where the measure needs an&#10;argument such as CEMI(n=4)" />
+    <Item key="5.1" value="5.1.n5" is_custom="False" comment="&quot;Five&quot; where the measure needs an&#10;argument" />
+    <Item key="6.1" value="6.1.n6" is_custom="False" comment="Six" />
+    <Item key="7.1" value="7.1.n7" is_custom="False" comment="Seven" />
+    <Item key="8.1" value="8.1.n8" is_custom="False" comment="Eight" />
+    <Item key="9.1" value="9.1.n9" is_custom="False" comment="Nine" />
+    <Item key="10.1" value="10.1.n10" is_custom="False" comment="Ten" />
+    <Item key="15.1" value="15.1.n15" is_custom="False" comment="Fifteen" />
+    <Item key="30.1" value="30.1.n30" is_custom="False" comment="Thirty" />
+    <Item key="45.1" value="45.1.n45" is_custom="False" comment="Fourtyfive" />
+    <Item key="60.1" value="60.1.n60" is_custom="False" comment="Sixty" />
+    <Item key="120.1" value="120.1.n120" is_custom="False" comment="2 × 60 = 120" />
+    <Item key="155.1" value="155.1.n155" is_custom="False" comment="One hundred fifty five" />
+    <Item key="240.1" value="240.1.n240" is_custom="False" comment="4 × 60 = 240" />
+    <Item key="305.1" value="305.1.n305" is_custom="False" comment="Three hundred and five." />
+    <Item key="360.1" value="360.1.n360" is_custom="False" comment="6 × 60 = 360" />
+    <Item key="480.1" value="480.1.n480" is_custom="False" comment="8 × 60 = 480" />
+    <Item key="720.1" value="720.1.n720" is_custom="False" comment="12 × 60 = 720" />
+    <Item key="720.6" value="720.60.n720/60" is_custom="False" comment="12 × 60/1 × 60" />
+    <Item key="720.12" value="720.120.n720/120" is_custom="False" comment="12 × 60/2 × 60" />
+    <Item key="720.18" value="720.180.n720/180" is_custom="False" comment="12 × 60/3 × 60" />
+    <Item key="720.24" value="720.240.n720/240" is_custom="False" comment="12 × 60/4 × 60" />
+    <Item key="720.36" value="720.360.n720/360" is_custom="False" comment="12 × 60/6 × 60" />
+  </Dictionary>
+  <Dictionary name="TOU">
+    <Item key="0" value="0.none" is_custom="False" comment="Not Applicable" />
+    <Item key="1" value="1.touA" is_custom="False" comment="Usage in the first defined TOU bucket" />
+    <Item key="2" value="2.touB" is_custom="False" comment="Usage in the second defined TOU bucket" />
+    <Item key="3" value="3.touC" is_custom="False" comment="Usage in the third defined TOU bucket" />
+    <Item key="4" value="4.touD" is_custom="False" comment="Usage in the fourth defined TOU bucket" />
+    <Item key="5" value="5.touE" is_custom="False" comment="Usage in the fifth defined TOU bucket" />
+    <Item key="6" value="6.touF" is_custom="False" comment="Usage in the sixth defined TOU bucket" />
+    <Item key="7" value="7.touG" is_custom="False" comment="Etc." />
+  </Dictionary>
+  <Dictionary name="cpp">
+    <Item key="0" value="0.none" is_custom="False" comment="Not Applicable" />
+    <Item key="1" value="1.cppA" is_custom="False" comment="Consumption associated with critical peak period A" />
+    <Item key="2" value="2.cppB" is_custom="False" comment="Consumption associated with critical peak period B" />
+    <Item key="3" value="3.cppC" is_custom="False" comment="Consumption associated with critical peak period C" />
+    <Item key="4" value="4.cppD" is_custom="False" comment="Consumption associated with critical peak period D" />
+    <Item key="5" value="5.cppE" is_custom="False" comment="Consumption associated with critical peak period E" />
+    <Item key="6" value="6.cppF" is_custom="False" comment="Consumption associated with critical peak period F" />
+    <Item key="7" value="7.cppG" is_custom="False" comment="Etc." />
+  </Dictionary>
+  <Dictionary name="tier">
+    <Item key="0" value="0.none" is_custom="False" comment="Not Applicable" />
+    <Item key="1" value="1.consumptionTier1" is_custom="False" comment="Usage in the first defined consumption bucket" />
+    <Item key="2" value="2.consumptionTier2" is_custom="False" comment="Usage in the second defined consumption bucket" />
+    <Item key="3" value="3.consumptionTier3" is_custom="False" comment="Usage in the third defined consumption bucket" />
+    <Item key="4" value="4.consumptionTier4" is_custom="False" comment="Usage in the fourth defined consumption bucket" />
+    <Item key="5" value="5.consumptionTier5" is_custom="False" comment="Usage in the fifth defined consumption bucket" />
+    <Item key="6" value="6.consumptionTier6" is_custom="False" comment="Usage in the sixth defined consumption bucket" />
+    <Item key="7" value="7.consumptionTier7" is_custom="False" comment="Additional consumption tiers may be created as necessary." />
+  </Dictionary>
+  <Dictionary name="phase">
+    <Item key="0" value="0.none" is_custom="False" comment="Not applicable to any phase" />
+    <Item key="16" value="16.phaseN" is_custom="False" comment="Neutral" />
+    <Item key="17" value="17.phaseNtoGnd" is_custom="False" comment="Neutral to ground" />
+    <Item key="32" value="32.phaseC" is_custom="False" comment="Phase C" />
+    <Item key="33" value="33.phaseCtoN" is_custom="False" comment="Phase C to Neutral" />
+    <Item key="40" value="40.phaseCtoAv" is_custom="False" comment="Phase C current or voltage relative to&#10;Phase A voltage" />
+    <Item key="41" value="41.phaseCAtoN" is_custom="False" comment="CA to Neutral" />
+    <Item key="64" value="64.phaseB" is_custom="False" comment="Phase B" />
+    <Item key="65" value="65.phaseBtoN" is_custom="False" comment="Phase B to Neutral" />
+    <Item key="66" value="66.phaseBtoC" is_custom="False" comment="Phase B to C" />
+    <Item key="72" value="72.phaseBtoAv" is_custom="False" comment="Phase B current or voltage relative to&#10;Phase A voltage" />
+    <Item key="97" value="97.phaseBCtoN" is_custom="False" comment="BC to Neutral" />
+    <Item key="128" value="128.phaseA" is_custom="False" comment="Phase A" />
+    <Item key="129" value="129.phaseAtoN" is_custom="False" comment="Phase A to Neutral" />
+    <Item key="132" value="132.phaseAtoB" is_custom="False" comment="Phase A to B" />
+    <Item key="136" value="136.phaseAtoAv" is_custom="False" comment="Phase A current relative to Phase A&#10;voltage" />
+    <Item key="93" value="93.phaseABtoN" is_custom="False" comment="AB to Neutral" />
+    <Item key="224" value="224.phasesABC" is_custom="False" comment="Involving all phases" />
+    <Item key="225" value="225.phaseABCtoN" is_custom="False" comment="ABC to Neutral" />
+    <Item key="256" value="256.s2" is_custom="False" comment="Phase S2" />
+    <Item key="257" value="257.s2N" is_custom="False" comment="Phase S2 to Neutral" />
+    <Item key="512" value="512.s1" is_custom="False" comment="Phase S1" />
+    <Item key="513" value="513.s1N" is_custom="False" comment="Phase S1 to Neutral" />
+    <Item key="768" value="768.s12" is_custom="False" comment="Phase S1 to S2" />
+    <Item key="769" value="769.s12N" is_custom="False" comment="Phase S1, S2 to Neutral" />
+    <Item key="1248" value="1248.threeWireWye" is_custom="False" comment="3W Wye" />
+    <Item key="1249" value="1249.fourWireWye" is_custom="False" comment="4W Wye" />
+    <Item key="2272" value="2272.threeWireDelta" is_custom="False" comment="3W Delta" />
+    <Item key="2273" value="2273.fourWireDelta" is_custom="False" comment="4W Delta" />
+    <Item key="6369" value="6369.fourWireHLDelta" is_custom="False" comment="4W High-leg Delta" />
+    <Item key="10465" value="10465.fourWireOpenDelta" is_custom="False" comment="4W Open Delta" />
+    <Item key="17153" value="17153.networked" is_custom="False" comment="Networked meter" />
+  </Dictionary>
+  <Dictionary name="multiplier">
+    <Item key="–24" value="–24 .y" is_custom="False" comment="yocto = ×10–24" />
+    <Item key="–21" value="–21 .z" is_custom="False" comment="zepto = ×10–21" />
+    <Item key="–18" value="–18 .a" is_custom="False" comment="atto = ×10–18" />
+    <Item key="–15" value="–15 .f" is_custom="False" comment="femto = ×10–15" />
+    <Item key="–12" value="–12 .p" is_custom="False" comment="pico = ×10–12" />
+    <Item key="–9" value="–9 .n" is_custom="False" comment="nano = ×10–9" />
+    <Item key="–6" value="–6 .µ" is_custom="False" comment="micro = ×10–6" />
+    <Item key="–3" value="–3 .m" is_custom="False" comment="milli= ×10–3" />
+    <Item key="–2" value="–2 .c" is_custom="False" comment="centi = ×10–2" />
+    <Item key="–1" value="–1 .d" is_custom="False" comment="deci = ×10–1" />
+    <Item key="0" value="0.Not applicable or &quot;×1&quot;" is_custom="False" comment="N" />
+    <Item key="1" value="1.da" is_custom="False" comment="deca = ×101" />
+    <Item key="2" value="2.h" is_custom="False" comment="hecto = ×102" />
+    <Item key="3" value="3.k" is_custom="False" comment="kilo = ×103" />
+    <Item key="6" value="6.M" is_custom="False" comment="Mega = ×106" />
+    <Item key="9" value="9.G" is_custom="False" comment="Giga = ×109" />
+    <Item key="12" value="12.T" is_custom="False" comment="Tera = ×1012" />
+    <Item key="15" value="15.P" is_custom="False" comment="Peta = ×1015" />
+    <Item key="18" value="18.E" is_custom="False" comment="Exa = ×1018" />
+    <Item key="21" value="21.Z" is_custom="False" comment="Zetta = ×1021" />
+    <Item key="24" value="24.Y" is_custom="False" comment="Yotta = ×1024" />
+  </Dictionary>
+  <Dictionary name="uom">
+    <Item key="2" value="2.metre" is_custom="False" />
+    <Item key="3" value="3.gram" is_custom="False" />
+    <Item key="5" value="5.A" is_custom="False" comment="ampere" />
+    <Item key="6" value="6.K" is_custom="False" comment="Kelvin" />
+    <Item key="7" value="7.mole" is_custom="False" />
+    <Item key="8" value="8.candela" is_custom="False" />
+    <Item key="27" value="27.second" is_custom="False" />
+    <Item key="10" value="10.Radian (m/m)" is_custom="False" />
+    <Item key="11" value="11.Steradian (m2/m2)" is_custom="False" />
+    <Item key="21" value="21.Gray (J/kg)" is_custom="False" />
+    <Item key="22" value="22.Becquerel (1/s)" is_custom="False" />
+    <Item key="23" value="23.degrees Celsius" is_custom="False" />
+    <Item key="24" value="24.Sievert (J/kg)" is_custom="False" />
+    <Item key="25" value="25.Farad (C/V)" is_custom="False" />
+    <Item key="26" value="26.Coulomb (Amp second)" is_custom="False" />
+    <Item key="28" value="28.Henry (Wb/A)" is_custom="False" />
+    <Item key="29" value="29.V" is_custom="False" comment=".Volt (W/A)" />
+    <Item key="30" value="30.Ohm (V/A)" is_custom="False" />
+    <Item key="31" value="31.J" is_custom="False" comment="N·m = C·V = W·s" />
+    <Item key="32" value="32.(kg m/s2)" is_custom="False" />
+    <Item key="33" value="33.Hz" is_custom="False" comment="Cycles per second or (1/s)" />
+    <Item key="34" value="34.(lm/m2)" is_custom="False" />
+    <Item key="35" value="35.lumen (cd sr)" is_custom="False" />
+    <Item key="36" value="36.Weber (V s)" is_custom="False" />
+    <Item key="37" value="37.Tesla (Wb/m2)" is_custom="False" />
+    <Item key="38" value="38.W" is_custom="False" comment="Watt." />
+    <Item key="39" value="39.Pascal (N/m2)" is_custom="False" />
+    <Item key="53" value="53.Siemens (A / V = 1 / Ω)" is_custom="False" />
+    <Item key="155" value="155.PA" is_custom="False" comment="Pascal, absolute pressure" />
+    <Item key="140" value="140.PA" is_custom="False" comment="Pascal, gauge pressure" />
+    <Item key="158" value="158.katal = mol / s" is_custom="False" />
+    <Item key="4" value="4.rotations per second" is_custom="False" />
+    <Item key="41" value="41.square metre" is_custom="False" />
+    <Item key="42" value="42.M³" is_custom="False" comment="cubic metre" />
+    <Item key="43" value="43.metre per second (m/s)" is_custom="False" />
+    <Item key="44" value="44.metre per second squared" is_custom="False" />
+    <Item key="45" value="45.cubic metres per second" is_custom="False" />
+    <Item key="46" value="46.metre / cubic metre" is_custom="False" />
+    <Item key="47" value="47.kilogram metre (kg·m)" is_custom="False" />
+    <Item key="48" value="48.gram/cubic metre" is_custom="False" />
+    <Item key="49" value="49.metre squared / second" is_custom="False" />
+    <Item key="50" value="50.Watt/metre Kelvin" is_custom="False" />
+    <Item key="51" value="51.Joule/Kelvin" is_custom="False" />
+    <Item key="54" value="54.radians per second" is_custom="False" />
+    <Item key="61" value="61.VA" is_custom="False" comment="Volt Ampere" />
+    <Item key="63" value="63.var" is_custom="False" comment="Volt Ampere reactive" />
+    <Item key="66" value="66.Volt seconds (Ws/A)" is_custom="False" />
+    <Item key="67" value="67.Volt squared (W2/A2)" is_custom="False" />
+    <Item key="68" value="68.Amp seconds" is_custom="False" />
+    <Item key="69" value="69.Amp squared" is_custom="False" />
+    <Item key="70" value="70.square Amp second" is_custom="False" />
+    <Item key="71" value="71.Vah" is_custom="False" comment="Volt Ampere hours" />
+    <Item key="72" value="72.W·h" is_custom="False" comment="Watt hours" />
+    <Item key="73" value="73.varh" is_custom="False" comment="Volt Ampere reactive hours" />
+    <Item key="74" value="74.Volt per Hertz" is_custom="False" />
+    <Item key="75" value="75.Hertz per second" is_custom="False" />
+    <Item key="78" value="78.kg m2" is_custom="False" />
+    <Item key="81" value="81.Watt per second" is_custom="False" />
+    <Item key="82" value="82.litre per second" is_custom="False" />
+    <Item key="100" value="100.Q" is_custom="False" />
+    <Item key="101" value="101.Qh" is_custom="False" />
+    <Item key="102" value="102.Ohm metre, ρ (rho)" is_custom="False" />
+    <Item key="103" value="103.magnetic field strength, Ampere per metre" is_custom="False" />
+    <Item key="104" value="104.Volt-squared-hours" is_custom="False" />
+    <Item key="105" value="105.Ampere-squared hour" is_custom="False" />
+    <Item key="106" value="106.Ah" is_custom="False" comment="Ampere-hours" />
+    <Item key="107" value="107.energy per volume" is_custom="False" />
+    <Item key="108" value="108.time and date per ISO 8601 format" is_custom="False" />
+    <Item key="115" value="115.active energy metering constant" is_custom="False" />
+    <Item key="116" value="116.reactive energy metering constant" is_custom="False" />
+    <Item key="117" value="117.apparent energy metering constant" is_custom="False" />
+    <Item key="125" value="125.cubic metre per hour" is_custom="False" />
+    <Item key="126" value="126.compensated cubic metre per hour" is_custom="False" />
+    <Item key="127" value="127.uncompensated cubic metre per hour" is_custom="False" />
+    <Item key="137" value="137.L/h" is_custom="False" comment="litre per hour" />
+    <Item key="139" value="139.litre (uncompensated) per hour" is_custom="False" />
+    <Item key="138" value="138.litre (compensated) per hour" is_custom="False" />
+    <Item key="161" value="161.Q measured at 45º" is_custom="False" />
+    <Item key="162" value="162.Q measured at 60º" is_custom="False" />
+    <Item key="163" value="163.Qh measured at 45º" is_custom="False" />
+    <Item key="164" value="164.Qh measured at 60º" is_custom="False" />
+    <Item key="165" value="165.Joule / kg" is_custom="False" />
+    <Item key="166" value="166.cubic metre, with the value uncompensated for weather effects." is_custom="False" />
+    <Item key="167" value="167.cubic metre, with the value compensated for weather effects." is_custom="False" />
+    <Item key="173" value="173.reciprocal metre, (1/m)" is_custom="False" />
+    <Item key="174" value="174.cubic metre per kilogram, v" is_custom="False" />
+    <Item key="175" value="175.Pascal second" is_custom="False" />
+    <Item key="176" value="176.Newton metre" is_custom="False" />
+    <Item key="177" value="177.Newton per metre" is_custom="False" />
+    <Item key="178" value="178.radian per second squared" is_custom="False" />
+    <Item key="179" value="179.Watt per square metre" is_custom="False" />
+    <Item key="180" value="180.Joule per kilogram kelvin" is_custom="False" />
+    <Item key="181" value="181.Joule per cubic metre" is_custom="False" />
+    <Item key="182" value="182.Volt per metre" is_custom="False" />
+    <Item key="183" value="183.Coulomb per cubic metre" is_custom="False" />
+    <Item key="184" value="184.Coulomb per square metre" is_custom="False" />
+    <Item key="185" value="185.Farad per metre" is_custom="False" />
+    <Item key="186" value="186.Henry per metre" is_custom="False" />
+    <Item key="187" value="187.Joule per mole" is_custom="False" />
+    <Item key="188" value="188.Joule per mole kelvin" is_custom="False" />
+    <Item key="189" value="189.Coulomb per kilogram" is_custom="False" />
+    <Item key="190" value="190.Gray per second" is_custom="False" />
+    <Item key="191" value="191.Watt per steradian" is_custom="False" />
+    <Item key="192" value="192.Watt per square metre steradian" is_custom="False" />
+    <Item key="193" value="193.katal per cubic metre" is_custom="False" />
+    <Item key="280" value="280.Volt hours" is_custom="False" />
+    <Item key="159" value="159.minute = 60 s" is_custom="False" />
+    <Item key="160" value="160.hour = 60 min = 3 600 s" is_custom="False" />
+    <Item key="195" value="195.day = 24 h = 86 400 s" is_custom="False" />
+    <Item key="9" value="9.degree" is_custom="False" />
+    <Item key="196" value="196.minute" is_custom="False" />
+    <Item key="197" value="197.second" is_custom="False" />
+    <Item key="198" value="198.hectare" is_custom="False" />
+    <Item key="134" value="134.L" is_custom="False" comment="litre = dm3 = m3/1 000" />
+    <Item key="199" value="199.“tonne” or “metric ton” (1 000 kg = 1 Mg)" is_custom="False" />
+    <Item key="0" value="0.N/A" is_custom="False" />
+    <Item key="65" value="65.Cosφ" is_custom="False" comment="Power factor" />
+    <Item key="79" value="79.Logrithmic ratio" is_custom="False" />
+    <Item key="109" value="109.State" is_custom="False" />
+    <Item key="111" value="111.Amount of substance" is_custom="False" />
+    <Item key="113" value="113.Logrithmic ratio of signal strength" is_custom="False" />
+    <Item key="114" value="114.Application Value" is_custom="False" />
+    <Item key="118" value="118.EndDeviceEvent" is_custom="False" />
+    <Item key="143" value="143.Concentration" is_custom="False" />
+    <Item key="144" value="144.Concentration" is_custom="False" />
+    <Item key="145" value="145.Concentration" is_custom="False" />
+    <Item key="146" value="146.Concentration" is_custom="False" />
+    <Item key="147" value="147.Molality" is_custom="False" />
+    <Item key="148" value="148.Ratio of length" is_custom="False" />
+    <Item key="149" value="149.Ratio of time" is_custom="False" />
+    <Item key="150" value="150.Rate of frequency change" is_custom="False" />
+    <Item key="151" value="151.Ratio of voltages" is_custom="False" />
+    <Item key="152" value="152.Ratio of Amperages" is_custom="False" />
+    <Item key="153" value="153.PF, the ratio of the active power to the apparent power." is_custom="False" />
+    <Item key="154" value="154.Revolutions" is_custom="False" />
+    <Item key="168" value="168.Ratio of power" is_custom="False" />
+    <Item key="170" value="170.n" is_custom="False" />
+    <Item key="171" value="171.μr" is_custom="False" />
+    <Item key="172" value="172.Neper" is_custom="False" />
+    <Item key="281" value="281.Relative humidity" is_custom="False" />
+    <Item key="282" value="282.Ratio of covered sky to total sky." is_custom="False" />
+    <Item key="200" value="200.electronvolt" is_custom="False" />
+    <Item key="201" value="201.dalton" is_custom="False" />
+    <Item key="202" value="202.unified atomic mass unit" is_custom="False" />
+    <Item key="203" value="203.astronomical unit (1ua = 1,495 978 × 1011 m)" is_custom="False" />
+    <Item key="204" value="204.natural unit of speed (speed of light in a vacuum)" is_custom="False" />
+    <Item key="205" value="205.natural unit of action (reduced planck constant)" is_custom="False" />
+    <Item key="206" value="206.natural unit of mass (electron mass)" is_custom="False" />
+    <Item key="207" value="207.natural unit of time" is_custom="False" />
+    <Item key="208" value="208.atomic units of charge (elementary charge)" is_custom="False" />
+    <Item key="209" value="209.atomic units of mass (electron mass)" is_custom="False" />
+    <Item key="210" value="210.atomic unit of action (reduced planck constant)" is_custom="False" />
+    <Item key="211" value="211.atomic unit of length, bohr ( Bohr radius)" is_custom="False" />
+    <Item key="212" value="212.atomic unit of energy, hartree" is_custom="False" />
+    <Item key="213" value="213.atomic unit of time" is_custom="False" />
+    <Item key="76" value="76.characters" is_custom="False" />
+    <Item key="77" value="77.characters per second" is_custom="False" />
+    <Item key="80" value="80.Generic money" is_custom="False" />
+    <Item key="119" value="119.cubic foot" is_custom="False" />
+    <Item key="120" value="120.cubic foot compensated for weather" is_custom="False" />
+    <Item key="121" value="121.cubic foot uncompensated for weather" is_custom="False" />
+    <Item key="122" value="122.cubic foot per hour" is_custom="False" />
+    <Item key="123" value="123.compensated cubic feet per hour" is_custom="False" />
+    <Item key="124" value="124.uncompensated cubic feet per hour" is_custom="False" />
+    <Item key="128" value="128.US gallon (1 gal = 231 in3 = 128 fl oz.)" is_custom="False" />
+    <Item key="129" value="129.US gallon per hour" is_custom="False" />
+    <Item key="130" value="130.Imperial gallon" is_custom="False" />
+    <Item key="131" value="131.Imperial gallon per hour" is_custom="False" />
+    <Item key="132" value="132.British Thermal Unit" is_custom="False" />
+    <Item key="133" value="133.BTU per hour" is_custom="False" />
+    <Item key="141" value="141.Pound per square inch, absolute" is_custom="False" />
+    <Item key="142" value="142.Pound per square inch, gauge" is_custom="False" />
+    <Item key="156" value="156.Litre, with the value uncompensated for weather effects" is_custom="False" />
+    <Item key="157" value="157.Litre, with the value compensated for weather effects" is_custom="False" />
+    <Item key="169" value="169.Therm" is_custom="False" />
+    <Item key="214" value="214.bar (1 bar = 100 kPa)" is_custom="False" />
+    <Item key="215" value="215.millimeter of mercury (1 mmHg ≈ 133,3 Pa)" is_custom="False" />
+    <Item key="216" value="216.ångström (1Å = 10–10 m)" is_custom="False" />
+    <Item key="217" value="217.nautical mile (1 M = 1852 m)" is_custom="False" />
+    <Item key="218" value="218.barn (1 b = 100 fm2 = 10–28 m2)" is_custom="False" />
+    <Item key="219" value="219.knot (1 kn = 1852/3600) m/s" is_custom="False" />
+    <Item key="220" value="220.curie (1 Ci = 3,7 × 1010 Bq)" is_custom="False" />
+    <Item key="221" value="221.roentgen (1 R = 2,58 × 10–4 C/kg)" is_custom="False" />
+    <Item key="222" value="222.rad (1 rd = 1 cGy)" is_custom="False" />
+    <Item key="223" value="223.rem (1 rem = 10–2 Sv)" is_custom="False" />
+    <Item key="224" value="224.inch" is_custom="False" />
+    <Item key="225" value="225.foot (1 ft = 12 in)" is_custom="False" />
+    <Item key="226" value="226.rod (1 rod = 16,5 ft)" is_custom="False" />
+    <Item key="227" value="227.furlong (1 fur = 660 ft)" is_custom="False" />
+    <Item key="228" value="228.mile (1 statute mile = 8 fur = 80 chains = 320 rods = 5280" is_custom="False" />
+    <Item key="229" value="229.square foot (1 ft2 = 144 in2)" is_custom="False" />
+    <Item key="230" value="230.square yard (1 yd2 = 9 ft2)" is_custom="False" />
+    <Item key="231" value="231.square rod (1 rod2 = 272,25 ft2)" is_custom="False" />
+    <Item key="232" value="232.acre (1 acre = 160 rd2 = 43 560 ft2)" is_custom="False" />
+    <Item key="233" value="233.square mile (1 mi2 = 640 acres)" is_custom="False" />
+    <Item key="234" value="234.section of land (1 mi2 = 1 section of land)" is_custom="False" />
+    <Item key="235" value="235.township (1 township = 6 miles square)" is_custom="False" />
+    <Item key="237" value="237.cubic yard (1 yd3 = 27 ft3)" is_custom="False" />
+    <Item key="238" value="238.link (1 li = 0,66 ft)" is_custom="False" />
+    <Item key="239" value="239.chain (1 ch = 100 links = 4 rods = 66 ft)" is_custom="False" />
+    <Item key="240" value="240.US liquid pint (1 pt = 28,875 in3 = 128 fl dr)" is_custom="False" />
+    <Item key="241" value="241.US liquid quart (1 qt = 2 pt)" is_custom="False" />
+    <Item key="242" value="242.Apothecaries fluid dram" is_custom="False" />
+    <Item key="243" value="243.Apothecaries fluid ounce (1 fl oz ap = 8 fl dr ap)" is_custom="False" />
+    <Item key="244" value="244.US dry pint (1 pt = 67,2 in3)" is_custom="False" />
+    <Item key="245" value="245.US dry quart (1 qt = 2 pints)" is_custom="False" />
+    <Item key="246" value="246.US peck (1 pk = 8 qt)" is_custom="False" />
+    <Item key="247" value="247.US bushel (1 bu = 4 pk)" is_custom="False" />
+    <Item key="248" value="248.grain (1 grain = 1/7000 avdp lb)" is_custom="False" />
+    <Item key="249" value="249.Avoirdupois dram (1 Avdp dr = 27-11/32 gr)" is_custom="False" />
+    <Item key="250" value="250.Avoirdupois ounce (1 Avdp oz = 16 Avdp dr)" is_custom="False" />
+    <Item key="251" value="251.Avoirdupois pound (1 lb = 16 oz)" is_custom="False" />
+    <Item key="252" value="252.Avoirdupois hundredweight (1 cwt = 100 lbs)" is_custom="False" />
+    <Item key="253" value="253.Avoirdupois ton (1 short ton = 2000 lbs)" is_custom="False" />
+    <Item key="254" value="254.Avoirdupois gross or long hundredweight" is_custom="False" />
+    <Item key="255" value="255.Avoirdupois gross or long ton" is_custom="False" />
+    <Item key="256" value="256.Troy pennyweight (1 dwt = 24 grains)" is_custom="False" />
+    <Item key="257" value="257.Troy ounce (1 oz t = 20 dwt)" is_custom="False" />
+    <Item key="258" value="258.Troy pound (1 lb t = 12 oz t)" is_custom="False" />
+    <Item key="259" value="259.Apothecaries scruple (1 s ap = 20 grains)" is_custom="False" />
+    <Item key="260" value="260.Apothecaries dram (1 dr ap = 3 s ap)" is_custom="False" />
+    <Item key="261" value="261.Apothecaries ounce (1 oz ap = 8 dr ap)" is_custom="False" />
+    <Item key="262" value="262.Apothecaries pound (1 lp ap = 12 oz ap)" is_custom="False" />
+    <Item key="263" value="263.mile per imperial gallon" is_custom="False" />
+    <Item key="264" value="264.mile per US gallon" is_custom="False" />
+    <Item key="265" value="265.mile per US gallon equivalent" is_custom="False" />
+    <Item key="266" value="266.litre per 100 km" is_custom="False" />
+    <Item key="267" value="267.killowatt-hour per mile" is_custom="False" />
+    <Item key="268" value="268.kilowatt-hour per 100 mile" is_custom="False" />
+    <Item key="279" value="279.degrees Fahrenheit" is_custom="False" />
+    <Item key="269" value="269.erg (1 erg = 10–7 J)" is_custom="False" />
+    <Item key="270" value="270.dyne (1 dyn = 10–5 N)" is_custom="False" />
+    <Item key="271" value="271.poise (1 P = 0,1 Pa s)" is_custom="False" />
+    <Item key="272" value="272.stokes (1 St = 1 cm2/s)" is_custom="False" />
+    <Item key="273" value="273.stilb (1 sb = 104 cd/m2)" is_custom="False" />
+    <Item key="274" value="274.phot (1 ph = 104 lx)" is_custom="False" />
+    <Item key="275" value="275.gal (1 Gal = 10–2 m s–2)" is_custom="False" />
+    <Item key="276" value="276.Maxwell (1 Mx = 10–8 Wb)" is_custom="False" />
+    <Item key="277" value="277.Gauss (1 G = 10–4 T)" is_custom="False" />
+    <Item key="278" value="278.OErsted (1 Oe = (103/4π) A/m)" is_custom="False" />
+    <Item key="278" value="278.278.Œrsted (1 Oe = (103/4π) A/m)" is_custom="False" />
+    <Item key="801" value="%" is_custom="False" />
+    <Item key="802" value="RMB" is_custom="False" />
+  </Dictionary>
+  <Dictionary name="currency">
+    <Item key="0" value="0.None" is_custom="False" comment="N" />
+    <Item key="36" value="36.AUD" is_custom="False" comment="Australian Dollar" />
+    <Item key="124" value="124.CAD" is_custom="False" comment="Canadian Dollar" />
+    <Item key="156" value="156.CNY" is_custom="False" comment="Chinese Yuan Renminbi" />
+    <Item key="208" value="208.DKK" is_custom="False" comment="Danish Crown" />
+    <Item key="356" value="356.INR" is_custom="False" comment="India Rupee" />
+    <Item key="392" value="392.JPY" is_custom="False" comment="Japanese Yen" />
+    <Item key="578" value="578.NOK" is_custom="False" comment="Norwegian Crown" />
+    <Item key="643" value="643.RUB" is_custom="False" comment="Russian Ruble" />
+    <Item key="710" value="710.ZAR" is_custom="False" comment="South African Rand" />
+    <Item key="752" value="752.SEK" is_custom="False" comment="Swedish Krona" />
+    <Item key="756" value="756.CHF" is_custom="False" comment="Swiss Franc" />
+    <Item key="826" value="826.GBP" is_custom="False" comment="British Pound" />
+    <Item key="840" value="840.USD" is_custom="False" comment="US Dollar" />
+    <Item key="978" value="978.EUR" is_custom="False" comment="Euro" />
+  </Dictionary>
+</ReadingTypeDictionaries>
